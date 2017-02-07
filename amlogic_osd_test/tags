@@ -1,0 +1,1962 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCESS_PER_THREAD_DATA	nano-X.h	1265;"	d
+ACLUT44	stgxobj.h	/^  STGXOBJ_ColorACLUT_t          ACLUT44 ;$/;"	m	union:STGXOBJ_ColorValue_u
+ACLUT88	stgxobj.h	/^  STGXOBJ_ColorACLUT_t          ACLUT88 ;$/;"	m	union:STGXOBJ_ColorValue_u
+ADJUST_LEFT_DENOMINATOR	Amlogicframe.c	101;"	d	file:
+ADJUST_LEFT_DENOMINATOR	Amlogicframexxx.c	101;"	d	file:
+ADJUST_LEFT_NUMERATOR	Amlogicframe.c	100;"	d	file:
+ADJUST_LEFT_NUMERATOR	Amlogicframexxx.c	100;"	d	file:
+ADJUST_MAP_HEIGHT	Amlogicframe1.c	89;"	d	file:
+ADJUST_MAP_WIDTH	Amlogicframe1.c	88;"	d	file:
+ADJUST_TOP_DENOMINATOR	Amlogicframe.c	98;"	d	file:
+ADJUST_TOP_DENOMINATOR	Amlogicframexxx.c	98;"	d	file:
+ADJUST_TOP_NUMERATOR	Amlogicframe.c	97;"	d	file:
+ADJUST_TOP_NUMERATOR	Amlogicframexxx.c	97;"	d	file:
+ALL	defines.h	54;"	d
+ALPHA1	stgxobj.h	/^  U8                            ALPHA1;$/;"	m	union:STGXOBJ_ColorValue_u
+ALPHA4	stgxobj.h	/^  U8                            ALPHA4;$/;"	m	union:STGXOBJ_ColorValue_u
+ALPHA8	stgxobj.h	/^  U8                            ALPHA8;$/;"	m	union:STGXOBJ_ColorValue_u
+ALPHA_FACTOR_CONST_ALPHA	Amlogicframe.c	248;"	d	file:
+ALPHA_FACTOR_CONST_ALPHA	Amlogicframexxx.c	246;"	d	file:
+ALPHA_FACTOR_DST_ALPHA	Amlogicframe.c	246;"	d	file:
+ALPHA_FACTOR_DST_ALPHA	Amlogicframexxx.c	244;"	d	file:
+ALPHA_FACTOR_ONE	Amlogicframe.c	243;"	d	file:
+ALPHA_FACTOR_ONE	Amlogicframexxx.c	241;"	d	file:
+ALPHA_FACTOR_ONE_MINUS_CONST_ALPHA	Amlogicframe.c	249;"	d	file:
+ALPHA_FACTOR_ONE_MINUS_CONST_ALPHA	Amlogicframexxx.c	247;"	d	file:
+ALPHA_FACTOR_ONE_MINUS_DST_ALPHA	Amlogicframe.c	247;"	d	file:
+ALPHA_FACTOR_ONE_MINUS_DST_ALPHA	Amlogicframexxx.c	245;"	d	file:
+ALPHA_FACTOR_ONE_MINUS_SRC_ALPHA	Amlogicframe.c	245;"	d	file:
+ALPHA_FACTOR_ONE_MINUS_SRC_ALPHA	Amlogicframexxx.c	243;"	d	file:
+ALPHA_FACTOR_SRC_ALPHA	Amlogicframe.c	244;"	d	file:
+ALPHA_FACTOR_SRC_ALPHA	Amlogicframexxx.c	242;"	d	file:
+ALPHA_FACTOR_ZERO	Amlogicframe.c	242;"	d	file:
+ALPHA_FACTOR_ZERO	Amlogicframexxx.c	240;"	d	file:
+ANY	defines.h	55;"	d
+ARGB1555	stgxobj.h	/^  STGXOBJ_ColorARGB_t           ARGB1555;$/;"	m	union:STGXOBJ_ColorValue_u
+ARGB4444	stgxobj.h	/^  STGXOBJ_ColorARGB_t           ARGB4444;$/;"	m	union:STGXOBJ_ColorValue_u
+ARGB8565	stgxobj.h	/^  STGXOBJ_ColorARGB_t           ARGB8565;$/;"	m	union:STGXOBJ_ColorValue_u
+ARGB8888	stgxobj.h	/^  STGXOBJ_ColorARGB_t           ARGB8888;$/;"	m	union:STGXOBJ_ColorValue_u
+Alpha	stgfb.h	/^    U32                       Alpha;$/;"	m	struct:STGFB_BltData_s
+Alpha	stgxobj.h	/^  U8 Alpha;$/;"	m	struct:STGXOBJ_ColorACLUT_s
+Alpha	stgxobj.h	/^  U8 Alpha;$/;"	m	struct:STGXOBJ_ColorARGB_s
+Alpha	stgxobj.h	/^  U8 Alpha;$/;"	m	struct:STGXOBJ_ColorSignedAYCbCr_s
+Alpha	stgxobj.h	/^  U8 Alpha;$/;"	m	struct:STGXOBJ_ColorUnsignedAYCbCr_s
+Alpha0	stgfb.h	/^    int Alpha0;$/;"	m	struct:STGFB_CompositorAlpha_s
+Alpha1	stgfb.h	/^    int Alpha1;$/;"	m	struct:STGFB_CompositorAlpha_s
+AspectRatio	stgxobj.h	/^  STGXOBJ_AspectRatio_t                 AspectRatio;$/;"	m	struct:STGXOBJ_Bitmap_s
+B	stgxobj.h	/^  U8 B;$/;"	m	struct:STGXOBJ_ColorARGB_s
+B	stgxobj.h	/^  U8 B;$/;"	m	struct:STGXOBJ_ColorRGB_s
+BEnable	stgxobj.h	/^  BOOL    BEnable;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+BLACK	mwtypes.h	776;"	d
+BLENDOP_ADD	Amlogicframe.c	268;"	d	file:
+BLENDOP_ADD	Amlogicframexxx.c	266;"	d	file:
+BLENDOP_LOGIC	Amlogicframe.c	273;"	d	file:
+BLENDOP_LOGIC	Amlogicframexxx.c	271;"	d	file:
+BLENDOP_LOGIC_AND	Amlogicframe.c	282;"	d	file:
+BLENDOP_LOGIC_AND	Amlogicframexxx.c	280;"	d	file:
+BLENDOP_LOGIC_AND_INVERT	Amlogicframe.c	288;"	d	file:
+BLENDOP_LOGIC_AND_INVERT	Amlogicframexxx.c	286;"	d	file:
+BLENDOP_LOGIC_AND_REVERSE	Amlogicframe.c	280;"	d	file:
+BLENDOP_LOGIC_AND_REVERSE	Amlogicframexxx.c	278;"	d	file:
+BLENDOP_LOGIC_CLEAR	Amlogicframe.c	274;"	d	file:
+BLENDOP_LOGIC_CLEAR	Amlogicframexxx.c	272;"	d	file:
+BLENDOP_LOGIC_COPY	Amlogicframe.c	275;"	d	file:
+BLENDOP_LOGIC_COPY	Amlogicframexxx.c	273;"	d	file:
+BLENDOP_LOGIC_COPY_INVERT	Amlogicframe.c	278;"	d	file:
+BLENDOP_LOGIC_COPY_INVERT	Amlogicframexxx.c	276;"	d	file:
+BLENDOP_LOGIC_EQUIV	Amlogicframe.c	287;"	d	file:
+BLENDOP_LOGIC_EQUIV	Amlogicframexxx.c	285;"	d	file:
+BLENDOP_LOGIC_INVERT	Amlogicframe.c	279;"	d	file:
+BLENDOP_LOGIC_INVERT	Amlogicframexxx.c	277;"	d	file:
+BLENDOP_LOGIC_NAND	Amlogicframe.c	284;"	d	file:
+BLENDOP_LOGIC_NAND	Amlogicframexxx.c	282;"	d	file:
+BLENDOP_LOGIC_NOOP	Amlogicframe.c	276;"	d	file:
+BLENDOP_LOGIC_NOOP	Amlogicframexxx.c	274;"	d	file:
+BLENDOP_LOGIC_NOR	Amlogicframe.c	285;"	d	file:
+BLENDOP_LOGIC_NOR	Amlogicframexxx.c	283;"	d	file:
+BLENDOP_LOGIC_OR	Amlogicframe.c	283;"	d	file:
+BLENDOP_LOGIC_OR	Amlogicframexxx.c	281;"	d	file:
+BLENDOP_LOGIC_OR_INVERT	Amlogicframe.c	289;"	d	file:
+BLENDOP_LOGIC_OR_INVERT	Amlogicframexxx.c	287;"	d	file:
+BLENDOP_LOGIC_OR_REVERSE	Amlogicframe.c	281;"	d	file:
+BLENDOP_LOGIC_OR_REVERSE	Amlogicframexxx.c	279;"	d	file:
+BLENDOP_LOGIC_SET	Amlogicframe.c	277;"	d	file:
+BLENDOP_LOGIC_SET	Amlogicframexxx.c	275;"	d	file:
+BLENDOP_LOGIC_XOR	Amlogicframe.c	286;"	d	file:
+BLENDOP_LOGIC_XOR	Amlogicframexxx.c	284;"	d	file:
+BLENDOP_MAX	Amlogicframe.c	272;"	d	file:
+BLENDOP_MAX	Amlogicframexxx.c	270;"	d	file:
+BLENDOP_MIN	Amlogicframe.c	271;"	d	file:
+BLENDOP_MIN	Amlogicframexxx.c	269;"	d	file:
+BLENDOP_REVERSE_SUB	Amlogicframe.c	270;"	d	file:
+BLENDOP_REVERSE_SUB	Amlogicframexxx.c	268;"	d	file:
+BLENDOP_SUB	Amlogicframe.c	269;"	d	file:
+BLENDOP_SUB	Amlogicframexxx.c	267;"	d	file:
+BLUE	mwtypes.h	777;"	d
+BMax	stgfb.h	/^    U32 BMax;$/;"	m	struct:STGFB_CompositorColoKey_s
+BMax	stgxobj.h	/^  U8      BMax;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+BMin	stgfb.h	/^    U32 BMin;$/;"	m	struct:STGFB_CompositorColoKey_s
+BMin	stgxobj.h	/^  U8      BMin;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+BOOL	stddefs.h	/^typedef int BOOL;$/;"	t
+BOut	stgxobj.h	/^  BOOL    BOut;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+BROWN	mwtypes.h	782;"	d
+BigNotLittle	stgxobj.h	/^  BOOL                                  BigNotLittle;$/;"	m	struct:STGXOBJ_Bitmap_s
+BitmapType	stgxobj.h	/^  STGXOBJ_BitmapType_t                  BitmapType;$/;"	m	struct:STGXOBJ_Bitmap_s
+BrcmFbTiming	Amlogicframe.c	/^int             BrcmFbTiming(void)$/;"	f
+BrcmFbTiming	Amlogicframexxx.c	/^int             BrcmFbTiming(void)$/;"	f
+Byte	stgxobj.h	/^  U8                            Byte;$/;"	m	union:STGXOBJ_ColorValue_u
+CC	Makefile	/^CC=arc-linux-uclibc-gcc$/;"	m
+CHAR	defines.h	/^typedef char CHAR;$/;"	t
+CLUT1	stgxobj.h	/^  STGXOBJ_ColorKeyCLUT_t           CLUT1;$/;"	m	union:STGXOBJ_ColorKeyValue_u
+CLUT1	stgxobj.h	/^  U8                            CLUT1;$/;"	m	union:STGXOBJ_ColorValue_u
+CLUT2	stgxobj.h	/^  U8                            CLUT2;$/;"	m	union:STGXOBJ_ColorValue_u
+CLUT4	stgxobj.h	/^  U8                            CLUT4;$/;"	m	union:STGXOBJ_ColorValue_u
+CLUT8	stgxobj.h	/^  STGXOBJ_ColorKeyCLUT_t           CLUT8;$/;"	m	union:STGXOBJ_ColorKeyValue_u
+CLUT8	stgxobj.h	/^  U8                            CLUT8;$/;"	m	union:STGXOBJ_ColorValue_u
+COLOR_FACTOR_CONST_ALPHA	Amlogicframe.c	238;"	d	file:
+COLOR_FACTOR_CONST_ALPHA	Amlogicframexxx.c	236;"	d	file:
+COLOR_FACTOR_CONST_COLOR	Amlogicframe.c	236;"	d	file:
+COLOR_FACTOR_CONST_COLOR	Amlogicframexxx.c	234;"	d	file:
+COLOR_FACTOR_DST_ALPHA	Amlogicframe.c	234;"	d	file:
+COLOR_FACTOR_DST_ALPHA	Amlogicframexxx.c	232;"	d	file:
+COLOR_FACTOR_DST_COLOR	Amlogicframe.c	230;"	d	file:
+COLOR_FACTOR_DST_COLOR	Amlogicframexxx.c	228;"	d	file:
+COLOR_FACTOR_ONE	Amlogicframe.c	227;"	d	file:
+COLOR_FACTOR_ONE	Amlogicframexxx.c	225;"	d	file:
+COLOR_FACTOR_ONE_MINUS_CONST_ALPHA	Amlogicframe.c	239;"	d	file:
+COLOR_FACTOR_ONE_MINUS_CONST_ALPHA	Amlogicframexxx.c	237;"	d	file:
+COLOR_FACTOR_ONE_MINUS_CONST_COLOR	Amlogicframe.c	237;"	d	file:
+COLOR_FACTOR_ONE_MINUS_CONST_COLOR	Amlogicframexxx.c	235;"	d	file:
+COLOR_FACTOR_ONE_MINUS_DST_ALPHA	Amlogicframe.c	235;"	d	file:
+COLOR_FACTOR_ONE_MINUS_DST_ALPHA	Amlogicframexxx.c	233;"	d	file:
+COLOR_FACTOR_ONE_MINUS_DST_COLOR	Amlogicframe.c	231;"	d	file:
+COLOR_FACTOR_ONE_MINUS_DST_COLOR	Amlogicframexxx.c	229;"	d	file:
+COLOR_FACTOR_ONE_MINUS_SRC_ALPHA	Amlogicframe.c	233;"	d	file:
+COLOR_FACTOR_ONE_MINUS_SRC_ALPHA	Amlogicframexxx.c	231;"	d	file:
+COLOR_FACTOR_ONE_MINUS_SRC_COLOR	Amlogicframe.c	229;"	d	file:
+COLOR_FACTOR_ONE_MINUS_SRC_COLOR	Amlogicframexxx.c	227;"	d	file:
+COLOR_FACTOR_SRC_ALPHA	Amlogicframe.c	232;"	d	file:
+COLOR_FACTOR_SRC_ALPHA	Amlogicframexxx.c	230;"	d	file:
+COLOR_FACTOR_SRC_ALPHA_SATURATE	Amlogicframe.c	240;"	d	file:
+COLOR_FACTOR_SRC_ALPHA_SATURATE	Amlogicframexxx.c	238;"	d	file:
+COLOR_FACTOR_SRC_COLOR	Amlogicframe.c	228;"	d	file:
+COLOR_FACTOR_SRC_COLOR	Amlogicframexxx.c	226;"	d	file:
+COLOR_FACTOR_ZERO	Amlogicframe.c	226;"	d	file:
+COLOR_FACTOR_ZERO	Amlogicframexxx.c	224;"	d	file:
+COLOR_TYPE	main.c	9;"	d	file:
+CYAN	mwtypes.h	779;"	d
+Cb	stgxobj.h	/^  S8 Cb;$/;"	m	struct:STGXOBJ_ColorSignedAYCbCr_s
+Cb	stgxobj.h	/^  S8 Cb;$/;"	m	struct:STGXOBJ_ColorSignedYCbCr_s
+Cb	stgxobj.h	/^  U8 Cb;$/;"	m	struct:STGXOBJ_ColorUnsignedAYCbCr_s
+Cb	stgxobj.h	/^  U8 Cb;$/;"	m	struct:STGXOBJ_ColorUnsignedYCbCr_s
+CbEnable	stgxobj.h	/^  BOOL    CbEnable;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+CbEnable	stgxobj.h	/^  BOOL    CbEnable;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+CbMax	stgxobj.h	/^  S8      CbMax;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+CbMax	stgxobj.h	/^  U8      CbMax;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+CbMin	stgxobj.h	/^  S8      CbMin;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+CbMin	stgxobj.h	/^  U8      CbMin;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+CbOut	stgxobj.h	/^  BOOL    CbOut;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+CbOut	stgxobj.h	/^  BOOL    CbOut;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+Color	stgfb.h	/^    STGXOBJ_Color_t           Color;$/;"	m	struct:STGFB_BltData_s
+ColorDepth	stgxobj.h	/^  U8                        ColorDepth;$/;"	m	struct:STGXOBJ_Palette_s
+ColorKey	stgfb.h	/^    STGXOBJ_ColorKey_t        ColorKey;$/;"	m	struct:STGFB_BltData_s
+ColorSpaceConversion	stgxobj.h	/^  STGXOBJ_ColorSpaceConversionMode_t    ColorSpaceConversion;$/;"	m	struct:STGXOBJ_Bitmap_s
+ColorType	stgfb.h	/^    STGFB_ColorFormat_t     ColorType;            \/* Color Type of the bitmap *\/$/;"	m	struct:STGFB_Pixmap_s
+ColorType	stgxobj.h	/^  STGXOBJ_ColorType_t                   ColorType;$/;"	m	struct:STGXOBJ_Bitmap_s
+ColorType	stgxobj.h	/^  STGXOBJ_ColorType_t       ColorType;$/;"	m	struct:STGXOBJ_Palette_s
+Cr	stgxobj.h	/^  S8 Cr;$/;"	m	struct:STGXOBJ_ColorSignedAYCbCr_s
+Cr	stgxobj.h	/^  S8 Cr;$/;"	m	struct:STGXOBJ_ColorSignedYCbCr_s
+Cr	stgxobj.h	/^  U8 Cr;$/;"	m	struct:STGXOBJ_ColorUnsignedAYCbCr_s
+Cr	stgxobj.h	/^  U8 Cr;$/;"	m	struct:STGXOBJ_ColorUnsignedYCbCr_s
+CrEnable	stgxobj.h	/^  BOOL    CrEnable;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+CrEnable	stgxobj.h	/^  BOOL    CrEnable;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+CrMax	stgxobj.h	/^  S8      CrMax ;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+CrMax	stgxobj.h	/^  U8      CrMax ;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+CrMin	stgxobj.h	/^  S8      CrMin;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+CrMin	stgxobj.h	/^  U8      CrMin;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+CrOut	stgxobj.h	/^  BOOL    CrOut;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+CrOut	stgxobj.h	/^  BOOL    CrOut;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+DEFINED_BOOL	stddefs.h	370;"	d
+DEFINED_S16	stddefs.h	47;"	d
+DEFINED_S32	stddefs.h	52;"	d
+DEFINED_S64	stddefs.h	72;"	d
+DEFINED_S8	stddefs.h	42;"	d
+DEFINED_U16	stddefs.h	31;"	d
+DEFINED_U32	stddefs.h	36;"	d
+DEFINED_U64	stddefs.h	60;"	d
+DEFINED_U8	stddefs.h	26;"	d
+DKGRAY	mwtypes.h	794;"	d
+Data1_p	stgxobj.h	/^  void*                                 Data1_p;$/;"	m	struct:STGXOBJ_Bitmap_s
+Data2_p	stgxobj.h	/^  void*                                 Data2_p;$/;"	m	struct:STGXOBJ_Bitmap_s
+Data_p	stgfb.h	/^    void                    *Data_p;$/;"	m	struct:STGFB_Pixmap_s
+Data_p	stgxobj.h	/^  void*                     Data_p;$/;"	m	struct:STGXOBJ_Palette_s
+DstRectangle	stgfb.h	/^    STGXOBJ_Rectangle_t       DstRectangle;$/;"	m	struct:STGFB_BltData_s
+EVENT_LIST	nano-X.h	/^typedef struct event_list EVENT_LIST;$/;"	t	typeref:struct:event_list
+FAILURE	defines.h	70;"	d
+FALSE	defines.h	66;"	d
+FALSE	stddefs.h	414;"	d
+FBDEVNAME	Amlogicframe.c	47;"	d	file:
+FBDEVNAME	Amlogicframe1.c	47;"	d	file:
+FBDEVNAME	Amlogicframexxx.c	47;"	d	file:
+FBDEVNAME1	Amlogicframe1.c	48;"	d	file:
+FBIOPUT_GE2D_BLEND	Amlogicframe.c	216;"	d	file:
+FBIOPUT_GE2D_BLEND	Amlogicframexxx.c	214;"	d	file:
+FBIOPUT_GE2D_BLIT	Amlogic.h	28;"	d
+FBIOPUT_GE2D_BLIT_NOALPHA	Amlogic.h	27;"	d
+FBIOPUT_GE2D_CONFIG	Amlogic.h	34;"	d
+FBIOPUT_GE2D_FILLRECTANGLE	Amlogic.h	30;"	d
+FBIOPUT_GE2D_SRCCOLORKEY	Amlogic.h	31;"	d
+FBIOPUT_GE2D_STRETCHBLIT	Amlogic.h	29;"	d
+FBIOPUT_OSD_ORDER_SET	Amlogicframe.c	94;"	d	file:
+FBIOPUT_OSD_ORDER_SET	Amlogicframexxx.c	94;"	d	file:
+FBIOPUT_OSD_SET_ALPHA	Amlogic.h	35;"	d
+FBIOPUT_OSD_SRCCOLORKEY	Amlogic.h	32;"	d
+FBIOPUT_OSD_SRCKEY_ENABLE	Amlogic.h	33;"	d
+FBMW_GETCONFIG	MwFb.h	11;"	d
+FBMW_GUITRANSOVER	MwFb.h	13;"	d
+FBMW_RECTRANSOVER	MwFb.h	14;"	d
+FBMW_REFRESHOVER	MwFb.h	12;"	d
+FB_COLORMODE_24	Amlogic.h	40;"	d
+FB_COLORMODE_32	Amlogic.h	41;"	d
+FB_COLORMODE_565	Amlogic.h	39;"	d
+FB_Enable32bitColorKey	Amlogicframe.c	/^static INT32 FB_Enable32bitColorKey(T_FBAdaptor* pFB,INT32 layer, INT32 iColorKey,INT32 keymode)$/;"	f	file:
+FB_Enable32bitColorKey	Amlogicframexxx.c	/^static INT32 FB_Enable32bitColorKey(T_FBAdaptor* pFB,INT32 layer, INT32 iColorKey,INT32 keymode)$/;"	f	file:
+FB_EraseRect	Amlogicframe.c	/^INT32	FB_EraseRect(INT32 layer, INT32 nType, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight)$/;"	f
+FB_EraseRect	Amlogicframe1.c	/^INT32	FB_EraseRect(INT32 layer, INT32 nType, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight)$/;"	f
+FB_EraseRect	Amlogicframexxx.c	/^INT32	FB_EraseRect(INT32 layer, INT32 nType, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight)$/;"	f
+FB_RefreshRect	Amlogicframe.c	/^INT32 FB_RefreshRect(unsigned char bLayer, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight)$/;"	f
+FB_RefreshRect	Amlogicframe1.c	/^INT32 FB_RefreshRect(unsigned char bLayer, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight)$/;"	f
+FB_RefreshRect	Amlogicframexxx.c	/^INT32 FB_RefreshRect(unsigned char bLayer, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight)$/;"	f
+FB_SetAlpha	Amlogicframe.c	/^static INT32 FB_SetAlpha(INT32 layer, INT32 alpha)$/;"	f	file:
+FB_SetAlpha	Amlogicframe1.c	/^static INT32 FB_SetAlpha(INT32 layer, INT32 alpha)$/;"	f	file:
+FB_SetAlpha	Amlogicframexxx.c	/^static INT32 FB_SetAlpha(INT32 layer, INT32 alpha)$/;"	f	file:
+FB_SetColorKey	Amlogicframe.c	/^static INT32 FB_SetColorKey(INT32 layer, INT32 colorKey,INT32  keymode)$/;"	f	file:
+FB_SetColorKey	Amlogicframe1.c	/^static INT32 FB_SetColorKey(INT32 layer, INT32 colorKey)$/;"	f	file:
+FB_SetColorKey	Amlogicframexxx.c	/^static INT32 FB_SetColorKey(INT32 layer, INT32 colorKey,INT32  keymode)$/;"	f	file:
+FB_SetColorKeyEx	Amlogicframe.c	/^static INT32  FB_SetColorKeyEx(INT32 layer, INT32  enable,INT32 colorKey,INT32  keymode) \/\/src2_key$/;"	f	file:
+FB_SetLayer	Amlogicframe.c	/^static INT32 FB_SetLayer(INT32 layer, INT32 ctrl)$/;"	f	file:
+FB_SetLayer	Amlogicframe1.c	/^static INT32 FB_SetLayer(INT32 layer, INT32 ctrl)$/;"	f	file:
+FB_SetLayer	Amlogicframexxx.c	/^static INT32 FB_SetLayer(INT32 layer, INT32 ctrl)$/;"	f	file:
+FbTiming	Amlogicframe1.c	/^int	FbTiming(void)$/;"	f
+FillFBWithBlack	Amlogicframe.c	/^void FillFBWithBlack()$/;"	f
+FillFBWithBlack	Amlogicframexxx.c	/^void FillFBWithBlack()$/;"	f
+Flags	stgfb.h	/^    STGFB_BltFlag_t           Flags;$/;"	m	struct:STGFB_BltData_s
+Format	stgfb.h	/^    STGFB_ColorFormat_t       Format;$/;"	m	struct:STGFB_BltData_s
+G	stgxobj.h	/^  U8 G;$/;"	m	struct:STGXOBJ_ColorARGB_s
+G	stgxobj.h	/^  U8 G;$/;"	m	struct:STGXOBJ_ColorRGB_s
+GE2D_SRC2COLORKEY	Amlogicframe.c	566;"	d	file:
+GEnable	stgxobj.h	/^  BOOL    GEnable;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+GMax	stgfb.h	/^    U32 GMax;$/;"	m	struct:STGFB_CompositorColoKey_s
+GMax	stgxobj.h	/^  U8      GMax;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+GMin	stgfb.h	/^    U32 GMin;$/;"	m	struct:STGFB_CompositorColoKey_s
+GMin	stgxobj.h	/^  U8      GMin;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+GOut	stgxobj.h	/^  BOOL    GOut;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+GRAY	mwtypes.h	784;"	d
+GREEN	mwtypes.h	778;"	d
+GR_ARC	nano-X.h	150;"	d
+GR_ARCOUTLINE	nano-X.h	151;"	d
+GR_ARGB	nano-X.h	88;"	d
+GR_BACKGROUND_CENTER	nano-X.h	173;"	d
+GR_BACKGROUND_STRETCH	nano-X.h	175;"	d
+GR_BACKGROUND_TILE	nano-X.h	172;"	d
+GR_BACKGROUND_TOPLEFT	nano-X.h	174;"	d
+GR_BACKGROUND_TRANS	nano-X.h	176;"	d
+GR_BITMAP	nano-X.h	/^typedef MWIMAGEBITS 	GR_BITMAP;	\/* bitmap unit *\/$/;"	t
+GR_BITMAPBITS	nano-X.h	624;"	d
+GR_BITMAP_SIZE	nano-X.h	623;"	d
+GR_BITVALUE	nano-X.h	625;"	d
+GR_BMDATA_BYTEREVERSE	nano-X.h	179;"	d
+GR_BMDATA_BYTESWAP	nano-X.h	180;"	d
+GR_BOOL	nano-X.h	/^typedef unsigned short	GR_BOOL;	\/* boolean value *\/$/;"	t
+GR_BUTTON	nano-X.h	/^typedef unsigned int	GR_BUTTON;	\/* mouse button value *\/$/;"	t
+GR_BUTTON_ANY	nano-X.h	169;"	d
+GR_BUTTON_L	nano-X.h	168;"	d
+GR_BUTTON_M	nano-X.h	167;"	d
+GR_BUTTON_R	nano-X.h	166;"	d
+GR_CAL_DATA	nano-X.h	/^} GR_CAL_DATA;$/;"	t	typeref:struct:__anon63
+GR_CHAR	nano-X.h	/^typedef MWUCHAR 	GR_CHAR;	\/* filename, window title *\/$/;"	t
+GR_CHAR_WIDTH	nano-X.h	/^typedef unsigned char	GR_CHAR_WIDTH;	\/* width of character *\/$/;"	t
+GR_COLOR	nano-X.h	/^typedef MWCOLORVAL 	GR_COLOR;	\/* full color value *\/$/;"	t
+GR_COLOR_3DLIGHT	nano-X.h	729;"	d
+GR_COLOR_ACTIVECAPTION	nano-X.h	721;"	d
+GR_COLOR_ACTIVECAPTIONTEXT	nano-X.h	722;"	d
+GR_COLOR_APPTEXT	nano-X.h	734;"	d
+GR_COLOR_APPWINDOW	nano-X.h	733;"	d
+GR_COLOR_BTNFACE	nano-X.h	737;"	d
+GR_COLOR_BTNHIGHLIGHT	nano-X.h	730;"	d
+GR_COLOR_BTNSHADOW	nano-X.h	728;"	d
+GR_COLOR_BTNTEXT	nano-X.h	738;"	d
+GR_COLOR_DESKTOP	nano-X.h	718;"	d
+GR_COLOR_GRAYTEXT	nano-X.h	745;"	d
+GR_COLOR_HIGHLIGHT	nano-X.h	743;"	d
+GR_COLOR_HIGHLIGHTTEXT	nano-X.h	744;"	d
+GR_COLOR_INACTIVECAPTION	nano-X.h	723;"	d
+GR_COLOR_INACTIVECAPTIONTEXT	nano-X.h	724;"	d
+GR_COLOR_MENU	nano-X.h	749;"	d
+GR_COLOR_MENUTEXT	nano-X.h	748;"	d
+GR_COLOR_WINDOW	nano-X.h	741;"	d
+GR_COLOR_WINDOWFRAME	nano-X.h	727;"	d
+GR_COLOR_WINDOWTEXT	nano-X.h	742;"	d
+GR_COORD	nano-X.h	/^typedef MWCOORD 	GR_COORD;	\/* coordinate value *\/$/;"	t
+GR_COUNT	nano-X.h	/^typedef int 		GR_COUNT;	\/* number of items *\/$/;"	t
+GR_CURSOR_ID	nano-X.h	/^typedef GR_ID		GR_CURSOR_ID;	\/* cursor id *\/$/;"	t
+GR_DRAW_ID	nano-X.h	/^typedef GR_ID		GR_DRAW_ID;	\/* drawable id *\/$/;"	t
+GR_ERROR	nano-X.h	/^typedef int		GR_ERROR;	\/* error types *\/$/;"	t
+GR_ERROR_BAD_CURSOR_SIZE	nano-X.h	315;"	d
+GR_ERROR_BAD_DRAWING_MODE	nano-X.h	325;"	d
+GR_ERROR_BAD_FILL_MODE	nano-X.h	327;"	d
+GR_ERROR_BAD_GC_ID	nano-X.h	314;"	d
+GR_ERROR_BAD_LINE_ATTRIBUTE	nano-X.h	326;"	d
+GR_ERROR_BAD_REGION_ID	nano-X.h	328;"	d
+GR_ERROR_BAD_WINDOW_ID	nano-X.h	313;"	d
+GR_ERROR_BAD_WINDOW_SIZE	nano-X.h	317;"	d
+GR_ERROR_ILLEGAL_ON_ROOT_WINDOW	nano-X.h	321;"	d
+GR_ERROR_INPUT_ONLY_WINDOW	nano-X.h	320;"	d
+GR_ERROR_KEYBOARD_ERROR	nano-X.h	318;"	d
+GR_ERROR_MALLOC_FAILED	nano-X.h	316;"	d
+GR_ERROR_MOUSE_ERROR	nano-X.h	319;"	d
+GR_ERROR_SCREEN_ERROR	nano-X.h	323;"	d
+GR_ERROR_STRINGS	nano-X.h	754;"	d
+GR_ERROR_TOO_MUCH_CLIPPING	nano-X.h	322;"	d
+GR_ERROR_UNMAPPED_FOCUS_WINDOW	nano-X.h	324;"	d
+GR_EVENT	nano-X.h	/^} GR_EVENT;$/;"	t	typeref:union:__anon78
+GR_EVENTMASK	nano-X.h	365;"	d
+GR_EVENT_BUTTON	nano-X.h	/^} GR_EVENT_BUTTON;$/;"	t	typeref:struct:__anon65
+GR_EVENT_CLIENT_DATA	nano-X.h	/^} GR_EVENT_CLIENT_DATA;$/;"	t	typeref:struct:__anon74
+GR_EVENT_CLIENT_DATA_REQ	nano-X.h	/^} GR_EVENT_CLIENT_DATA_REQ;$/;"	t	typeref:struct:__anon73
+GR_EVENT_ERROR	nano-X.h	/^} GR_EVENT_ERROR;$/;"	t	typeref:struct:__anon64
+GR_EVENT_EXPOSURE	nano-X.h	/^} GR_EVENT_EXPOSURE;$/;"	t	typeref:struct:__anon67
+GR_EVENT_FDINPUT	nano-X.h	/^} GR_EVENT_FDINPUT;$/;"	t	typeref:struct:__anon70
+GR_EVENT_GENERAL	nano-X.h	/^} GR_EVENT_GENERAL;$/;"	t	typeref:struct:__anon68
+GR_EVENT_KEYSTROKE	nano-X.h	/^} GR_EVENT_KEYSTROKE;$/;"	t	typeref:struct:__anon66
+GR_EVENT_MASK	nano-X.h	/^typedef unsigned long	GR_EVENT_MASK;	\/* event masks *\/$/;"	t
+GR_EVENT_MASK_ALL	nano-X.h	394;"	d
+GR_EVENT_MASK_BUTTON_DOWN	nano-X.h	370;"	d
+GR_EVENT_MASK_BUTTON_UP	nano-X.h	371;"	d
+GR_EVENT_MASK_CHLD_UPDATE	nano-X.h	382;"	d
+GR_EVENT_MASK_CLIENT_DATA	nano-X.h	387;"	d
+GR_EVENT_MASK_CLIENT_DATA_REQ	nano-X.h	386;"	d
+GR_EVENT_MASK_CLOSE_REQ	nano-X.h	383;"	d
+GR_EVENT_MASK_ERROR	nano-X.h	368;"	d
+GR_EVENT_MASK_EXPOSURE	nano-X.h	369;"	d
+GR_EVENT_MASK_FDINPUT	nano-X.h	380;"	d
+GR_EVENT_MASK_FOCUS_IN	nano-X.h	378;"	d
+GR_EVENT_MASK_FOCUS_OUT	nano-X.h	379;"	d
+GR_EVENT_MASK_KEY_DOWN	nano-X.h	376;"	d
+GR_EVENT_MASK_KEY_UP	nano-X.h	377;"	d
+GR_EVENT_MASK_MOUSE_ENTER	nano-X.h	372;"	d
+GR_EVENT_MASK_MOUSE_EXIT	nano-X.h	373;"	d
+GR_EVENT_MASK_MOUSE_MOTION	nano-X.h	374;"	d
+GR_EVENT_MASK_MOUSE_POSITION	nano-X.h	375;"	d
+GR_EVENT_MASK_NONE	nano-X.h	367;"	d
+GR_EVENT_MASK_PORTRAIT_CHANGED	nano-X.h	390;"	d
+GR_EVENT_MASK_SCREENSAVER	nano-X.h	385;"	d
+GR_EVENT_MASK_SELECTION_CHANGED	nano-X.h	388;"	d
+GR_EVENT_MASK_TIMEOUT	nano-X.h	384;"	d
+GR_EVENT_MASK_TIMER	nano-X.h	389;"	d
+GR_EVENT_MASK_UPDATE	nano-X.h	381;"	d
+GR_EVENT_MOUSE	nano-X.h	/^} GR_EVENT_MOUSE;$/;"	t	typeref:struct:__anon69
+GR_EVENT_SCREENSAVER	nano-X.h	/^} GR_EVENT_SCREENSAVER;$/;"	t	typeref:struct:__anon72
+GR_EVENT_SELECTION_CHANGED	nano-X.h	/^} GR_EVENT_SELECTION_CHANGED;$/;"	t	typeref:struct:__anon75
+GR_EVENT_TIMER	nano-X.h	/^} GR_EVENT_TIMER;$/;"	t	typeref:struct:__anon76
+GR_EVENT_TYPE	nano-X.h	/^typedef int		GR_EVENT_TYPE;	\/* event types *\/$/;"	t
+GR_EVENT_TYPE_BUTTON_DOWN	nano-X.h	340;"	d
+GR_EVENT_TYPE_BUTTON_UP	nano-X.h	341;"	d
+GR_EVENT_TYPE_CHLD_UPDATE	nano-X.h	352;"	d
+GR_EVENT_TYPE_CLIENT_DATA	nano-X.h	357;"	d
+GR_EVENT_TYPE_CLIENT_DATA_REQ	nano-X.h	356;"	d
+GR_EVENT_TYPE_CLOSE_REQ	nano-X.h	353;"	d
+GR_EVENT_TYPE_ERROR	nano-X.h	337;"	d
+GR_EVENT_TYPE_EXPOSURE	nano-X.h	339;"	d
+GR_EVENT_TYPE_FDINPUT	nano-X.h	350;"	d
+GR_EVENT_TYPE_FOCUS_IN	nano-X.h	348;"	d
+GR_EVENT_TYPE_FOCUS_OUT	nano-X.h	349;"	d
+GR_EVENT_TYPE_KEY_DOWN	nano-X.h	346;"	d
+GR_EVENT_TYPE_KEY_UP	nano-X.h	347;"	d
+GR_EVENT_TYPE_MOUSE_ENTER	nano-X.h	342;"	d
+GR_EVENT_TYPE_MOUSE_EXIT	nano-X.h	343;"	d
+GR_EVENT_TYPE_MOUSE_MOTION	nano-X.h	344;"	d
+GR_EVENT_TYPE_MOUSE_POSITION	nano-X.h	345;"	d
+GR_EVENT_TYPE_NONE	nano-X.h	338;"	d
+GR_EVENT_TYPE_PORTRAIT_CHANGED	nano-X.h	360;"	d
+GR_EVENT_TYPE_SCREENSAVER	nano-X.h	355;"	d
+GR_EVENT_TYPE_SELECTION_CHANGED	nano-X.h	358;"	d
+GR_EVENT_TYPE_TIMEOUT	nano-X.h	354;"	d
+GR_EVENT_TYPE_TIMER	nano-X.h	359;"	d
+GR_EVENT_TYPE_UPDATE	nano-X.h	351;"	d
+GR_EVENT_UPDATE	nano-X.h	/^} GR_EVENT_UPDATE;$/;"	t	typeref:struct:__anon71
+GR_FALSE	nano-X.h	159;"	d
+GR_FILL_OPAQUE_STIPPLE	nano-X.h	118;"	d
+GR_FILL_SOLID	nano-X.h	116;"	d
+GR_FILL_STIPPLE	nano-X.h	117;"	d
+GR_FILL_TILE	nano-X.h	119;"	d
+GR_FIRSTBIT	nano-X.h	626;"	d
+GR_FNCALLBACKEVENT	nano-X.h	/^typedef void (*GR_FNCALLBACKEVENT)(GR_EVENT *);$/;"	t
+GR_FONTLIST	nano-X.h	/^typedef MWFONTLIST	GR_FONTLIST;	\/* list of fonts *\/$/;"	t
+GR_FONT_GUI_VAR	nano-X.h	128;"	d
+GR_FONT_ID	nano-X.h	/^typedef GR_ID		GR_FONT_ID;	\/* font id *\/$/;"	t
+GR_FONT_INFO	nano-X.h	/^typedef MWFONTINFO	GR_FONT_INFO;	\/* font information *\/$/;"	t
+GR_FONT_OEM_FIXED	nano-X.h	129;"	d
+GR_FONT_SYSTEM_FIXED	nano-X.h	127;"	d
+GR_FONT_SYSTEM_VAR	nano-X.h	126;"	d
+GR_FUNC_NAME	nano-X.h	/^typedef char		GR_FUNC_NAME[25];\/* function name *\/$/;"	t
+GR_GC_ID	nano-X.h	/^typedef GR_ID		GR_GC_ID;	\/* graphics context id *\/$/;"	t
+GR_GC_INFO	nano-X.h	/^} GR_GC_INFO;$/;"	t	typeref:struct:__anon60
+GR_GC_LINESTYLE_INFO	nano-X.h	/^} GR_GC_LINESTYLE_INFO;$/;"	t	typeref:struct:__anon61
+GR_GIFMAP_ID	nano-X.h	/^typedef  unsigned int   GR_GIFMAP_ID;    \/* gifmap id *\/$/;"	t
+GR_GOVRECT_ID	nano-X.h	/^typedef	GR_ID		GR_GOVRECT_ID;$/;"	t
+GR_GRAB_EXCLUSIVE	nano-X.h	691;"	d
+GR_GRAB_EXCLUSIVE_MOUSE	nano-X.h	706;"	d
+GR_GRAB_HOTKEY	nano-X.h	671;"	d
+GR_GRAB_HOTKEY_EXCLUSIVE	nano-X.h	649;"	d
+GR_GRAB_MAX	nano-X.h	714;"	d
+GR_ID	nano-X.h	/^typedef unsigned int	GR_ID;		\/* resource ids *\/$/;"	t
+GR_IMAGE_ANY	nano-X.h	/^	GR_IMAGE_ANY = 0,$/;"	e	enum:__anon77
+GR_IMAGE_BMP	nano-X.h	/^	GR_IMAGE_BMP, 	\/\/ add by xch 2005-05-22$/;"	e	enum:__anon77
+GR_IMAGE_GIF	nano-X.h	/^	GR_IMAGE_GIF,$/;"	e	enum:__anon77
+GR_IMAGE_HDR	nano-X.h	/^typedef MWIMAGEHDR	GR_IMAGE_HDR;	\/* multicolor image representation *\/$/;"	t
+GR_IMAGE_ID	nano-X.h	/^typedef GR_ID		GR_IMAGE_ID;	\/* image id *\/$/;"	t
+GR_IMAGE_INFO	nano-X.h	/^typedef MWIMAGEINFO	GR_IMAGE_INFO;	\/* image information *\/$/;"	t
+GR_IMAGE_JPEG	nano-X.h	/^	GR_IMAGE_JPEG,$/;"	e	enum:__anon77
+GR_IMAGE_MAX_SIZE	nano-X.h	163;"	d
+GR_IMAGE_PNG	nano-X.h	/^	GR_IMAGE_PNG,$/;"	e	enum:__anon77
+GR_IMAGE_TYPE	nano-X.h	/^}GR_IMAGE_TYPE ;$/;"	t	typeref:enum:__anon77
+GR_KBINFO	nano-X.h	/^typedef MWKBINFO	GR_KBINFO;	\/* keyboard information  *\/$/;"	t
+GR_KEY	nano-X.h	/^typedef MWKEY	 	GR_KEY;		\/* keystroke value *\/$/;"	t
+GR_KEYMOD	nano-X.h	/^typedef MWKEYMOD	GR_KEYMOD;	\/* keystroke modifiers *\/$/;"	t
+GR_LENGTH	nano-X.h	/^typedef unsigned long	GR_LENGTH;	\/* Length of a block of data *\/$/;"	t
+GR_LINE_ONOFF_DASH	nano-X.h	114;"	d
+GR_LINE_SOLID	nano-X.h	113;"	d
+GR_LOGFONT	nano-X.h	/^typedef MWLOGFONT	GR_LOGFONT;	\/* logical font descriptor *\/$/;"	t
+GR_MIMETYPE	nano-X.h	/^typedef unsigned short	GR_MIMETYPE;	\/* Index into mime type list *\/$/;"	t
+GR_MODE_AND	nano-X.h	95;"	d
+GR_MODE_ANDINVERTED	nano-X.h	104;"	d
+GR_MODE_ANDREVERSE	nano-X.h	106;"	d
+GR_MODE_CLEAR	nano-X.h	96;"	d
+GR_MODE_COPY	nano-X.h	91;"	d
+GR_MODE_COPYINVERTED	nano-X.h	102;"	d
+GR_MODE_DRAWMASK	nano-X.h	109;"	d
+GR_MODE_EQUIV	nano-X.h	98;"	d
+GR_MODE_EXCLUDECHILDREN	nano-X.h	110;"	d
+GR_MODE_INVERT	nano-X.h	101;"	d
+GR_MODE_NAND	nano-X.h	100;"	d
+GR_MODE_NOOP	nano-X.h	107;"	d
+GR_MODE_NOR	nano-X.h	99;"	d
+GR_MODE_OR	nano-X.h	94;"	d
+GR_MODE_ORINVERTED	nano-X.h	103;"	d
+GR_MODE_ORREVERSE	nano-X.h	105;"	d
+GR_MODE_SET	nano-X.h	92;"	d
+GR_MODE_SETTO1	nano-X.h	97;"	d
+GR_MODE_XOR	nano-X.h	93;"	d
+GR_NEXTBIT	nano-X.h	627;"	d
+GR_PALENTRY	nano-X.h	/^typedef MWPALENTRY	GR_PALENTRY;	\/* palette entry *\/$/;"	t
+GR_PALETTE	nano-X.h	/^} GR_PALETTE;$/;"	t	typeref:struct:__anon62
+GR_PIE	nano-X.h	152;"	d
+GR_PIXELVAL	nano-X.h	/^typedef MWPIXELVAL 	GR_PIXELVAL;	\/* hw pixel value *\/$/;"	t
+GR_POINT	nano-X.h	/^typedef MWPOINT		GR_POINT;	\/* definition of a point *\/$/;"	t
+GR_POLY_EVENODD	nano-X.h	122;"	d
+GR_POLY_WINDING	nano-X.h	123;"	d
+GR_RECT	nano-X.h	/^} GR_RECT;$/;"	t	typeref:struct:__anon57
+GR_REGION_ID	nano-X.h	/^typedef GR_ID		GR_REGION_ID;	\/* region id *\/$/;"	t
+GR_RGB	nano-X.h	87;"	d
+GR_ROOT_WINDOW_ID	nano-X.h	84;"	d
+GR_SCANCODE	nano-X.h	/^typedef MWSCANCODE	GR_SCANCODE;	\/* oem keystroke scancode value *\/$/;"	t
+GR_SCREEN_INFO	nano-X.h	/^typedef MWSCREENINFO	GR_SCREEN_INFO;	\/* screen information *\/$/;"	t
+GR_SERIALNO	nano-X.h	/^typedef unsigned long	GR_SERIALNO;	\/* Selection request ID number *\/$/;"	t
+GR_SHIFTBIT	nano-X.h	629;"	d
+GR_SIZE	nano-X.h	/^typedef MWCOORD 	GR_SIZE;	\/* size value *\/$/;"	t
+GR_STIPPLE	nano-X.h	/^typedef MWSTIPPLE       GR_STIPPLE;     \/* Stipple information   *\/$/;"	t
+GR_TESTBIT	nano-X.h	628;"	d
+GR_TEXTFLAGS	nano-X.h	/^typedef MWTEXTFLAGS	GR_TEXTFLAGS;	\/* text encoding flags *\/$/;"	t
+GR_TFANTIALIAS	nano-X.h	146;"	d
+GR_TFASCII	nano-X.h	132;"	d
+GR_TFBASELINE	nano-X.h	141;"	d
+GR_TFBOTTOM	nano-X.h	142;"	d
+GR_TFKERNING	nano-X.h	145;"	d
+GR_TFPACKMASK	nano-X.h	137;"	d
+GR_TFTOP	nano-X.h	140;"	d
+GR_TFUC16	nano-X.h	134;"	d
+GR_TFUC32	nano-X.h	135;"	d
+GR_TFUNDERLINE	nano-X.h	147;"	d
+GR_TFUTF8	nano-X.h	133;"	d
+GR_TFXCHAR2B	nano-X.h	136;"	d
+GR_TIMEOUT	nano-X.h	/^typedef MWTIMEOUT	GR_TIMEOUT;	\/* timeout value *\/$/;"	t
+GR_TIMER_ID	nano-X.h	/^typedef GR_ID		GR_TIMER_ID;	\/* timer id *\/$/;"	t
+GR_TRANSFORM	nano-X.h	/^typedef MWTRANSFORM     GR_TRANSFORM;   \/* Transform information *\/$/;"	t
+GR_TRANSPARENCE	nano-X.h	/^typedef MWTRANSPARENCE  GR_TRANSPARENCE;$/;"	t
+GR_TRUE	nano-X.h	160;"	d
+GR_TYPED_EVENT_CALLBACK	nano-X.h	/^typedef GR_BOOL (*GR_TYPED_EVENT_CALLBACK)(GR_WINDOW_ID, GR_EVENT_MASK,$/;"	t
+GR_UPDATE_ACTIVATE	nano-X.h	402;"	d
+GR_UPDATE_DESTROY	nano-X.h	403;"	d
+GR_UPDATE_MAP	nano-X.h	397;"	d
+GR_UPDATE_MOVE	nano-X.h	399;"	d
+GR_UPDATE_REPARENT	nano-X.h	404;"	d
+GR_UPDATE_SIZE	nano-X.h	400;"	d
+GR_UPDATE_TYPE	nano-X.h	/^typedef int		GR_UPDATE_TYPE;	\/* window update types *\/$/;"	t
+GR_UPDATE_UNMAP	nano-X.h	398;"	d
+GR_UPDATE_UNMAPTEMP	nano-X.h	401;"	d
+GR_WINDOW_BOUNDING_MASK	nano-X.h	155;"	d
+GR_WINDOW_CLIP_MASK	nano-X.h	156;"	d
+GR_WINDOW_FB_INFO	nano-X.h	/^typedef MWWINDOWFBINFO	GR_WINDOW_FB_INFO; \/* direct client-mapped window info *\/$/;"	t
+GR_WINDOW_ID	nano-X.h	/^typedef GR_DRAW_ID	GR_WINDOW_ID;	\/* window or pixmap id *\/$/;"	t
+GR_WINDOW_INFO	nano-X.h	/^} GR_WINDOW_INFO;$/;"	t	typeref:struct:__anon59
+GR_WM_FLAGS_BACKGROUND	nano-X.h	215;"	d
+GR_WM_FLAGS_BORDERCOLOR	nano-X.h	217;"	d
+GR_WM_FLAGS_BORDERSIZE	nano-X.h	216;"	d
+GR_WM_FLAGS_PROPS	nano-X.h	213;"	d
+GR_WM_FLAGS_TITLE	nano-X.h	214;"	d
+GR_WM_PROPERTIES	nano-X.h	/^} GR_WM_PROPERTIES;$/;"	t	typeref:struct:__anon58
+GR_WM_PROPS	nano-X.h	/^typedef unsigned long	GR_WM_PROPS;	\/* window property flags *\/$/;"	t
+GR_WM_PROPS_APPFRAME	nano-X.h	207;"	d
+GR_WM_PROPS_APPMASK	nano-X.h	205;"	d
+GR_WM_PROPS_APPWINDOW	nano-X.h	204;"	d
+GR_WM_PROPS_BORDER	nano-X.h	206;"	d
+GR_WM_PROPS_CAPTION	nano-X.h	208;"	d
+GR_WM_PROPS_CLOSEBOX	nano-X.h	209;"	d
+GR_WM_PROPS_DOUBLEWINDOW	nano-X.h	201;"	d
+GR_WM_PROPS_MAXIMIZE	nano-X.h	210;"	d
+GR_WM_PROPS_NOAUTOMOVE	nano-X.h	199;"	d
+GR_WM_PROPS_NOAUTORESIZE	nano-X.h	200;"	d
+GR_WM_PROPS_NOBACKGROUND	nano-X.h	194;"	d
+GR_WM_PROPS_NODECORATE	nano-X.h	198;"	d
+GR_WM_PROPS_NOFOCUS	nano-X.h	195;"	d
+GR_WM_PROPS_NOMOVE	nano-X.h	196;"	d
+GR_WM_PROPS_NORAISE	nano-X.h	197;"	d
+GR_WM_PROP_DND	nano-X.h	190;"	d
+GR_WM_PROP_NOICONISE	nano-X.h	185;"	d
+GR_WM_PROP_NORESIZE	nano-X.h	184;"	d
+GR_WM_PROP_NOROLLUP	nano-X.h	187;"	d
+GR_WM_PROP_NOWINMENU	nano-X.h	186;"	d
+GR_WM_PROP_ONTOP	nano-X.h	188;"	d
+GR_WM_PROP_STICKY	nano-X.h	189;"	d
+GrClearWindow	nano-X.h	1192;"	d
+GrSetBorderColor	nano-X.h	1191;"	d
+GrSetWindowBackgroundColor	nano-X.h	1195;"	d
+GrSetWindowBorderColor	nano-X.h	1207;"	d
+GrSetWindowBorderSize	nano-X.h	1201;"	d
+GrSetWindowTitle	nano-X.h	1213;"	d
+HD_EPG	Amlogicframe.c	/^	HD_EPG, \/\/高清$/;"	e	enum:__anon29	file:
+HD_EPG	Amlogicframe1.c	/^	HD_EPG, \/\/高清$/;"	e	enum:__anon27	file:
+HD_EPG	Amlogicframexxx.c	/^	HD_EPG, \/\/高清$/;"	e	enum:__anon86	file:
+Height	stgfb.h	/^    U32                     Height;$/;"	m	struct:STGFB_Pixmap_s
+Height	stgxobj.h	/^  U32                                   Height;$/;"	m	struct:STGXOBJ_Bitmap_s
+Height	stgxobj.h	/^  U32 Height;$/;"	m	struct:STGXOBJ_Rectangle_s
+I64_Add	stddefs.h	109;"	d
+I64_Add	stddefs.h	80;"	d
+I64_AddLit	stddefs.h	114;"	d
+I64_AddLit	stddefs.h	93;"	d
+I64_AreNotEqual	stddefs.h	147;"	d
+I64_DivLit	stddefs.h	163;"	d
+I64_DivLit	stddefs.h	274;"	d
+I64_GetValue	stddefs.h	123;"	d
+I64_IsEqual	stddefs.h	121;"	d
+I64_IsGreaterOrEqual	stddefs.h	126;"	d
+I64_IsGreaterThan	stddefs.h	130;"	d
+I64_IsLessOrEqual	stddefs.h	138;"	d
+I64_IsLessThan	stddefs.h	134;"	d
+I64_IsNegative	stddefs.h	141;"	d
+I64_IsZero	stddefs.h	144;"	d
+I64_ModLit	stddefs.h	171;"	d
+I64_ModLit	stddefs.h	303;"	d
+I64_Mul	stddefs.h	179;"	d
+I64_Mul	stddefs.h	332;"	d
+I64_MulLit	stddefs.h	189;"	d
+I64_MulLit	stddefs.h	348;"	d
+I64_SetValue	stddefs.h	149;"	d
+I64_ShiftLeft	stddefs.h	198;"	d
+I64_ShiftLeft	stddefs.h	222;"	d
+I64_ShiftRight	stddefs.h	207;"	d
+I64_ShiftRight	stddefs.h	248;"	d
+I64_Sub	stddefs.h	152;"	d
+I64_SubLit	stddefs.h	156;"	d
+IMEINFO	nano-X.h	/^}IMEINFO;$/;"	t	typeref:struct:__anon79
+INCLUDE_GetRevision	stddefs.h	383;"	d
+INIT_PER_THREAD_DATA	nano-X.h	1269;"	d
+INT16	defines.h	/^typedef short INT16;$/;"	t
+INT32	defines.h	/^typedef int INT32;$/;"	t
+INT64	defines.h	/^typedef long long INT64;$/;"	t
+INT8	defines.h	/^typedef char INT8;$/;"	t
+LAYER_GUI	Amlogicframe.c	103;"	d	file:
+LAYER_GUI	Amlogicframexxx.c	103;"	d	file:
+LAYER_TVMS	Amlogicframe.c	104;"	d	file:
+LAYER_TVMS	Amlogicframexxx.c	104;"	d	file:
+LOGIC_OPERATION_AND	Amlogicframe.c	259;"	d	file:
+LOGIC_OPERATION_AND	Amlogicframexxx.c	257;"	d	file:
+LOGIC_OPERATION_AND_INVERT	Amlogicframe.c	265;"	d	file:
+LOGIC_OPERATION_AND_INVERT	Amlogicframexxx.c	263;"	d	file:
+LOGIC_OPERATION_AND_REVERSE	Amlogicframe.c	257;"	d	file:
+LOGIC_OPERATION_AND_REVERSE	Amlogicframexxx.c	255;"	d	file:
+LOGIC_OPERATION_CLEAR	Amlogicframe.c	251;"	d	file:
+LOGIC_OPERATION_CLEAR	Amlogicframexxx.c	249;"	d	file:
+LOGIC_OPERATION_COPY	Amlogicframe.c	252;"	d	file:
+LOGIC_OPERATION_COPY	Amlogicframexxx.c	250;"	d	file:
+LOGIC_OPERATION_COPY_INVERT	Amlogicframe.c	255;"	d	file:
+LOGIC_OPERATION_COPY_INVERT	Amlogicframexxx.c	253;"	d	file:
+LOGIC_OPERATION_EQUIV	Amlogicframe.c	264;"	d	file:
+LOGIC_OPERATION_EQUIV	Amlogicframexxx.c	262;"	d	file:
+LOGIC_OPERATION_INVERT	Amlogicframe.c	256;"	d	file:
+LOGIC_OPERATION_INVERT	Amlogicframexxx.c	254;"	d	file:
+LOGIC_OPERATION_NAND	Amlogicframe.c	261;"	d	file:
+LOGIC_OPERATION_NAND	Amlogicframexxx.c	259;"	d	file:
+LOGIC_OPERATION_NOOP	Amlogicframe.c	253;"	d	file:
+LOGIC_OPERATION_NOOP	Amlogicframexxx.c	251;"	d	file:
+LOGIC_OPERATION_NOR	Amlogicframe.c	262;"	d	file:
+LOGIC_OPERATION_NOR	Amlogicframexxx.c	260;"	d	file:
+LOGIC_OPERATION_OR	Amlogicframe.c	260;"	d	file:
+LOGIC_OPERATION_OR	Amlogicframexxx.c	258;"	d	file:
+LOGIC_OPERATION_OR_INVERT	Amlogicframe.c	266;"	d	file:
+LOGIC_OPERATION_OR_INVERT	Amlogicframexxx.c	264;"	d	file:
+LOGIC_OPERATION_OR_REVERSE	Amlogicframe.c	258;"	d	file:
+LOGIC_OPERATION_OR_REVERSE	Amlogicframexxx.c	256;"	d	file:
+LOGIC_OPERATION_SET	Amlogicframe.c	254;"	d	file:
+LOGIC_OPERATION_SET	Amlogicframexxx.c	252;"	d	file:
+LOGIC_OPERATION_XOR	Amlogicframe.c	263;"	d	file:
+LOGIC_OPERATION_XOR	Amlogicframexxx.c	261;"	d	file:
+LOGODEVNAME	Amlogicframe.c	48;"	d	file:
+LOGOFILENAME	Amlogicframe.c	49;"	d	file:
+LOGOFILENAME	Amlogicframexxx.c	49;"	d	file:
+LSW	stddefs.h	/^    unsigned int LSW;$/;"	m	struct:U64_s
+LTBLUE	mwtypes.h	785;"	d
+LTCYAN	mwtypes.h	787;"	d
+LTGRAY	mwtypes.h	783;"	d
+LTGREEN	mwtypes.h	786;"	d
+LTMAGENTA	mwtypes.h	789;"	d
+LTRED	mwtypes.h	788;"	d
+MAGENTA	mwtypes.h	781;"	d
+MANUL_DEBUG	Amlogicframe1.c	45;"	d	file:
+MASKBLACK	Amlogic.h	45;"	d
+MASKMAUVE	Amlogic.h	46;"	d
+MASKNONE	Amlogic.h	44;"	d
+MPEGFrame	stgxobj.h	/^        STGXOBJ_MPEGFrame_t MPEGFrame;$/;"	m	struct:STGXOBJ_PictureInfos_s::__anon18
+MSW	stddefs.h	/^    unsigned int MSW;$/;"	m	struct:U64_s
+MW0RGB	mwtypes.h	121;"	d
+MWARC	mwtypes.h	760;"	d
+MWARCOUTLINE	mwtypes.h	762;"	d
+MWARGB	mwtypes.h	116;"	d
+MWBOOL	mwtypes.h	/^typedef int		MWBOOL;		\/* boolean value*\/$/;"	t
+MWBUTTON_L	mwtypes.h	111;"	d
+MWBUTTON_M	mwtypes.h	112;"	d
+MWBUTTON_R	mwtypes.h	113;"	d
+MWCLIPREGION	mwtypes.h	/^} MWCLIPREGION;$/;"	t	typeref:struct:__anon9
+MWCOLORVAL	mwtypes.h	/^typedef unsigned long	MWCOLORVAL;	\/* device-independent color value*\/$/;"	t
+MWCOORD	mwtypes.h	/^typedef int		MWCOORD;	\/* device coordinates*\/$/;"	t
+MWCOORD_MAX	mwtypes.h	292;"	d
+MWCOORD_MIN	mwtypes.h	293;"	d
+MWCURSOR	mwtypes.h	/^} MWCURSOR, *PMWCURSOR;$/;"	t	typeref:struct:__anon14
+MWELLIPSE	mwtypes.h	764;"	d
+MWELLIPSEFILL	mwtypes.h	765;"	d
+MWFB_GUITRANSMODE	MwFb.h	8;"	d
+MWFB_MAX_REC_NUM	MwFb.h	2;"	d
+MWFB_MSGBUF_SIZE	MwFb.h	1;"	d
+MWFB_RECTRANSMODE	MwFb.h	9;"	d
+MWFB_RECTREFRESH	MwFb.h	7;"	d
+MWFB_RESPONSE	MwFb.h	4;"	d
+MWFB_SETCONFIG	MwFb.h	6;"	d
+MWFILL_OPAQUE_STIPPLE	mwtypes.h	107;"	d
+MWFILL_SOLID	mwtypes.h	105;"	d
+MWFILL_STIPPLE	mwtypes.h	106;"	d
+MWFILL_TILE	mwtypes.h	108;"	d
+MWFONTINFO	mwtypes.h	/^} MWFONTINFO, *PMWFONTINFO;$/;"	t	typeref:struct:__anon4
+MWFONTLIST	mwtypes.h	/^} MWFONTLIST, *PMWFONTLIST;$/;"	t	typeref:struct:__anon5
+MWFONT_GUI_VAR	mwtypes.h	19;"	d
+MWFONT_OEM_FIXED	mwtypes.h	20;"	d
+MWFONT_SYSTEM_FIXED	mwtypes.h	18;"	d
+MWFONT_SYSTEM_VAR	mwtypes.h	17;"	d
+MWIMAGEBITS	mwtypes.h	/^typedef unsigned short	MWIMAGEBITS;	\/* bitmap image unit size*\/$/;"	t
+MWIMAGEHDR	mwtypes.h	/^} MWIMAGEHDR, *PMWIMAGEHDR;$/;"	t	typeref:struct:__anon12
+MWIMAGEINFO	mwtypes.h	/^} MWIMAGEINFO, *PMWIMAGEINFO;$/;"	t	typeref:struct:__anon13
+MWIMAGE_ALPHA_CHANNEL	mwtypes.h	705;"	d
+MWIMAGE_BGR	mwtypes.h	703;"	d
+MWIMAGE_BITSPERIMAGE	mwtypes.h	301;"	d
+MWIMAGE_BITVALUE	mwtypes.h	302;"	d
+MWIMAGE_BYTES	mwtypes.h	297;"	d
+MWIMAGE_FIRSTBIT	mwtypes.h	303;"	d
+MWIMAGE_NEXTBIT	mwtypes.h	304;"	d
+MWIMAGE_RGB	mwtypes.h	704;"	d
+MWIMAGE_SHIFTBIT	mwtypes.h	306;"	d
+MWIMAGE_SIZE	mwtypes.h	299;"	d
+MWIMAGE_TESTBIT	mwtypes.h	305;"	d
+MWIMAGE_UPSIDEDOWN	mwtypes.h	702;"	d
+MWIMAGE_WORDS	mwtypes.h	296;"	d
+MWKBINFO	mwtypes.h	/^} MWKBINFO, *PMWKBINFO;$/;"	t	typeref:struct:__anon16
+MWKEY	mwtypes.h	/^typedef unsigned short	MWKEY;$/;"	t
+MWKEYMOD	mwtypes.h	/^typedef unsigned int	MWKEYMOD;$/;"	t
+MWKEY_ACCEPT	mwtypes.h	887;"	d
+MWKEY_ALTGR	mwtypes.h	869;"	d
+MWKEY_APP1	mwtypes.h	889;"	d
+MWKEY_APP2	mwtypes.h	890;"	d
+MWKEY_APP3	mwtypes.h	891;"	d
+MWKEY_APP4	mwtypes.h	892;"	d
+MWKEY_BACKSPACE	mwtypes.h	803;"	d
+MWKEY_BALANCE_LEFT	mwtypes.h	977;"	d
+MWKEY_BALANCE_RIGHT	mwtypes.h	976;"	d
+MWKEY_BASS_BOOST_DOWN	mwtypes.h	981;"	d
+MWKEY_BASS_BOOST_UP	mwtypes.h	980;"	d
+MWKEY_BREAK	mwtypes.h	875;"	d
+MWKEY_BRIGHTNESS	mwtypes.h	884;"	d
+MWKEY_CANCEL	mwtypes.h	888;"	d
+MWKEY_CAPSLOCK	mwtypes.h	859;"	d
+MWKEY_CHANNEL_DOWN	mwtypes.h	953;"	d
+MWKEY_CHANNEL_UP	mwtypes.h	952;"	d
+MWKEY_CLEAR_FAVORITE_0	mwtypes.h	962;"	d
+MWKEY_CLEAR_FAVORITE_1	mwtypes.h	963;"	d
+MWKEY_CLEAR_FAVORITE_2	mwtypes.h	964;"	d
+MWKEY_CLEAR_FAVORITE_3	mwtypes.h	965;"	d
+MWKEY_COLORED_KEY_0	mwtypes.h	928;"	d
+MWKEY_COLORED_KEY_1	mwtypes.h	929;"	d
+MWKEY_COLORED_KEY_2	mwtypes.h	930;"	d
+MWKEY_COLORED_KEY_3	mwtypes.h	931;"	d
+MWKEY_COLORED_KEY_4	mwtypes.h	932;"	d
+MWKEY_COLORED_KEY_5	mwtypes.h	933;"	d
+MWKEY_CONTRAST	mwtypes.h	883;"	d
+MWKEY_DELETE	mwtypes.h	818;"	d
+MWKEY_DIMMER	mwtypes.h	935;"	d
+MWKEY_DISPLAY_SWAP	mwtypes.h	969;"	d
+MWKEY_DOWN	mwtypes.h	816;"	d
+MWKEY_EJECT_TOGGLE	mwtypes.h	939;"	d
+MWKEY_END	mwtypes.h	820;"	d
+MWKEY_END_NORMAL	mwtypes.h	894;"	d
+MWKEY_ENTER	mwtypes.h	805;"	d
+MWKEY_ESCAPE	mwtypes.h	806;"	d
+MWKEY_F1	mwtypes.h	844;"	d
+MWKEY_F10	mwtypes.h	853;"	d
+MWKEY_F11	mwtypes.h	854;"	d
+MWKEY_F12	mwtypes.h	855;"	d
+MWKEY_F2	mwtypes.h	845;"	d
+MWKEY_F3	mwtypes.h	846;"	d
+MWKEY_F4	mwtypes.h	847;"	d
+MWKEY_F5	mwtypes.h	848;"	d
+MWKEY_F6	mwtypes.h	849;"	d
+MWKEY_F7	mwtypes.h	850;"	d
+MWKEY_F8	mwtypes.h	851;"	d
+MWKEY_F9	mwtypes.h	852;"	d
+MWKEY_FADER_FRONT	mwtypes.h	978;"	d
+MWKEY_FADER_REAR	mwtypes.h	979;"	d
+MWKEY_FAST_FWD	mwtypes.h	942;"	d
+MWKEY_FIRST	mwtypes.h	812;"	d
+MWKEY_FROM_HAVI_CODE	mwtypes.h	918;"	d
+MWKEY_GO_TO_END	mwtypes.h	948;"	d
+MWKEY_GO_TO_START	mwtypes.h	947;"	d
+MWKEY_GUIDE	mwtypes.h	983;"	d
+MWKEY_HAVI_CODE_FIRST	mwtypes.h	912;"	d
+MWKEY_HAVI_CODE_LAST	mwtypes.h	915;"	d
+MWKEY_HAVI_KEY_BASE	mwtypes.h	909;"	d
+MWKEY_HOME	mwtypes.h	819;"	d
+MWKEY_INFO	mwtypes.h	982;"	d
+MWKEY_INSERT	mwtypes.h	817;"	d
+MWKEY_IS_HAVI_CODE	mwtypes.h	924;"	d
+MWKEY_KP0	mwtypes.h	825;"	d
+MWKEY_KP1	mwtypes.h	826;"	d
+MWKEY_KP2	mwtypes.h	827;"	d
+MWKEY_KP3	mwtypes.h	828;"	d
+MWKEY_KP4	mwtypes.h	829;"	d
+MWKEY_KP5	mwtypes.h	830;"	d
+MWKEY_KP6	mwtypes.h	831;"	d
+MWKEY_KP7	mwtypes.h	832;"	d
+MWKEY_KP8	mwtypes.h	833;"	d
+MWKEY_KP9	mwtypes.h	834;"	d
+MWKEY_KP_DIVIDE	mwtypes.h	836;"	d
+MWKEY_KP_ENTER	mwtypes.h	840;"	d
+MWKEY_KP_EQUALS	mwtypes.h	841;"	d
+MWKEY_KP_MINUS	mwtypes.h	838;"	d
+MWKEY_KP_MULTIPLY	mwtypes.h	837;"	d
+MWKEY_KP_PERIOD	mwtypes.h	835;"	d
+MWKEY_KP_PLUS	mwtypes.h	839;"	d
+MWKEY_LALT	mwtypes.h	865;"	d
+MWKEY_LAST	mwtypes.h	987;"	d
+MWKEY_LCTRL	mwtypes.h	863;"	d
+MWKEY_LEFT	mwtypes.h	813;"	d
+MWKEY_LMETA	mwtypes.h	867;"	d
+MWKEY_LSHIFT	mwtypes.h	861;"	d
+MWKEY_MENU	mwtypes.h	877;"	d
+MWKEY_MUTE	mwtypes.h	974;"	d
+MWKEY_NONASCII_MASK	mwtypes.h	809;"	d
+MWKEY_NUMLOCK	mwtypes.h	858;"	d
+MWKEY_PAGEDOWN	mwtypes.h	822;"	d
+MWKEY_PAGEUP	mwtypes.h	821;"	d
+MWKEY_PAUSE	mwtypes.h	874;"	d
+MWKEY_PINP_TOGGLE	mwtypes.h	967;"	d
+MWKEY_PLAY	mwtypes.h	940;"	d
+MWKEY_PLAY_SPEED_DOWN	mwtypes.h	944;"	d
+MWKEY_PLAY_SPEED_RESET	mwtypes.h	945;"	d
+MWKEY_PLAY_SPEED_UP	mwtypes.h	943;"	d
+MWKEY_POWER	mwtypes.h	934;"	d
+MWKEY_PRINT	mwtypes.h	872;"	d
+MWKEY_QUIT	mwtypes.h	876;"	d
+MWKEY_RALT	mwtypes.h	866;"	d
+MWKEY_RANDOM_TOGGLE	mwtypes.h	951;"	d
+MWKEY_RCTRL	mwtypes.h	864;"	d
+MWKEY_RECALL_FAVORITE_0	mwtypes.h	958;"	d
+MWKEY_RECALL_FAVORITE_1	mwtypes.h	959;"	d
+MWKEY_RECALL_FAVORITE_2	mwtypes.h	960;"	d
+MWKEY_RECALL_FAVORITE_3	mwtypes.h	961;"	d
+MWKEY_RECORD	mwtypes.h	941;"	d
+MWKEY_RECORD_SPEED_NEXT	mwtypes.h	946;"	d
+MWKEY_REDRAW	mwtypes.h	878;"	d
+MWKEY_REWIND	mwtypes.h	937;"	d
+MWKEY_RIGHT	mwtypes.h	814;"	d
+MWKEY_RMETA	mwtypes.h	868;"	d
+MWKEY_RSHIFT	mwtypes.h	862;"	d
+MWKEY_SCAN_CHANNELS_TOGGLE	mwtypes.h	966;"	d
+MWKEY_SCREEN_MODE_NEXT	mwtypes.h	970;"	d
+MWKEY_SCROLLOCK	mwtypes.h	860;"	d
+MWKEY_SELECTDOWN	mwtypes.h	886;"	d
+MWKEY_SELECTUP	mwtypes.h	885;"	d
+MWKEY_SPLIT_SCREEN_TOGGLE	mwtypes.h	968;"	d
+MWKEY_STOP	mwtypes.h	938;"	d
+MWKEY_STORE_FAVORITE_0	mwtypes.h	954;"	d
+MWKEY_STORE_FAVORITE_1	mwtypes.h	955;"	d
+MWKEY_STORE_FAVORITE_2	mwtypes.h	956;"	d
+MWKEY_STORE_FAVORITE_3	mwtypes.h	957;"	d
+MWKEY_SUBTITLE	mwtypes.h	985;"	d
+MWKEY_SURROUND_MODE_NEXT	mwtypes.h	975;"	d
+MWKEY_SUSPEND	mwtypes.h	893;"	d
+MWKEY_SYSREQ	mwtypes.h	873;"	d
+MWKEY_TAB	mwtypes.h	804;"	d
+MWKEY_TELETEXT	mwtypes.h	984;"	d
+MWKEY_TO_HAVI_CODE	mwtypes.h	921;"	d
+MWKEY_TRACK_NEXT	mwtypes.h	950;"	d
+MWKEY_TRACK_PREV	mwtypes.h	949;"	d
+MWKEY_UNKNOWN	mwtypes.h	801;"	d
+MWKEY_UP	mwtypes.h	815;"	d
+MWKEY_VIDEO_MODE_NEXT	mwtypes.h	971;"	d
+MWKEY_VOLUME_DOWN	mwtypes.h	973;"	d
+MWKEY_VOLUME_UP	mwtypes.h	972;"	d
+MWKEY_WINK	mwtypes.h	936;"	d
+MWKINFO_LED_CAP	mwtypes.h	1014;"	d
+MWKINFO_LED_MASK	mwtypes.h	1010;"	d
+MWKINFO_LED_MODE_MASK	mwtypes.h	1011;"	d
+MWKINFO_LED_MODE_OFF	mwtypes.h	1019;"	d
+MWKINFO_LED_MODE_ON	mwtypes.h	1018;"	d
+MWKINFO_LED_NUM	mwtypes.h	1015;"	d
+MWKINFO_LED_SCR	mwtypes.h	1016;"	d
+MWKMOD_ALT	mwtypes.h	1007;"	d
+MWKMOD_ALTGR	mwtypes.h	1002;"	d
+MWKMOD_CAPS	mwtypes.h	1001;"	d
+MWKMOD_CTRL	mwtypes.h	1005;"	d
+MWKMOD_LALT	mwtypes.h	996;"	d
+MWKMOD_LCTRL	mwtypes.h	994;"	d
+MWKMOD_LMETA	mwtypes.h	998;"	d
+MWKMOD_LSHIFT	mwtypes.h	991;"	d
+MWKMOD_META	mwtypes.h	1008;"	d
+MWKMOD_NONE	mwtypes.h	990;"	d
+MWKMOD_NUM	mwtypes.h	1000;"	d
+MWKMOD_RALT	mwtypes.h	997;"	d
+MWKMOD_RCTRL	mwtypes.h	995;"	d
+MWKMOD_REPEAT	mwtypes.h	993;"	d
+MWKMOD_RMETA	mwtypes.h	999;"	d
+MWKMOD_RSHIFT	mwtypes.h	992;"	d
+MWKMOD_SCR	mwtypes.h	1003;"	d
+MWKMOD_SHIFT	mwtypes.h	1006;"	d
+MWLF_CHARSET_ANSI	mwtypes.h	528;"	d
+MWLF_CHARSET_DEFAULT	mwtypes.h	529;"	d
+MWLF_CHARSET_OEM	mwtypes.h	531;"	d
+MWLF_CHARSET_UNICODE	mwtypes.h	530;"	d
+MWLF_CLASS_ANY	mwtypes.h	496;"	d
+MWLF_CLASS_BUILTIN	mwtypes.h	497;"	d
+MWLF_CLASS_FNT	mwtypes.h	498;"	d
+MWLF_CLASS_FREETYPE	mwtypes.h	500;"	d
+MWLF_CLASS_HZK	mwtypes.h	503;"	d
+MWLF_CLASS_MGL	mwtypes.h	502;"	d
+MWLF_CLASS_PCF	mwtypes.h	499;"	d
+MWLF_CLASS_T1LIB	mwtypes.h	501;"	d
+MWLF_Clear	mwtypes.h	590;"	d
+MWLF_FACESIZE	mwtypes.h	505;"	d
+MWLF_FLAGS_ALIAS	mwtypes.h	546;"	d
+MWLF_PITCH_CONDENSED	mwtypes.h	537;"	d
+MWLF_PITCH_DEFAULT	mwtypes.h	534;"	d
+MWLF_PITCH_EXPANDED	mwtypes.h	541;"	d
+MWLF_PITCH_EXTRACONDENSED	mwtypes.h	536;"	d
+MWLF_PITCH_EXTRAEXPANDED	mwtypes.h	542;"	d
+MWLF_PITCH_NORMAL	mwtypes.h	539;"	d
+MWLF_PITCH_SEMICONDENSED	mwtypes.h	538;"	d
+MWLF_PITCH_SEMIEXPANDED	mwtypes.h	540;"	d
+MWLF_PITCH_ULTRACONDENSED	mwtypes.h	535;"	d
+MWLF_PITCH_ULTRAEXPANDED	mwtypes.h	543;"	d
+MWLF_SetBold	mwtypes.h	618;"	d
+MWLF_SetItalics	mwtypes.h	628;"	d
+MWLF_SetRegular	mwtypes.h	623;"	d
+MWLF_SetRoman	mwtypes.h	635;"	d
+MWLF_TYPE_ADOBE	mwtypes.h	512;"	d
+MWLF_TYPE_DEFAULT	mwtypes.h	508;"	d
+MWLF_TYPE_RASTER	mwtypes.h	510;"	d
+MWLF_TYPE_SCALED	mwtypes.h	509;"	d
+MWLF_TYPE_TRUETYPE	mwtypes.h	511;"	d
+MWLF_WEIGHT_BLACK	mwtypes.h	525;"	d
+MWLF_WEIGHT_BOLD	mwtypes.h	523;"	d
+MWLF_WEIGHT_DEFAULT	mwtypes.h	515;"	d
+MWLF_WEIGHT_DEMIBOLD	mwtypes.h	522;"	d
+MWLF_WEIGHT_EXTRALIGHT	mwtypes.h	517;"	d
+MWLF_WEIGHT_LIGHT	mwtypes.h	518;"	d
+MWLF_WEIGHT_MEDIUM	mwtypes.h	521;"	d
+MWLF_WEIGHT_NORMAL	mwtypes.h	519;"	d
+MWLF_WEIGHT_REGULAR	mwtypes.h	520;"	d
+MWLF_WEIGHT_THIN	mwtypes.h	516;"	d
+MWLF_WEIGTH_EXTRABOLD	mwtypes.h	524;"	d
+MWLINE_ONOFF_DASH	mwtypes.h	100;"	d
+MWLINE_SOLID	mwtypes.h	99;"	d
+MWLIST	mwtypes.h	/^} MWLIST, *PMWLIST;$/;"	t	typeref:struct:_mwlist
+MWLISTHEAD	mwtypes.h	/^} MWLISTHEAD, *PMWLISTHEAD;$/;"	t	typeref:struct:_mwlisthead
+MWLOGFONT	mwtypes.h	/^} MWLOGFONT, *PMWLOGFONT;$/;"	t	typeref:struct:__anon6
+MWMAX_CURSOR_BUFLEN	mwtypes.h	736;"	d
+MWMAX_CURSOR_SIZE	mwtypes.h	735;"	d
+MWMODE_AND	mwtypes.h	56;"	d
+MWMODE_ANDINVERTED	mwtypes.h	65;"	d
+MWMODE_ANDREVERSE	mwtypes.h	67;"	d
+MWMODE_CLEAR	mwtypes.h	57;"	d
+MWMODE_COPY	mwtypes.h	53;"	d
+MWMODE_COPYINVERTED	mwtypes.h	63;"	d
+MWMODE_DST	mwtypes.h	84;"	d
+MWMODE_DST_ATOP	mwtypes.h	92;"	d
+MWMODE_DST_IN	mwtypes.h	88;"	d
+MWMODE_DST_OUT	mwtypes.h	90;"	d
+MWMODE_DST_OVER	mwtypes.h	86;"	d
+MWMODE_EQUIV	mwtypes.h	59;"	d
+MWMODE_INVERT	mwtypes.h	62;"	d
+MWMODE_MAX	mwtypes.h	95;"	d
+MWMODE_NAND	mwtypes.h	61;"	d
+MWMODE_NOOP	mwtypes.h	68;"	d
+MWMODE_NOR	mwtypes.h	60;"	d
+MWMODE_OR	mwtypes.h	55;"	d
+MWMODE_ORINVERTED	mwtypes.h	64;"	d
+MWMODE_ORREVERSE	mwtypes.h	66;"	d
+MWMODE_PORTERDUFF_XOR	mwtypes.h	93;"	d
+MWMODE_SETTO1	mwtypes.h	58;"	d
+MWMODE_SIMPLE_MAX	mwtypes.h	71;"	d
+MWMODE_SRC	mwtypes.h	83;"	d
+MWMODE_SRC_ATOP	mwtypes.h	91;"	d
+MWMODE_SRC_IN	mwtypes.h	87;"	d
+MWMODE_SRC_OUT	mwtypes.h	89;"	d
+MWMODE_SRC_OVER	mwtypes.h	85;"	d
+MWMODE_TO_ROP	mwtypes.h	128;"	d
+MWMODE_XOR	mwtypes.h	54;"	d
+MWMODE_XOR_FGBG	mwtypes.h	69;"	d
+MWOUTLINE	mwtypes.h	761;"	d
+MWPACKED	mwtypes.h	14;"	d
+MWPALENTRY	mwtypes.h	/^} MWPALENTRY;$/;"	t	typeref:struct:__anon11
+MWPF_PALETTE	mwtypes.h	226;"	d
+MWPF_PIXELVAL	mwtypes.h	225;"	d
+MWPF_RGB	mwtypes.h	224;"	d
+MWPF_TRUECOLOR0888	mwtypes.h	227;"	d
+MWPF_TRUECOLOR332	mwtypes.h	231;"	d
+MWPF_TRUECOLOR555	mwtypes.h	230;"	d
+MWPF_TRUECOLOR565	mwtypes.h	229;"	d
+MWPF_TRUECOLOR888	mwtypes.h	228;"	d
+MWPF_TRUECOLOR8888	mwtypes.h	232;"	d
+MWPIE	mwtypes.h	763;"	d
+MWPIXELVAL	mwtypes.h	/^      typedef unsigned long MWPIXELVAL;$/;"	t
+MWPIXELVAL	mwtypes.h	/^    typedef unsigned char MWPIXELVAL;$/;"	t
+MWPIXELVAL	mwtypes.h	/^  typedef unsigned char MWPIXELVAL;$/;"	t
+MWPIXELVAL	mwtypes.h	/^typedef unsigned short MWPIXELVAL;$/;"	t
+MWPIXEL_FORMAT	mwtypes.h	252;"	d
+MWPIXEL_FORMAT	mwtypes.h	257;"	d
+MWPIXEL_FORMAT	mwtypes.h	258;"	d
+MWPOINT	mwtypes.h	/^} MWPOINT;$/;"	t	typeref:struct:__anon7
+MWPOLY_EVENODD	mwtypes.h	684;"	d
+MWPOLY_WINDING	mwtypes.h	685;"	d
+MWPORTRAIT_DOWN	mwtypes.h	279;"	d
+MWPORTRAIT_LEFT	mwtypes.h	277;"	d
+MWPORTRAIT_NONE	mwtypes.h	276;"	d
+MWPORTRAIT_RIGHT	mwtypes.h	278;"	d
+MWRECT	mwtypes.h	/^} MWRECT;$/;"	t	typeref:struct:__anon8
+MWRECT_ALLIN	mwtypes.h	680;"	d
+MWRECT_OUT	mwtypes.h	679;"	d
+MWRECT_PARTIN	mwtypes.h	681;"	d
+MWREGION_COMPLEX	mwtypes.h	676;"	d
+MWREGION_ERROR	mwtypes.h	673;"	d
+MWREGION_NULL	mwtypes.h	674;"	d
+MWREGION_SIMPLE	mwtypes.h	675;"	d
+MWRGB	mwtypes.h	120;"	d
+MWROP_ALPHA_CHANNEL	mwtypes.h	161;"	d
+MWROP_AND	mwtypes.h	175;"	d
+MWROP_ANDINVERTED	mwtypes.h	184;"	d
+MWROP_ANDREVERSE	mwtypes.h	186;"	d
+MWROP_BLACKNESS	mwtypes.h	215;"	d
+MWROP_BLENDCHANNEL	mwtypes.h	154;"	d
+MWROP_BLENDCONSTANT	mwtypes.h	147;"	d
+MWROP_BLENDFGBG	mwtypes.h	150;"	d
+MWROP_CLEAR	mwtypes.h	176;"	d
+MWROP_COPY	mwtypes.h	172;"	d
+MWROP_COPYINVERTED	mwtypes.h	182;"	d
+MWROP_DST	mwtypes.h	201;"	d
+MWROP_DST_ATOP	mwtypes.h	209;"	d
+MWROP_DST_IN	mwtypes.h	205;"	d
+MWROP_DST_OUT	mwtypes.h	207;"	d
+MWROP_DST_OVER	mwtypes.h	203;"	d
+MWROP_EQUIV	mwtypes.h	178;"	d
+MWROP_EXTENSION	mwtypes.h	136;"	d
+MWROP_INVERT	mwtypes.h	181;"	d
+MWROP_NAND	mwtypes.h	180;"	d
+MWROP_NOOP	mwtypes.h	187;"	d
+MWROP_NOR	mwtypes.h	179;"	d
+MWROP_OR	mwtypes.h	174;"	d
+MWROP_ORINVERTED	mwtypes.h	183;"	d
+MWROP_ORREVERSE	mwtypes.h	185;"	d
+MWROP_PORTERDUFF_XOR	mwtypes.h	210;"	d
+MWROP_SET	mwtypes.h	177;"	d
+MWROP_SRC	mwtypes.h	200;"	d
+MWROP_SRCAND	mwtypes.h	213;"	d
+MWROP_SRCCOPY	mwtypes.h	212;"	d
+MWROP_SRCINVERT	mwtypes.h	214;"	d
+MWROP_SRCTRANSCOPY	mwtypes.h	143;"	d
+MWROP_SRC_ATOP	mwtypes.h	208;"	d
+MWROP_SRC_IN	mwtypes.h	204;"	d
+MWROP_SRC_OUT	mwtypes.h	206;"	d
+MWROP_SRC_OVER	mwtypes.h	202;"	d
+MWROP_STRETCH	mwtypes.h	157;"	d
+MWROP_TILE	mwtypes.h	139;"	d
+MWROP_TO_MODE	mwtypes.h	125;"	d
+MWROP_USE_GC_MODE	mwtypes.h	169;"	d
+MWROP_XOR	mwtypes.h	173;"	d
+MWROP_XOR_FGBG	mwtypes.h	188;"	d
+MWSCANCODE	mwtypes.h	/^typedef unsigned short	MWSCANCODE;$/;"	t
+MWSCREENINFO	mwtypes.h	/^} MWSCREENINFO, *PMWSCREENINFO;$/;"	t	typeref:struct:__anon1
+MWSTIPPLE	mwtypes.h	/^} MWSTIPPLE;$/;"	t	typeref:struct:__anon10
+MWTEXTFLAGS	mwtypes.h	/^typedef unsigned long	MWTEXTFLAGS;	\/* MWTF_ text flag*\/$/;"	t
+MWTF_ANTIALIAS	mwtypes.h	47;"	d
+MWTF_ASCII	mwtypes.h	23;"	d
+MWTF_AUTO_NEWLINE	mwtypes.h	42;"	d
+MWTF_BASELINE	mwtypes.h	40;"	d
+MWTF_BOTTOM	mwtypes.h	41;"	d
+MWTF_DBCSMASK	mwtypes.h	36;"	d
+MWTF_DBCS_BIG5	mwtypes.h	31;"	d
+MWTF_DBCS_EUCCN	mwtypes.h	32;"	d
+MWTF_DBCS_EUCJP	mwtypes.h	34;"	d
+MWTF_DBCS_EUCKR	mwtypes.h	33;"	d
+MWTF_DBCS_JIS	mwtypes.h	35;"	d
+MWTF_FREETYPE	mwtypes.h	49;"	d
+MWTF_HOZIRONTAL	mwtypes.h	43;"	d
+MWTF_KERNING	mwtypes.h	46;"	d
+MWTF_MIDDLE	mwtypes.h	44;"	d
+MWTF_PACKMASK	mwtypes.h	28;"	d
+MWTF_STRIKEOUT	mwtypes.h	50;"	d
+MWTF_TOP	mwtypes.h	39;"	d
+MWTF_UC16	mwtypes.h	25;"	d
+MWTF_UC32	mwtypes.h	26;"	d
+MWTF_UNDERLINE	mwtypes.h	48;"	d
+MWTF_UTF8	mwtypes.h	24;"	d
+MWTF_XCHAR2B	mwtypes.h	27;"	d
+MWTIMEOUT	mwtypes.h	/^typedef unsigned long	MWTIMEOUT;	\/* timeout value *\/$/;"	t
+MWTRANSFORM	mwtypes.h	/^} MWTRANSFORM;$/;"	t	typeref:struct:__anon15
+MWTRANSPARENCE	mwtypes.h	/^}MWTRANSPARENCE;$/;"	t	typeref:struct:__anon3
+MWUCHAR	mwtypes.h	/^typedef unsigned char	MWUCHAR;	\/* unsigned char*\/$/;"	t
+MWWINDOWFBINFO	mwtypes.h	/^} MWWINDOWFBINFO;$/;"	t	typeref:struct:__anon2
+MwClearNonClientScreen	Amlogicframe.c	/^void MwClearNonClientScreen(int x, int y)$/;"	f
+MwClearNonClientScreen	Amlogicframexxx.c	/^void MwClearNonClientScreen(int x, int y)$/;"	f
+MwFbBlitBufEx	Amlogicframe.c	/^int MwFbBlitBufEx(void *pDstAddr, MWRECT* pDstRect, void *pSrcAddr, MWRECT* pSrcRect,  long op)$/;"	f
+MwFbBlitBufEx	Amlogicframexxx.c	/^int MwFbBlitBufEx(void *pDstAddr, MWRECT* pDstRect, void *pSrcAddr, MWRECT* pSrcRect,  long op)$/;"	f
+MwFbClrBuf	Amlogicframe.c	/^int MwFbClrBuf(MWRECT* pRect, int iType)$/;"	f
+MwFbClrBuf	Amlogicframexxx.c	/^int MwFbClrBuf(MWRECT* pRect, int iType)$/;"	f
+MwFbClrBufEx	Amlogicframe.c	/^int MwFbClrBufEx(void *pDstAddr, MWRECT* pDstRect)$/;"	f
+MwFbClrBufEx	Amlogicframexxx.c	/^int MwFbClrBufEx(void *pDstAddr, MWRECT* pDstRect)$/;"	f
+MwFbDriverControl	Amlogicframe.c	/^int MwFbDriverControl(unsigned char bAction, unsigned char bOption)$/;"	f
+MwFbDriverControl	Amlogicframe1.c	/^int MwFbDriverControl(unsigned char bAction, unsigned char bOption)$/;"	f
+MwFbDriverControl	Amlogicframexxx.c	/^int MwFbDriverControl(unsigned char bAction, unsigned char bOption)$/;"	f
+MwFbEarasePixel	Amlogicframe.c	/^int	MwFbEarasePixel(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, int nNum)$/;"	f
+MwFbEarasePixel	Amlogicframe1.c	/^int	MwFbEarasePixel(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, int nNum)$/;"	f
+MwFbEarasePixel	Amlogicframexxx.c	/^int	MwFbEarasePixel(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, int nNum)$/;"	f
+MwFbGetBufSize	Amlogicframe.c	/^void	MwFbGetBufSize(int *pnSize)$/;"	f
+MwFbGetBufSize	Amlogicframe1.c	/^void	MwFbGetBufSize(int *pnSize)$/;"	f
+MwFbGetBufSize	Amlogicframexxx.c	/^void	MwFbGetBufSize(int *pnSize)$/;"	f
+MwFbGetDeviceConfig	Amlogicframe.c	/^T_MwDriverState		*MwFbGetDeviceConfig(unsigned char bDevice)$/;"	f
+MwFbGetDeviceConfig	Amlogicframe1.c	/^T_MwDriverState		*MwFbGetDeviceConfig(unsigned char bDevice)$/;"	f
+MwFbGetDeviceConfig	Amlogicframexxx.c	/^T_MwDriverState		*MwFbGetDeviceConfig(unsigned char bDevice)$/;"	f
+MwFbGetLineLen	Amlogicframe.c	/^void	MwFbGetLineLen(int *pnLineLen)$/;"	f
+MwFbGetLineLen	Amlogicframe1.c	/^void	MwFbGetLineLen(int *pnLineLen)$/;"	f
+MwFbGetLineLen	Amlogicframexxx.c	/^void	MwFbGetLineLen(int *pnLineLen)$/;"	f
+MwFbGetPixType	Amlogicframe.c	/^void	MwFbGetPixType(int *pbColorMode)$/;"	f
+MwFbGetPixType	Amlogicframe1.c	/^void	MwFbGetPixType(int *pbColorMode)$/;"	f
+MwFbGetPixType	Amlogicframexxx.c	/^void	MwFbGetPixType(int *pbColorMode)$/;"	f
+MwFbGetScrInfo	Amlogicframe.c	/^void	MwFbGetScrInfo(int *pnScrW, int *pnScrH, int *pnBpp, void **pMwFb)$/;"	f
+MwFbGetScrInfo	Amlogicframe1.c	/^void	MwFbGetScrInfo(int *pnScrW, int *pnScrH, int *pnBpp, void **pMwFb)$/;"	f
+MwFbGetScrInfo	Amlogicframexxx.c	/^void	MwFbGetScrInfo(int *pnScrW, int *pnScrH, int *pnBpp, void **pMwFb)$/;"	f
+MwFbInit	Amlogicframe.c	/^int	MwFbInit(int nScrW, int nScrH, unsigned char bColorMode, void **pMwFb)$/;"	f
+MwFbInit	Amlogicframe1.c	/^int	MwFbInit(int nScrW, int nScrH, unsigned char bColorMode, void **pMwFb)$/;"	f
+MwFbInit	Amlogicframexxx.c	/^int	MwFbInit(int nScrW, int nScrH, unsigned char bColorMode, void **pMwFb)$/;"	f
+MwFbLayerControl	Amlogicframe.c	/^int MwFbLayerControl(unsigned char bDevice, unsigned char bLayer,$/;"	f
+MwFbLayerControl	Amlogicframe1.c	/^int MwFbLayerControl(unsigned char bDevice, unsigned char bLayer,$/;"	f
+MwFbLayerControl	Amlogicframexxx.c	/^int MwFbLayerControl(unsigned char bDevice, unsigned char bLayer,$/;"	f
+MwFbRefreshBuf	Amlogicframe.c	/^void MwFbRefreshBuf(MWRECT* pRect,void *pBuf)$/;"	f
+MwFbRefreshBuf	Amlogicframexxx.c	/^void MwFbRefreshBuf(MWRECT* pRect,void *pBuf)$/;"	f
+MwFbRefreshBufEx	Amlogicframe.c	/^int MwFbRefreshBufEx(MWRECT *pDstRect, void *pSrcAddr, MWRECT *pSrcRect,  void *pSrc1Addr, MWRECT *pSrc1Rect, int iAlpha)$/;"	f
+MwFbRefreshBufEx	Amlogicframexxx.c	/^int MwFbRefreshBufEx(MWRECT *pDstRect, void *pSrcAddr, MWRECT *pSrcRect,  void *pSrc1Addr, MWRECT *pSrc1Rect, int iAlpha)$/;"	f
+MwFbRefreshPixel	Amlogicframe.c	/^int	MwFbRefreshPixel(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, int nNum)$/;"	f
+MwFbRefreshPixel	Amlogicframe1.c	/^int	MwFbRefreshPixel(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, int nNum)$/;"	f
+MwFbRefreshPixel	Amlogicframexxx.c	/^int	MwFbRefreshPixel(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, int nNum)$/;"	f
+MwFbSetScreenOffset	Amlogicframe.c	/^int MwFbSetScreenOffset(int x,int y)$/;"	f
+MwFbSetScreenOffset	Amlogicframexxx.c	/^int MwFbSetScreenOffset(int x,int y)$/;"	f
+MwFbSetTransparent	Amlogicframe.c	/^int	MwFbSetTransparent(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, MWTRANSPARENCE *ptTrans)$/;"	f
+MwFbSetTransparent	Amlogicframe1.c	/^int	MwFbSetTransparent(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, MWTRANSPARENCE *ptTrans)$/;"	f
+MwFbSetTransparent	Amlogicframexxx.c	/^int	MwFbSetTransparent(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, MWTRANSPARENCE *ptTrans)$/;"	f
+MwFbUninit	Amlogicframe.c	/^void	MwFbUninit(void)$/;"	f
+MwFbUninit	Amlogicframe1.c	/^void	MwFbUninit(void)$/;"	f
+MwFbUninit	Amlogicframexxx.c	/^void	MwFbUninit(void)$/;"	f
+MwFreeMem	Amlogicframe.c	/^void MwFreeMem(void *ptr)$/;"	f
+MwFreeMem	Amlogicframexxx.c	/^void MwFreeMem(void *ptr)$/;"	f
+MwIsDriverMem	Amlogicframe.c	/^int MwIsDriverMem(void *ptr)$/;"	f
+MwIsDriverMem	Amlogicframexxx.c	/^int MwIsDriverMem(void *ptr)$/;"	f
+MwKbSleep	Amlogicframe.c	/^INT32	MwKbSleep(unsigned char bOption)$/;"	f
+MwKbSleep	Amlogicframe1.c	/^INT32	MwKbSleep(unsigned char bOption)$/;"	f
+MwKbSleep	Amlogicframexxx.c	/^INT32	MwKbSleep(unsigned char bOption)$/;"	f
+MwMallocMem	Amlogicframe.c	/^void *MwMallocMem(int iMemSize, int iWidth, int iHeight, int iPriority)$/;"	f
+MwMallocMem	Amlogicframexxx.c	/^void *MwMallocMem(int iMemSize, int iWidth, int iHeight, int iPriority)$/;"	f
+MwPrintMemInfo	Amlogicframe.c	/^void MwPrintMemInfo(void)$/;"	f
+MwPrintMemInfo	Amlogicframexxx.c	/^void MwPrintMemInfo(void)$/;"	f
+NANO_LISTEN_PORT	MwFb.h	16;"	d
+NORMAL	defines.h	56;"	d
+NOWAIT	defines.h	53;"	d
+NULL	defines.h	60;"	d
+OBJ_FILE	Makefile	/^OBJ_FILE=main.o Amlogicframe.o$/;"	m
+OPERATION_ADD	Amlogicframe.c	219;"	d	file:
+OPERATION_ADD	Amlogicframexxx.c	217;"	d	file:
+OPERATION_LOGIC	Amlogicframe.c	224;"	d	file:
+OPERATION_LOGIC	Amlogicframexxx.c	222;"	d	file:
+OPERATION_MAX	Amlogicframe.c	223;"	d	file:
+OPERATION_MAX	Amlogicframexxx.c	221;"	d	file:
+OPERATION_MIN	Amlogicframe.c	222;"	d	file:
+OPERATION_MIN	Amlogicframexxx.c	220;"	d	file:
+OPERATION_REVERSE_SUB	Amlogicframe.c	221;"	d	file:
+OPERATION_REVERSE_SUB	Amlogicframexxx.c	219;"	d	file:
+OPERATION_SUB	Amlogicframe.c	220;"	d	file:
+OPERATION_SUB	Amlogicframexxx.c	218;"	d	file:
+OSD0_OSD0	Amlogic.h	/^                OSD0_OSD0 =0,$/;"	e	enum:__anon20
+OSD0_OSD1	Amlogic.h	/^                OSD0_OSD1,$/;"	e	enum:__anon20
+OSD1_OSD0	Amlogic.h	/^                OSD1_OSD0,$/;"	e	enum:__anon20
+OSD1_OSD1	Amlogic.h	/^                OSD1_OSD1,$/;"	e	enum:__anon20
+Offset	stgxobj.h	/^  U32                                   Offset;$/;"	m	struct:STGXOBJ_Bitmap_s
+Offset	stgxobj.h	/^  U32                           Offset;$/;"	m	struct:STGXOBJ_BitmapAllocParams_s
+Offset2	stgxobj.h	/^  U32                                   Offset2;$/;"	m	struct:STGXOBJ_Bitmap_s
+OffsetX	stgfb.h	/^    U32 OffsetX;$/;"	m	struct:STGFB_Position_s
+OffsetY	stgfb.h	/^    U32 OffsetY;$/;"	m	struct:STGFB_Position_s
+Operation	stgfb.h	/^    STGFB_BltOp_t             Operation;$/;"	m	struct:STGFB_BltData_s
+PAGE_TYPE_t	Amlogicframe.c	/^}PAGE_TYPE_t;$/;"	t	typeref:enum:__anon29	file:
+PAGE_TYPE_t	Amlogicframe1.c	/^}PAGE_TYPE_t;$/;"	t	typeref:enum:__anon27	file:
+PAGE_TYPE_t	Amlogicframexxx.c	/^}PAGE_TYPE_t;$/;"	t	typeref:enum:__anon86	file:
+PARTITION_T	stddefs.h	392;"	d
+PMWCURSOR	mwtypes.h	/^} MWCURSOR, *PMWCURSOR;$/;"	t	typeref:struct:__anon14
+PMWFONT	mwtypes.h	/^typedef struct _mwfont *	PMWFONT;$/;"	t	typeref:struct:_mwfont
+PMWFONTINFO	mwtypes.h	/^} MWFONTINFO, *PMWFONTINFO;$/;"	t	typeref:struct:__anon4
+PMWFONTLIST	mwtypes.h	/^} MWFONTLIST, *PMWFONTLIST;$/;"	t	typeref:struct:__anon5
+PMWIMAGEHDR	mwtypes.h	/^} MWIMAGEHDR, *PMWIMAGEHDR;$/;"	t	typeref:struct:__anon12
+PMWIMAGEINFO	mwtypes.h	/^} MWIMAGEINFO, *PMWIMAGEINFO;$/;"	t	typeref:struct:__anon13
+PMWKBINFO	mwtypes.h	/^} MWKBINFO, *PMWKBINFO;$/;"	t	typeref:struct:__anon16
+PMWLIST	mwtypes.h	/^} MWLIST, *PMWLIST;$/;"	t	typeref:struct:_mwlist
+PMWLISTHEAD	mwtypes.h	/^} MWLISTHEAD, *PMWLISTHEAD;$/;"	t	typeref:struct:_mwlisthead
+PMWLOGFONT	mwtypes.h	/^} MWLOGFONT, *PMWLOGFONT;$/;"	t	typeref:struct:__anon6
+PMWSCREENINFO	mwtypes.h	/^} MWSCREENINFO, *PMWSCREENINFO;$/;"	t	typeref:struct:__anon1
+PSTATERETVALUE	mwtypes.h	/^}STATERETVALUE, *PSTATERETVALUE;$/;"	t	typeref:struct:__anon17
+PaletteEntry	stgxobj.h	/^  U8 PaletteEntry;$/;"	m	struct:STGXOBJ_ColorACLUT_s
+PaletteEntryEnable	stgxobj.h	/^  BOOL    PaletteEntryEnable;$/;"	m	struct:STGXOBJ_ColorKeyCLUT_s
+PaletteEntryMax	stgxobj.h	/^  U8      PaletteEntryMax;$/;"	m	struct:STGXOBJ_ColorKeyCLUT_s
+PaletteEntryMin	stgxobj.h	/^  U8      PaletteEntryMin;$/;"	m	struct:STGXOBJ_ColorKeyCLUT_s
+PaletteEntryOut	stgxobj.h	/^  BOOL    PaletteEntryOut;$/;"	m	struct:STGXOBJ_ColorKeyCLUT_s
+PaletteType	stgxobj.h	/^  STGXOBJ_PaletteType_t     PaletteType;$/;"	m	struct:STGXOBJ_Palette_s
+Pitch	stgfb.h	/^    U32                       Pitch;$/;"	m	struct:STGFB_BltData_s
+Pitch	stgxobj.h	/^  U32                                   Pitch;$/;"	m	struct:STGXOBJ_Bitmap_s
+Pitch	stgxobj.h	/^  U32                           Pitch;$/;"	m	struct:STGXOBJ_BitmapAllocParams_s
+Pitch2	stgxobj.h	/^  U32                                   Pitch2;$/;"	m	struct:STGXOBJ_Bitmap_s
+Pixmap	stgfb.h	/^    STGFB_Pixmap_t            Pixmap;$/;"	m	struct:STGFB_BltData_s
+PositionX	stgxobj.h	/^  S32 PositionX;$/;"	m	struct:STGXOBJ_Rectangle_s
+PositionY	stgxobj.h	/^  S32 PositionY;$/;"	m	struct:STGXOBJ_Rectangle_s
+PreMultipliedColor	stgxobj.h	/^  BOOL                                  PreMultipliedColor;$/;"	m	struct:STGXOBJ_Bitmap_s
+R	stgxobj.h	/^  U8 R;$/;"	m	struct:STGXOBJ_ColorARGB_s
+R	stgxobj.h	/^  U8 R;$/;"	m	struct:STGXOBJ_ColorRGB_s
+RED	mwtypes.h	780;"	d
+REQBUF	nano-X.h	/^} REQBUF;$/;"	t	typeref:struct:__anon80
+REnable	stgxobj.h	/^  BOOL    REnable;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+RGB565	stgxobj.h	/^  STGXOBJ_ColorKeyRGB_t            RGB565;$/;"	m	union:STGXOBJ_ColorKeyValue_u
+RGB565	stgxobj.h	/^  STGXOBJ_ColorRGB_t            RGB565;$/;"	m	union:STGXOBJ_ColorValue_u
+RGB888	stgxobj.h	/^  STGXOBJ_ColorKeyRGB_t            RGB888;$/;"	m	union:STGXOBJ_ColorKeyValue_u
+RGB888	stgxobj.h	/^  STGXOBJ_ColorRGB_t            RGB888;$/;"	m	union:STGXOBJ_ColorValue_u
+RMax	stgfb.h	/^    U32 RMax;$/;"	m	struct:STGFB_CompositorColoKey_s
+RMax	stgxobj.h	/^  U8      RMax;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+RMin	stgfb.h	/^    U32 RMin;$/;"	m	struct:STGFB_CompositorColoKey_s
+RMin	stgxobj.h	/^  U8      RMin;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+ROut	stgxobj.h	/^  BOOL    ROut;$/;"	m	struct:STGXOBJ_ColorKeyRGB_s
+Region_Check	Amlogicframe.c	/^static INT32 Region_Check(INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight, INT32 *pnX, INT32 *pnY, INT32 *pnW, INT32 *pnH)$/;"	f	file:
+Region_Check	Amlogicframe1.c	/^static INT32 Region_Check(INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight, INT32 *pnX, INT32 *pnY, INT32 *pnW, INT32 *pnH)$/;"	f	file:
+Region_Check	Amlogicframexxx.c	/^static INT32 Region_Check(INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight, INT32 *pnX, INT32 *pnY, INT32 *pnW, INT32 *pnH)$/;"	f	file:
+S16	stddefs.h	/^typedef signed short S16;$/;"	t
+S32	stddefs.h	/^typedef signed int   S32;$/;"	t
+S64	stddefs.h	/^typedef U64 S64;$/;"	t
+S8	stddefs.h	/^typedef signed char  S8;$/;"	t
+SCREEN_AXIS_FILE	Amlogicframe.c	145;"	d	file:
+SCREEN_AXIS_FILE	Amlogicframexxx.c	143;"	d	file:
+SD_EPG	Amlogicframe.c	/^	SD_EPG = 1,\/\/标清$/;"	e	enum:__anon29	file:
+SD_EPG	Amlogicframe1.c	/^	SD_EPG = 1,\/\/标清$/;"	e	enum:__anon27	file:
+SD_EPG	Amlogicframexxx.c	/^	SD_EPG = 1,\/\/标清$/;"	e	enum:__anon86	file:
+SRC_FILES	Makefile	/^SRC_FILES=main.c Amlogicframe.c $/;"	m
+STATERETVALUE	mwtypes.h	/^}STATERETVALUE, *PSTATERETVALUE;$/;"	t	typeref:struct:__anon17
+STGFB_ACCEL	stgfb.h	34;"	d
+STGFB_BLIT_FLAG_BLEND_SRC_ALPHA	stgfb.h	/^  STGFB_BLIT_FLAG_BLEND_SRC_ALPHA = 0x8,$/;"	e	enum:__anon84
+STGFB_BLIT_FLAG_DST_COLORKEY	stgfb.h	/^  STGFB_BLIT_FLAG_DST_COLORKEY = 0x4,$/;"	e	enum:__anon84
+STGFB_BLIT_FLAG_FLICKERFILTER	stgfb.h	/^  STGFB_BLIT_FLAG_FLICKERFILTER = 0x10$/;"	e	enum:__anon84
+STGFB_BLIT_FLAG_NULL	stgfb.h	/^  STGFB_BLIT_FLAG_NULL = 0x0,$/;"	e	enum:__anon84
+STGFB_BLIT_FLAG_SRC_COLORKEY	stgfb.h	/^  STGFB_BLIT_FLAG_SRC_COLORKEY = 0x2,$/;"	e	enum:__anon84
+STGFB_BLIT_OP_COPY	stgfb.h	/^  STGFB_BLIT_OP_COPY,$/;"	e	enum:__anon85
+STGFB_BLIT_OP_DRAW_RECTANGLE	stgfb.h	/^  STGFB_BLIT_OP_DRAW_RECTANGLE,$/;"	e	enum:__anon85
+STGFB_BLIT_OP_FILL_RECTANGLE	stgfb.h	/^  STGFB_BLIT_OP_FILL_RECTANGLE,$/;"	e	enum:__anon85
+STGFB_BLIT_OP_FLICKER_FILTER	stgfb.h	/^  STGFB_BLIT_OP_FLICKER_FILTER,$/;"	e	enum:__anon85
+STGFB_BLIT_OP_IMAGE_COPY	stgfb.h	/^  STGFB_BLIT_OP_IMAGE_COPY$/;"	e	enum:__anon85
+STGFB_BLIT_OP_NULL	stgfb.h	/^  STGFB_BLIT_OP_NULL,$/;"	e	enum:__anon85
+STGFB_BLIT_OP_UPDATE_SCREEN	stgfb.h	/^  STGFB_BLIT_OP_UPDATE_SCREEN,$/;"	e	enum:__anon85
+STGFB_BltData_s	stgfb.h	/^typedef struct STGFB_BltData_s$/;"	s
+STGFB_BltData_t	stgfb.h	/^} STGFB_BltData_t;$/;"	t	typeref:struct:STGFB_BltData_s
+STGFB_BltFlag_t	stgfb.h	/^} STGFB_BltFlag_t;$/;"	t	typeref:enum:__anon84
+STGFB_BltOp_t	stgfb.h	/^} STGFB_BltOp_t;$/;"	t	typeref:enum:__anon85
+STGFB_COLOR_FORMAT_ARGB1555	stgfb.h	/^  STGFB_COLOR_FORMAT_ARGB1555$/;"	e	enum:__anon83
+STGFB_COLOR_FORMAT_ARGB8888	stgfb.h	/^  STGFB_COLOR_FORMAT_ARGB8888,$/;"	e	enum:__anon83
+STGFB_COLOR_FORMAT_RGB565	stgfb.h	/^  STGFB_COLOR_FORMAT_RGB565,$/;"	e	enum:__anon83
+STGFB_COLOR_FORMAT_RGB888	stgfb.h	/^  STGFB_COLOR_FORMAT_RGB888,$/;"	e	enum:__anon83
+STGFB_ColorFormat_t	stgfb.h	/^} STGFB_ColorFormat_t;$/;"	t	typeref:enum:__anon83
+STGFB_CompositorAlpha_s	stgfb.h	/^typedef struct STGFB_CompositorAlpha_s$/;"	s
+STGFB_CompositorAlpha_t	stgfb.h	/^} STGFB_CompositorAlpha_t;$/;"	t	typeref:struct:STGFB_CompositorAlpha_s
+STGFB_CompositorColoKey_s	stgfb.h	/^typedef struct STGFB_CompositorColoKey_s$/;"	s
+STGFB_CompositorColoKey_t	stgfb.h	/^} STGFB_CompositorColoKey_t;$/;"	t	typeref:struct:STGFB_CompositorColoKey_s
+STGFB_DRIVER_BASE	stgfb.h	18;"	d
+STGFB_DRIVER_ID	stgfb.h	17;"	d
+STGFB_ERROR_FEATURE_NOT_SUPPORTED	stgfb.h	/^    STGFB_ERROR_FEATURE_NOT_SUPPORTED$/;"	e	enum:__anon82
+STGFB_ERROR_I2C	stgfb.h	/^    STGFB_ERROR_I2C = STGFB_DRIVER_BASE,$/;"	e	enum:__anon82
+STGFB_ERROR_INVALID_PARAMETER	stgfb.h	/^    STGFB_ERROR_INVALID_PARAMETER,$/;"	e	enum:__anon82
+STGFB_GetRevision	stgfb.h	15;"	d
+STGFB_IO_BLIT_COMMAND	stgfb.h	48;"	d
+STGFB_IO_BLT	stgfb.h	57;"	d
+STGFB_IO_DISABLE_FLICKER_FILTER	stgfb.h	47;"	d
+STGFB_IO_ENABLE_FLICKER_FILTER	stgfb.h	46;"	d
+STGFB_IO_GET_BITMAP	stgfb.h	55;"	d
+STGFB_IO_GET_EVTSUBID	stgfb.h	56;"	d
+STGFB_IO_GET_LAYER_HANDLE	stgfb.h	50;"	d
+STGFB_IO_GET_VIEWPORT_HANDLE	stgfb.h	51;"	d
+STGFB_IO_SET_FB_POSITION	stgfb.h	52;"	d
+STGFB_IO_SET_OVERLAY_ALPHA	stgfb.h	49;"	d
+STGFB_IO_SET_OVERLAY_COLORKEY	stgfb.h	45;"	d
+STGFB_IO_SET_VIEWPORT_HANDLE	stgfb.h	54;"	d
+STGFB_MAX_DEVICE	stgfb.h	36;"	d
+STGFB_MAX_MIXER_NUMBER	stgfb.h	37;"	d
+STGFB_Pixmap_s	stgfb.h	/^typedef struct STGFB_Pixmap_s$/;"	s
+STGFB_Pixmap_t	stgfb.h	/^} STGFB_Pixmap_t;$/;"	t	typeref:struct:STGFB_Pixmap_s
+STGFB_Position_s	stgfb.h	/^typedef struct STGFB_Position_s$/;"	s
+STGFB_Position_t	stgfb.h	/^} STGFB_Position_t;$/;"	t	typeref:struct:STGFB_Position_s
+STGXOBJ_ASPECT_RATIO_14TO9	stgxobj.h	/^  STGXOBJ_ASPECT_RATIO_14TO9$/;"	e	enum:STGXOBJ_AspectRatio_e
+STGXOBJ_ASPECT_RATIO_16TO9	stgxobj.h	/^  STGXOBJ_ASPECT_RATIO_16TO9,$/;"	e	enum:STGXOBJ_AspectRatio_e
+STGXOBJ_ASPECT_RATIO_221TO1	stgxobj.h	/^  STGXOBJ_ASPECT_RATIO_221TO1,$/;"	e	enum:STGXOBJ_AspectRatio_e
+STGXOBJ_ASPECT_RATIO_4TO3	stgxobj.h	/^  STGXOBJ_ASPECT_RATIO_4TO3,$/;"	e	enum:STGXOBJ_AspectRatio_e
+STGXOBJ_ASPECT_RATIO_SQUARE	stgxobj.h	/^  STGXOBJ_ASPECT_RATIO_SQUARE,$/;"	e	enum:STGXOBJ_AspectRatio_e
+STGXOBJ_AspectRatio_e	stgxobj.h	/^typedef enum STGXOBJ_AspectRatio_e$/;"	g
+STGXOBJ_AspectRatio_t	stgxobj.h	/^} STGXOBJ_AspectRatio_t;$/;"	t	typeref:enum:STGXOBJ_AspectRatio_e
+STGXOBJ_BITMAP_TYPE_MB	stgxobj.h	/^  STGXOBJ_BITMAP_TYPE_MB,$/;"	e	enum:STGXOBJ_BitmapType_e
+STGXOBJ_BITMAP_TYPE_MB_HDPIP	stgxobj.h	/^  STGXOBJ_BITMAP_TYPE_MB_HDPIP,$/;"	e	enum:STGXOBJ_BitmapType_e
+STGXOBJ_BITMAP_TYPE_MB_RANGE_MAP	stgxobj.h	/^  STGXOBJ_BITMAP_TYPE_MB_RANGE_MAP$/;"	e	enum:STGXOBJ_BitmapType_e
+STGXOBJ_BITMAP_TYPE_MB_TOP_BOTTOM	stgxobj.h	/^  STGXOBJ_BITMAP_TYPE_MB_TOP_BOTTOM,$/;"	e	enum:STGXOBJ_BitmapType_e
+STGXOBJ_BITMAP_TYPE_RASTER_PROGRESSIVE	stgxobj.h	/^  STGXOBJ_BITMAP_TYPE_RASTER_PROGRESSIVE,$/;"	e	enum:STGXOBJ_BitmapType_e
+STGXOBJ_BITMAP_TYPE_RASTER_TOP_BOTTOM	stgxobj.h	/^  STGXOBJ_BITMAP_TYPE_RASTER_TOP_BOTTOM,$/;"	e	enum:STGXOBJ_BitmapType_e
+STGXOBJ_BitmapAllocParams_s	stgxobj.h	/^typedef struct STGXOBJ_BitmapAllocParams_s$/;"	s
+STGXOBJ_BitmapAllocParams_t	stgxobj.h	/^} STGXOBJ_BitmapAllocParams_t;$/;"	t	typeref:struct:STGXOBJ_BitmapAllocParams_s
+STGXOBJ_BitmapType_e	stgxobj.h	/^typedef enum STGXOBJ_BitmapType_e$/;"	g
+STGXOBJ_BitmapType_t	stgxobj.h	/^}STGXOBJ_BitmapType_t;$/;"	t	typeref:enum:STGXOBJ_BitmapType_e
+STGXOBJ_Bitmap_s	stgxobj.h	/^typedef struct STGXOBJ_Bitmap_s$/;"	s
+STGXOBJ_Bitmap_t	stgxobj.h	/^} STGXOBJ_Bitmap_t;$/;"	t	typeref:struct:STGXOBJ_Bitmap_s
+STGXOBJ_COLOR_KEY_TYPE_CLUT1	stgxobj.h	/^  STGXOBJ_COLOR_KEY_TYPE_CLUT1,$/;"	e	enum:STGXOBJ_ColorKeyType_e
+STGXOBJ_COLOR_KEY_TYPE_CLUT8	stgxobj.h	/^  STGXOBJ_COLOR_KEY_TYPE_CLUT8,$/;"	e	enum:STGXOBJ_ColorKeyType_e
+STGXOBJ_COLOR_KEY_TYPE_RGB565	stgxobj.h	/^  STGXOBJ_COLOR_KEY_TYPE_RGB565$/;"	e	enum:STGXOBJ_ColorKeyType_e
+STGXOBJ_COLOR_KEY_TYPE_RGB888	stgxobj.h	/^  STGXOBJ_COLOR_KEY_TYPE_RGB888,$/;"	e	enum:STGXOBJ_ColorKeyType_e
+STGXOBJ_COLOR_KEY_TYPE_YCbCr888_SIGNED	stgxobj.h	/^  STGXOBJ_COLOR_KEY_TYPE_YCbCr888_SIGNED,$/;"	e	enum:STGXOBJ_ColorKeyType_e
+STGXOBJ_COLOR_KEY_TYPE_YCbCr888_UNSIGNED	stgxobj.h	/^  STGXOBJ_COLOR_KEY_TYPE_YCbCr888_UNSIGNED,$/;"	e	enum:STGXOBJ_ColorKeyType_e
+STGXOBJ_COLOR_TYPE_ACLUT44	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ACLUT44,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ACLUT88	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ACLUT88,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ACLUT88_255	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ACLUT88_255,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ALPHA1	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ALPHA1,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ALPHA4	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ALPHA4,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ALPHA8	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ALPHA8,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ALPHA8_255	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ALPHA8_255$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ARGB1555	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ARGB1555,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ARGB4444	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ARGB4444,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ARGB8565	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ARGB8565,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ARGB8565_255	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ARGB8565_255,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ARGB8888	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ARGB8888,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_ARGB8888_255	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_ARGB8888_255,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_BYTE	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_BYTE,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_CLUT1	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_CLUT1,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_CLUT2	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_CLUT2,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_CLUT4	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_CLUT4,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_CLUT8	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_CLUT8,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_RGB565	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_RGB565,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_RGB888	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_RGB888,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_SIGNED_AYCBCR8888	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_SIGNED_AYCBCR8888,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_SIGNED_YCBCR888_420	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_SIGNED_YCBCR888_420,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_SIGNED_YCBCR888_422	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_SIGNED_YCBCR888_422,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_SIGNED_YCBCR888_444	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_SIGNED_YCBCR888_444,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_UNSIGNED_AYCBCR6888_444	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_UNSIGNED_AYCBCR6888_444,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_UNSIGNED_AYCBCR8888	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_UNSIGNED_AYCBCR8888,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_UNSIGNED_YCBCR888_420	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_UNSIGNED_YCBCR888_420,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_UNSIGNED_YCBCR888_422	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_UNSIGNED_YCBCR888_422,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_COLOR_TYPE_UNSIGNED_YCBCR888_444	stgxobj.h	/^  STGXOBJ_COLOR_TYPE_UNSIGNED_YCBCR888_444,$/;"	e	enum:STGXOBJ_ColorType_e
+STGXOBJ_CONVERSION_MODE_UNKNOWN	stgxobj.h	/^    STGXOBJ_CONVERSION_MODE_UNKNOWN$/;"	e	enum:STGXOBJ_ColorSpaceConversionMode_e
+STGXOBJ_Capability_s	stgxobj.h	/^typedef struct STGXOBJ_Capability_s$/;"	s
+STGXOBJ_Capability_t	stgxobj.h	/^} STGXOBJ_Capability_t;$/;"	t	typeref:struct:STGXOBJ_Capability_s
+STGXOBJ_ColorACLUT_s	stgxobj.h	/^typedef struct STGXOBJ_ColorACLUT_s$/;"	s
+STGXOBJ_ColorACLUT_t	stgxobj.h	/^} STGXOBJ_ColorACLUT_t;$/;"	t	typeref:struct:STGXOBJ_ColorACLUT_s
+STGXOBJ_ColorARGB_s	stgxobj.h	/^typedef struct STGXOBJ_ColorARGB_s$/;"	s
+STGXOBJ_ColorARGB_t	stgxobj.h	/^} STGXOBJ_ColorARGB_t;$/;"	t	typeref:struct:STGXOBJ_ColorARGB_s
+STGXOBJ_ColorKeyCLUT_s	stgxobj.h	/^typedef struct STGXOBJ_ColorKeyCLUT_s$/;"	s
+STGXOBJ_ColorKeyCLUT_t	stgxobj.h	/^} STGXOBJ_ColorKeyCLUT_t;$/;"	t	typeref:struct:STGXOBJ_ColorKeyCLUT_s
+STGXOBJ_ColorKeyRGB_s	stgxobj.h	/^typedef struct STGXOBJ_ColorKeyRGB_s$/;"	s
+STGXOBJ_ColorKeyRGB_t	stgxobj.h	/^} STGXOBJ_ColorKeyRGB_t;$/;"	t	typeref:struct:STGXOBJ_ColorKeyRGB_s
+STGXOBJ_ColorKeySignedYCbCr_s	stgxobj.h	/^typedef struct STGXOBJ_ColorKeySignedYCbCr_s$/;"	s
+STGXOBJ_ColorKeySignedYCbCr_t	stgxobj.h	/^} STGXOBJ_ColorKeySignedYCbCr_t;$/;"	t	typeref:struct:STGXOBJ_ColorKeySignedYCbCr_s
+STGXOBJ_ColorKeyType_e	stgxobj.h	/^typedef enum STGXOBJ_ColorKeyType_e$/;"	g
+STGXOBJ_ColorKeyType_t	stgxobj.h	/^} STGXOBJ_ColorKeyType_t;$/;"	t	typeref:enum:STGXOBJ_ColorKeyType_e
+STGXOBJ_ColorKeyUnsignedYCbCr_s	stgxobj.h	/^typedef struct STGXOBJ_ColorKeyUnsignedYCbCr_s$/;"	s
+STGXOBJ_ColorKeyUnsignedYCbCr_t	stgxobj.h	/^} STGXOBJ_ColorKeyUnsignedYCbCr_t;$/;"	t	typeref:struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+STGXOBJ_ColorKeyValue_t	stgxobj.h	/^} STGXOBJ_ColorKeyValue_t;$/;"	t	typeref:union:STGXOBJ_ColorKeyValue_u
+STGXOBJ_ColorKeyValue_u	stgxobj.h	/^typedef union STGXOBJ_ColorKeyValue_u$/;"	u
+STGXOBJ_ColorKey_s	stgxobj.h	/^typedef struct STGXOBJ_ColorKey_s$/;"	s
+STGXOBJ_ColorKey_t	stgxobj.h	/^} STGXOBJ_ColorKey_t;$/;"	t	typeref:struct:STGXOBJ_ColorKey_s
+STGXOBJ_ColorRGB_s	stgxobj.h	/^typedef struct STGXOBJ_ColorRGB_s$/;"	s
+STGXOBJ_ColorRGB_t	stgxobj.h	/^} STGXOBJ_ColorRGB_t;$/;"	t	typeref:struct:STGXOBJ_ColorRGB_s
+STGXOBJ_ColorSignedAYCbCr_s	stgxobj.h	/^typedef struct STGXOBJ_ColorSignedAYCbCr_s$/;"	s
+STGXOBJ_ColorSignedAYCbCr_t	stgxobj.h	/^} STGXOBJ_ColorSignedAYCbCr_t;$/;"	t	typeref:struct:STGXOBJ_ColorSignedAYCbCr_s
+STGXOBJ_ColorSignedYCbCr_s	stgxobj.h	/^typedef struct STGXOBJ_ColorSignedYCbCr_s$/;"	s
+STGXOBJ_ColorSignedYCbCr_t	stgxobj.h	/^} STGXOBJ_ColorSignedYCbCr_t;$/;"	t	typeref:struct:STGXOBJ_ColorSignedYCbCr_s
+STGXOBJ_ColorSpaceConversionMode_e	stgxobj.h	/^typedef enum STGXOBJ_ColorSpaceConversionMode_e$/;"	g
+STGXOBJ_ColorSpaceConversionMode_t	stgxobj.h	/^} STGXOBJ_ColorSpaceConversionMode_t;$/;"	t	typeref:enum:STGXOBJ_ColorSpaceConversionMode_e
+STGXOBJ_ColorType_e	stgxobj.h	/^typedef enum STGXOBJ_ColorType_e$/;"	g
+STGXOBJ_ColorType_t	stgxobj.h	/^} STGXOBJ_ColorType_t;$/;"	t	typeref:enum:STGXOBJ_ColorType_e
+STGXOBJ_ColorUnsignedAYCbCr_s	stgxobj.h	/^typedef struct STGXOBJ_ColorUnsignedAYCbCr_s$/;"	s
+STGXOBJ_ColorUnsignedAYCbCr_t	stgxobj.h	/^} STGXOBJ_ColorUnsignedAYCbCr_t;$/;"	t	typeref:struct:STGXOBJ_ColorUnsignedAYCbCr_s
+STGXOBJ_ColorUnsignedYCbCr_s	stgxobj.h	/^typedef struct STGXOBJ_ColorUnsignedYCbCr_s$/;"	s
+STGXOBJ_ColorUnsignedYCbCr_t	stgxobj.h	/^} STGXOBJ_ColorUnsignedYCbCr_t;$/;"	t	typeref:struct:STGXOBJ_ColorUnsignedYCbCr_s
+STGXOBJ_ColorValue_t	stgxobj.h	/^} STGXOBJ_ColorValue_t;$/;"	t	typeref:union:STGXOBJ_ColorValue_u
+STGXOBJ_ColorValue_u	stgxobj.h	/^typedef union STGXOBJ_ColorValue_u$/;"	u
+STGXOBJ_Color_s	stgxobj.h	/^typedef struct STGXOBJ_Color_s$/;"	s
+STGXOBJ_Color_t	stgxobj.h	/^} STGXOBJ_Color_t;$/;"	t	typeref:struct:STGXOBJ_Color_s
+STGXOBJ_DRIVER_BASE	stgxobj.h	30;"	d
+STGXOBJ_DRIVER_ID	stgxobj.h	29;"	d
+STGXOBJ_FCC	stgxobj.h	/^    STGXOBJ_FCC,$/;"	e	enum:STGXOBJ_ColorSpaceConversionMode_e
+STGXOBJ_GAMMA_BKL_PIPELINE	stgxobj.h	/^    STGXOBJ_GAMMA_BKL_PIPELINE   = 0x00000080,$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_GAMMA_BLITTER	stgxobj.h	/^    STGXOBJ_GAMMA_BLITTER        = 0x00000010,$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_GAMMA_CURS_PIPELINE	stgxobj.h	/^    STGXOBJ_GAMMA_CURS_PIPELINE  = 0x00000100$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_GAMMA_GDP_PIPELINE	stgxobj.h	/^    STGXOBJ_GAMMA_GDP_PIPELINE   = 0x00000040,$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_HardUse_e	stgxobj.h	/^typedef enum STGXOBJ_HardUse_e$/;"	g
+STGXOBJ_HardUse_t	stgxobj.h	/^}STGXOBJ_HardUse_t;$/;"	t	typeref:enum:STGXOBJ_HardUse_e
+STGXOBJ_INTERLACED_SCAN	stgxobj.h	/^    STGXOBJ_INTERLACED_SCAN$/;"	e	enum:STGXOBJ_ScanType_e
+STGXOBJ_ITU_R_BT470_2_BG	stgxobj.h	/^    STGXOBJ_ITU_R_BT470_2_BG,$/;"	e	enum:STGXOBJ_ColorSpaceConversionMode_e
+STGXOBJ_ITU_R_BT470_2_M	stgxobj.h	/^    STGXOBJ_ITU_R_BT470_2_M,$/;"	e	enum:STGXOBJ_ColorSpaceConversionMode_e
+STGXOBJ_ITU_R_BT601	stgxobj.h	/^    STGXOBJ_ITU_R_BT601,$/;"	e	enum:STGXOBJ_ColorSpaceConversionMode_e
+STGXOBJ_ITU_R_BT709	stgxobj.h	/^    STGXOBJ_ITU_R_BT709,$/;"	e	enum:STGXOBJ_ColorSpaceConversionMode_e
+STGXOBJ_MPEGFrame_e	stgxobj.h	/^typedef enum STGXOBJ_MPEGFrame_e$/;"	g
+STGXOBJ_MPEGFrame_t	stgxobj.h	/^} STGXOBJ_MPEGFrame_t;$/;"	t	typeref:enum:STGXOBJ_MPEGFrame_e
+STGXOBJ_MPEG_FRAME_B	stgxobj.h	/^    STGXOBJ_MPEG_FRAME_B      = 4$/;"	e	enum:STGXOBJ_MPEGFrame_e
+STGXOBJ_MPEG_FRAME_I	stgxobj.h	/^    STGXOBJ_MPEG_FRAME_I      = 1,$/;"	e	enum:STGXOBJ_MPEGFrame_e
+STGXOBJ_MPEG_FRAME_P	stgxobj.h	/^    STGXOBJ_MPEG_FRAME_P      = 2,$/;"	e	enum:STGXOBJ_MPEGFrame_e
+STGXOBJ_NO_HARD	stgxobj.h	/^    STGXOBJ_NO_HARD              = 0x00000000,$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_OSDFRAME_CELL	stgxobj.h	/^    STGXOBJ_OSDFRAME_CELL        = 0x00000004,$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_OSDTOP_BOT_CELL	stgxobj.h	/^    STGXOBJ_OSDTOP_BOT_CELL      = 0x00000008,$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_PALETTE_TYPE_DEVICE_DEPENDENT	stgxobj.h	/^  STGXOBJ_PALETTE_TYPE_DEVICE_DEPENDENT$/;"	e	enum:STGXOBJ_PaletteType_e
+STGXOBJ_PALETTE_TYPE_DEVICE_INDEPENDENT	stgxobj.h	/^  STGXOBJ_PALETTE_TYPE_DEVICE_INDEPENDENT,$/;"	e	enum:STGXOBJ_PaletteType_e
+STGXOBJ_PROGRESSIVE_SCAN	stgxobj.h	/^    STGXOBJ_PROGRESSIVE_SCAN,$/;"	e	enum:STGXOBJ_ScanType_e
+STGXOBJ_PaletteType_e	stgxobj.h	/^typedef enum STGXOBJ_PaletteType_e$/;"	g
+STGXOBJ_PaletteType_t	stgxobj.h	/^}STGXOBJ_PaletteType_t;$/;"	t	typeref:enum:STGXOBJ_PaletteType_e
+STGXOBJ_Palette_s	stgxobj.h	/^typedef struct STGXOBJ_Palette_s$/;"	s
+STGXOBJ_Palette_t	stgxobj.h	/^} STGXOBJ_Palette_t;$/;"	t	typeref:struct:STGXOBJ_Palette_s
+STGXOBJ_PictureInfos_s	stgxobj.h	/^typedef struct STGXOBJ_PictureInfos_s$/;"	s
+STGXOBJ_PictureInfos_t	stgxobj.h	/^} STGXOBJ_PictureInfos_t;$/;"	t	typeref:struct:STGXOBJ_PictureInfos_s
+STGXOBJ_Rectangle_s	stgxobj.h	/^typedef struct STGXOBJ_Rectangle_s$/;"	s
+STGXOBJ_Rectangle_t	stgxobj.h	/^} STGXOBJ_Rectangle_t;$/;"	t	typeref:struct:STGXOBJ_Rectangle_s
+STGXOBJ_SMPTE_170M	stgxobj.h	/^    STGXOBJ_SMPTE_170M,$/;"	e	enum:STGXOBJ_ColorSpaceConversionMode_e
+STGXOBJ_SMPTE_240M	stgxobj.h	/^    STGXOBJ_SMPTE_240M,$/;"	e	enum:STGXOBJ_ColorSpaceConversionMode_e
+STGXOBJ_SOFT_EMU_BLITTER	stgxobj.h	/^    STGXOBJ_SOFT_EMU_BLITTER     = 0x00000020,$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_STILLPIC_CELL	stgxobj.h	/^    STGXOBJ_STILLPIC_CELL        = 0x00000002,$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_SUBBYTE_FORMAT_RPIX_LSB	stgxobj.h	/^    STGXOBJ_SUBBYTE_FORMAT_RPIX_LSB = 1$/;"	e	enum:STGXOBJ_SubByteFormat_e
+STGXOBJ_SUBBYTE_FORMAT_RPIX_MSB	stgxobj.h	/^    STGXOBJ_SUBBYTE_FORMAT_RPIX_MSB = 0,$/;"	e	enum:STGXOBJ_SubByteFormat_e
+STGXOBJ_SUBPIC_CELL	stgxobj.h	/^    STGXOBJ_SUBPIC_CELL          = 0x00000001,$/;"	e	enum:STGXOBJ_HardUse_e
+STGXOBJ_ScanType_e	stgxobj.h	/^typedef enum STGXOBJ_ScanType_e$/;"	g
+STGXOBJ_ScanType_t	stgxobj.h	/^} STGXOBJ_ScanType_t;$/;"	t	typeref:enum:STGXOBJ_ScanType_e
+STGXOBJ_SubByteFormat_e	stgxobj.h	/^typedef enum STGXOBJ_SubByteFormat_e$/;"	g
+STGXOBJ_SubByteFormat_t	stgxobj.h	/^}STGXOBJ_SubByteFormat_t;$/;"	t	typeref:enum:STGXOBJ_SubByteFormat_e
+ST_DRIVER_BASE	stddefs.h	419;"	d
+ST_DRIVER_ID	stddefs.h	418;"	d
+ST_DeviceName_t	stddefs.h	/^typedef char ST_DeviceName_t[ST_MAX_DEVICE_NAME];$/;"	t
+ST_ERROR_ALREADY_INITIALIZED	stddefs.h	/^    ST_ERROR_ALREADY_INITIALIZED,       \/* Device already initialized *\/$/;"	e	enum:__anon31
+ST_ERROR_BAD_PARAMETER	stddefs.h	/^    ST_ERROR_BAD_PARAMETER,             \/* Bad parameter passed       *\/$/;"	e	enum:__anon31
+ST_ERROR_DEVICE_BUSY	stddefs.h	/^    ST_ERROR_DEVICE_BUSY                \/* Device is currently busy   *\/$/;"	e	enum:__anon31
+ST_ERROR_FEATURE_NOT_SUPPORTED	stddefs.h	/^    ST_ERROR_FEATURE_NOT_SUPPORTED,     \/* Feature unavailable        *\/$/;"	e	enum:__anon31
+ST_ERROR_INTERRUPT_INSTALL	stddefs.h	/^    ST_ERROR_INTERRUPT_INSTALL,         \/* Interrupt install failed   *\/$/;"	e	enum:__anon31
+ST_ERROR_INTERRUPT_UNINSTALL	stddefs.h	/^    ST_ERROR_INTERRUPT_UNINSTALL,       \/* Interrupt uninstall failed *\/$/;"	e	enum:__anon31
+ST_ERROR_INVALID_HANDLE	stddefs.h	/^    ST_ERROR_INVALID_HANDLE,            \/* Handle is not valid        *\/$/;"	e	enum:__anon31
+ST_ERROR_NO_FREE_HANDLES	stddefs.h	/^    ST_ERROR_NO_FREE_HANDLES,           \/* Cannot open device again   *\/$/;"	e	enum:__anon31
+ST_ERROR_NO_MEMORY	stddefs.h	/^    ST_ERROR_NO_MEMORY,                 \/* Memory allocation failed   *\/$/;"	e	enum:__anon31
+ST_ERROR_OPEN_HANDLE	stddefs.h	/^    ST_ERROR_OPEN_HANDLE,               \/* At least one open handle   *\/$/;"	e	enum:__anon31
+ST_ERROR_TIMEOUT	stddefs.h	/^    ST_ERROR_TIMEOUT,                   \/* Timeout occured            *\/$/;"	e	enum:__anon31
+ST_ERROR_UNKNOWN_DEVICE	stddefs.h	/^    ST_ERROR_UNKNOWN_DEVICE,            \/* Unknown device name        *\/$/;"	e	enum:__anon31
+ST_ErrorCode_t	stddefs.h	/^typedef U32 ST_ErrorCode_t;$/;"	t
+ST_MAX_DEVICE_NAME	stddefs.h	386;"	d
+ST_NO_ERROR	stddefs.h	/^    ST_NO_ERROR = ST_DRIVER_BASE,$/;"	e	enum:__anon31
+ST_PARTITION_T	stddefs.h	396;"	d
+ST_Partition_t	stddefs.h	/^typedef partition_t ST_Partition_t;$/;"	t
+ST_Revision_t	stddefs.h	/^typedef const char * ST_Revision_t;$/;"	t
+ST_String_t	stddefs.h	/^typedef char* ST_String_t;$/;"	t
+SUCCESS	defines.h	69;"	d
+ScalingFactorUV	stgxobj.h	/^    YUV_Scaling_t ScalingFactorUV;$/;"	m	struct:YUV_ScalingFactor_s
+ScalingFactorY	stgxobj.h	/^    YUV_Scaling_t ScalingFactorY;$/;"	m	struct:YUV_ScalingFactor_s
+SetScreanInfo	Amlogicframe.c	/^void SetScreanInfo(int iOsdType, char* val)$/;"	f
+SetScreanInfo	Amlogicframexxx.c	/^void SetScreanInfo(int iOsdType, char* val)$/;"	f
+SignedAYCbCr8888	stgxobj.h	/^  STGXOBJ_ColorSignedAYCbCr_t   SignedAYCbCr8888;$/;"	m	union:STGXOBJ_ColorValue_u
+SignedYCbCr888	stgxobj.h	/^  STGXOBJ_ColorKeySignedYCbCr_t    SignedYCbCr888;$/;"	m	union:STGXOBJ_ColorKeyValue_u
+SignedYCbCr888_420	stgxobj.h	/^  STGXOBJ_ColorSignedYCbCr_t    SignedYCbCr888_420;$/;"	m	union:STGXOBJ_ColorValue_u
+SignedYCbCr888_422	stgxobj.h	/^  STGXOBJ_ColorSignedYCbCr_t    SignedYCbCr888_422;$/;"	m	union:STGXOBJ_ColorValue_u
+SignedYCbCr888_444	stgxobj.h	/^  STGXOBJ_ColorSignedYCbCr_t    SignedYCbCr888_444;$/;"	m	union:STGXOBJ_ColorValue_u
+Size	stgfb.h	/^    U32                     Size;$/;"	m	struct:STGFB_Pixmap_s
+Size1	stgxobj.h	/^  U32                                   Size1;$/;"	m	struct:STGXOBJ_Bitmap_s
+Size2	stgxobj.h	/^  U32                                   Size2;$/;"	m	struct:STGXOBJ_Bitmap_s
+SrcRectangle	stgfb.h	/^    STGXOBJ_Rectangle_t       SrcRectangle;$/;"	m	struct:STGFB_BltData_s
+SubByteFormat	stgxobj.h	/^  STGXOBJ_SubByteFormat_t               SubByteFormat;$/;"	m	struct:STGXOBJ_Bitmap_s
+TARGET	Makefile	/^TARGET=ztetest $/;"	m
+TBD	stgxobj.h	/^  char TBD;$/;"	m	struct:STGXOBJ_Capability_s
+TRANSFORM_INVERTED_AXES	nano-X.h	776;"	d
+TRANSFORM_X_FLIP	nano-X.h	777;"	d
+TRANSFORM_Y_FLIP	nano-X.h	778;"	d
+TRANS_MIRROR	nano-X.h	783;"	d
+TRANS_MIRROR_ROT180	nano-X.h	785;"	d
+TRANS_MIRROR_ROT270	nano-X.h	786;"	d
+TRANS_MIRROR_ROT90	nano-X.h	784;"	d
+TRANS_NONE	nano-X.h	779;"	d
+TRANS_ROT180	nano-X.h	781;"	d
+TRANS_ROT270	nano-X.h	782;"	d
+TRANS_ROT90	nano-X.h	780;"	d
+TRUE	defines.h	63;"	d
+TRUE	stddefs.h	411;"	d
+TYPE_INVALID	Amlogic.h	/^                TYPE_INVALID,$/;"	e	enum:__anon20
+T_FBAdaptor	Amlogicframe.c	/^}T_FBAdaptor;$/;"	t	typeref:struct:__anon30	file:
+T_FBAdaptor	Amlogicframe1.c	/^}T_FBAdaptor;$/;"	t	typeref:struct:__anon28	file:
+T_FBAdaptor	Amlogicframexxx.c	/^}T_FBAdaptor;$/;"	t	typeref:struct:__anon87	file:
+T_MwDriverState	MwFbDriver.h	/^T_MwDriverState;$/;"	t	typeref:struct:__anon19
+Type	stgxobj.h	/^  STGXOBJ_ColorKeyType_t           Type;$/;"	m	struct:STGXOBJ_ColorKey_s
+Type	stgxobj.h	/^  STGXOBJ_ColorType_t            Type;$/;"	m	struct:STGXOBJ_Color_s
+U16	stddefs.h	/^typedef unsigned short U16;$/;"	t
+U32	stddefs.h	/^typedef unsigned int   U32;$/;"	t
+U64	stddefs.h	/^U64;$/;"	t	typeref:struct:U64_s
+U64_s	stddefs.h	/^typedef struct U64_s$/;"	s
+U8	stddefs.h	/^typedef unsigned char  U8;$/;"	t
+UCHAR	defines.h	/^typedef unsigned char UCHAR;$/;"	t
+UINT16	defines.h	/^typedef unsigned short UINT16;$/;"	t
+UINT32	defines.h	/^typedef unsigned int UINT32;$/;"	t
+UINT64	defines.h	/^typedef unsigned long long UINT64;$/;"	t
+UINT8	defines.h	/^typedef unsigned char UINT8;$/;"	t
+UNUSED_PARAMETER	stddefs.h	441;"	d
+URGENT	defines.h	57;"	d
+USE_OFFSET_FUNC	Amlogicframe.c	50;"	d	file:
+UnsignedAYCbCr6888_444	stgxobj.h	/^  STGXOBJ_ColorUnsignedAYCbCr_t UnsignedAYCbCr6888_444;$/;"	m	union:STGXOBJ_ColorValue_u
+UnsignedAYCbCr8888	stgxobj.h	/^  STGXOBJ_ColorUnsignedAYCbCr_t UnsignedAYCbCr8888;$/;"	m	union:STGXOBJ_ColorValue_u
+UnsignedYCbCr888	stgxobj.h	/^  STGXOBJ_ColorKeyUnsignedYCbCr_t  UnsignedYCbCr888;$/;"	m	union:STGXOBJ_ColorKeyValue_u
+UnsignedYCbCr888_420	stgxobj.h	/^  STGXOBJ_ColorUnsignedYCbCr_t  UnsignedYCbCr888_420;$/;"	m	union:STGXOBJ_ColorValue_u
+UnsignedYCbCr888_422	stgxobj.h	/^  STGXOBJ_ColorUnsignedYCbCr_t  UnsignedYCbCr888_422;$/;"	m	union:STGXOBJ_ColorValue_u
+UnsignedYCbCr888_444	stgxobj.h	/^  STGXOBJ_ColorUnsignedYCbCr_t  UnsignedYCbCr888_444;$/;"	m	union:STGXOBJ_ColorValue_u
+VOD_LISTEN_PORT	MwFb.h	17;"	d
+VOID	defines.h	/^typedef void VOID;$/;"	t
+Value	stgxobj.h	/^  STGXOBJ_ColorKeyValue_t          Value;$/;"	m	struct:STGXOBJ_ColorKey_s
+Value	stgxobj.h	/^  STGXOBJ_ColorValue_t           Value;$/;"	m	struct:STGXOBJ_Color_s
+VideoParams	stgxobj.h	/^    } VideoParams;$/;"	m	struct:STGXOBJ_PictureInfos_s	typeref:struct:STGXOBJ_PictureInfos_s::__anon18
+WAIT	defines.h	52;"	d
+WHITE	mwtypes.h	791;"	d
+Width	stgfb.h	/^    U32                     Width;$/;"	m	struct:STGFB_Pixmap_s
+Width	stgxobj.h	/^  U32                                   Width;$/;"	m	struct:STGXOBJ_Bitmap_s
+Width	stgxobj.h	/^  U32 Width;$/;"	m	struct:STGXOBJ_Rectangle_s
+XD_EPG	Amlogicframe.c	/^	XD_EPG \/\/伸缩$/;"	e	enum:__anon29	file:
+XD_EPG	Amlogicframe1.c	/^	XD_EPG \/\/伸缩$/;"	e	enum:__anon27	file:
+XD_EPG	Amlogicframexxx.c	/^	XD_EPG \/\/伸缩$/;"	e	enum:__anon86	file:
+Y	stgxobj.h	/^  U8 Y;$/;"	m	struct:STGXOBJ_ColorSignedAYCbCr_s
+Y	stgxobj.h	/^  U8 Y;$/;"	m	struct:STGXOBJ_ColorSignedYCbCr_s
+Y	stgxobj.h	/^  U8 Y;$/;"	m	struct:STGXOBJ_ColorUnsignedAYCbCr_s
+Y	stgxobj.h	/^  U8 Y;$/;"	m	struct:STGXOBJ_ColorUnsignedYCbCr_s
+YELLOW	mwtypes.h	790;"	d
+YEnable	stgxobj.h	/^  BOOL    YEnable;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+YEnable	stgxobj.h	/^  BOOL    YEnable;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+YMax	stgxobj.h	/^  U8      YMax;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+YMax	stgxobj.h	/^  U8      YMax;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+YMin	stgxobj.h	/^  U8      YMin;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+YMin	stgxobj.h	/^  U8      YMin;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+YOut	stgxobj.h	/^  BOOL    YOut;$/;"	m	struct:STGXOBJ_ColorKeySignedYCbCr_s
+YOut	stgxobj.h	/^  BOOL    YOut;$/;"	m	struct:STGXOBJ_ColorKeyUnsignedYCbCr_s
+YUVScaling	stgxobj.h	/^  YUV_ScalingFactor_t                   YUVScaling;$/;"	m	struct:STGXOBJ_Bitmap_s
+YUV_HALF_VALUE	stgxobj.h	/^    YUV_HALF_VALUE,$/;"	e	enum:YUV_Scaling_s
+YUV_NO_RESCALE	stgxobj.h	/^    YUV_NO_RESCALE = 1,   \/* default value to be used in standard cases*\/$/;"	e	enum:YUV_Scaling_s
+YUV_RANGE_MAP_0	stgxobj.h	/^    YUV_RANGE_MAP_0,$/;"	e	enum:YUV_Scaling_s
+YUV_RANGE_MAP_1	stgxobj.h	/^    YUV_RANGE_MAP_1,$/;"	e	enum:YUV_Scaling_s
+YUV_RANGE_MAP_2	stgxobj.h	/^    YUV_RANGE_MAP_2,$/;"	e	enum:YUV_Scaling_s
+YUV_RANGE_MAP_3	stgxobj.h	/^    YUV_RANGE_MAP_3,$/;"	e	enum:YUV_Scaling_s
+YUV_RANGE_MAP_4	stgxobj.h	/^    YUV_RANGE_MAP_4,$/;"	e	enum:YUV_Scaling_s
+YUV_RANGE_MAP_5	stgxobj.h	/^    YUV_RANGE_MAP_5,$/;"	e	enum:YUV_Scaling_s
+YUV_RANGE_MAP_6	stgxobj.h	/^    YUV_RANGE_MAP_6,$/;"	e	enum:YUV_Scaling_s
+YUV_RANGE_MAP_7	stgxobj.h	/^    YUV_RANGE_MAP_7$/;"	e	enum:YUV_Scaling_s
+YUV_ScalingFactor_s	stgxobj.h	/^typedef struct YUV_ScalingFactor_s$/;"	s
+YUV_ScalingFactor_t	stgxobj.h	/^} YUV_ScalingFactor_t;$/;"	t	typeref:struct:YUV_ScalingFactor_s
+YUV_Scaling_s	stgxobj.h	/^typedef enum YUV_Scaling_s$/;"	g
+YUV_Scaling_t	stgxobj.h	/^} YUV_Scaling_t;$/;"	t	typeref:enum:YUV_Scaling_s
+_DEFINES_H_	defines.h	13;"	d
+_GrErrorFunc	nano-X.h	/^    GR_FNCALLBACKEVENT  _GrErrorFunc;           \/* GrDefaultErrorHandler *\/$/;"	m	struct:__anon81
+_MWTYPES_H	mwtypes.h	2;"	d
+_NANO_X_H	nano-X.h	2;"	d
+_STGFB_H	stgfb.h	10;"	d
+__B120_H__	Amlogic.h	16;"	d
+__MWFBDRIVER_H__	MwFbDriver.h	20;"	d
+__STDDEFS_H	stddefs.h	13;"	d
+__STGXOBJ_H	stgxobj.h	17;"	d
+_evlist	nano-X.h	/^    EVENT_LIST          *_evlist;$/;"	m	struct:__anon81
+_mwlist	mwtypes.h	/^typedef struct _mwlist {		\/* LIST must be first decl in struct*\/$/;"	s
+_mwlisthead	mwtypes.h	/^typedef struct _mwlisthead {$/;"	s
+_nxGlobalLock	nano-X.h	/^    MWMUTEX	 	_nxGlobalLock;$/;"	m	struct:__anon81
+_nxSocket	nano-X.h	/^    int                 _nxSocket;              \/*  -1 *\/$/;"	m	struct:__anon81
+_padding	mwtypes.h	/^	MWUCHAR _padding;$/;"	m	struct:__anon11
+_regfdmax	nano-X.h	/^    int                 _regfdmax;              \/* -1 *\/$/;"	m	struct:__anon81
+_regfdset	nano-X.h	/^    fd_set		_regfdset;		\/* FD_ZERO *\/$/;"	m	struct:__anon81
+_reqbuf	nano-X.h	/^    REQBUF              _reqbuf;$/;"	m	struct:__anon81
+_storedevent	nano-X.h	/^    int                 _storedevent;           \/* 0 *\/$/;"	m	struct:__anon81
+_storedevent_data	nano-X.h	/^    GR_EVENT            _storedevent_data;      \/* no init(0) *\/$/;"	m	struct:__anon81
+a	mwtypes.h	/^	int	a, b, c;	\/* xpos = (a*jitx + b*jity + c)\/denom *\/$/;"	m	struct:__anon15
+abAlpha	MwFbDriver.h	/^	unsigned char	abAlpha[2];			\/* 两个图层的默认透明度 *\/$/;"	m	struct:__anon19
+activate	nano-X.h	/^  GR_BOOL activate;		\/**< true = activate, false = deactivate *\/$/;"	m	struct:__anon72
+addr	Amlogic.h	/^	unsigned long  addr;$/;"	m	struct:__anon21
+alu_const_color	Amlogic.h	/^	int  alu_const_color;$/;"	m	struct:__anon23
+aml_swap	Amlogic.h	48;"	d
+array	Amlogicframe.c	/^	unsigned short *array;$/;"	m	union:semun	file:
+array	Amlogicframexxx.c	/^	unsigned short *array;$/;"	m	union:semun	file:
+auColorKey	MwFbDriver.h	/^	unsigned long	auColorKey[2];		\/* 两个图层的色键 *\/$/;"	m	struct:__anon19
+auSrc2ColorKey	MwFbDriver.h	/^       unsigned long  auSrc2ColorKey[2];\/\/src2_key$/;"	m	struct:__anon19
+b	mwtypes.h	/^	MWUCHAR	b;$/;"	m	struct:__anon11
+b	mwtypes.h	/^	int	a, b, c;	\/* xpos = (a*jitx + b*jity + c)\/denom *\/$/;"	m	struct:__anon15
+bAlphaBuffer	MwFbDriver.h	/^	unsigned char	bAlphaBuffer;		\/* 是否有透明度缓冲区，0-否、1-是 *\/$/;"	m	struct:__anon19
+bColorFilter	mwtypes.h	/^	unsigned char	bColorFilter;	\/* 色彩过滤，表示对特定颜色采取特殊的透明度设置： *\/$/;"	m	struct:__anon3
+bEndTrans	mwtypes.h	/^	unsigned char	bEndTrans;		\/* 结束透明度，当透明度模式为4时有意义 *\/$/;"	m	struct:__anon3
+bMode	mwtypes.h	/^	unsigned char	bMode;	\/* 透明度模式，取值及含义如下：*\/$/;"	m	struct:__anon3
+bOption	mwtypes.h	/^	unsigned char	bOption;			\/* 模式选项，取值及含义与透明度模式有关 *\/$/;"	m	struct:__anon3
+bOrgTrans	mwtypes.h	/^	unsigned char	bOrgTrans;		\/* 初始透明度，当透明度模式为3、4时有意义 *\/$/;"	m	struct:__anon3
+bSleepState	MwFbDriver.h	/^	unsigned char	bSleepState;		\/* 当前休眠状态，0-关闭、1-启动 *\/$/;"	m	struct:__anon19
+bVideoState	MwFbDriver.h	/^	unsigned char	bVideoState;		\/* 当前视频状态，0-关闭、1-打开 *\/$/;"	m	struct:__anon19
+background	nano-X.h	/^  GR_COLOR background;		\/**< Window background color*\/$/;"	m	struct:__anon58
+background	nano-X.h	/^  GR_COLOR background;		\/**< background RGB color or pixel value *\/$/;"	m	struct:__anon60
+background	nano-X.h	/^  GR_COLOR background;		\/**< background color *\/$/;"	m	struct:__anon59
+baseline	mwtypes.h	/^	int baseline;$/;"	m	struct:__anon4
+bcopy	defines.h	73;"	d
+bgcolor	mwtypes.h	/^	MWCOLORVAL	bgcolor;		\/* background color*\/$/;"	m	struct:__anon14
+bgispixelval	nano-X.h	/^  GR_BOOL bgispixelval;		\/**< TRUE if 'background' is actually a GR_PIXELVAL *\/$/;"	m	struct:__anon60
+bitmap	mwtypes.h	/^	MWIMAGEBITS *	bitmap;$/;"	m	struct:__anon10
+blendop	Amlogicframe.c	/^static inline unsigned blendop(unsigned color_blending_mode,$/;"	f	file:
+blendop	Amlogicframexxx.c	/^static inline unsigned blendop(unsigned color_blending_mode,$/;"	f	file:
+bmask	mwtypes.h	/^	unsigned long bmask;	\/* blue mask bits in pixel*\/$/;"	m	struct:__anon1
+bordercolor	nano-X.h	/^  GR_COLOR bordercolor;		\/**< Window border color*\/$/;"	m	struct:__anon58
+bordercolor	nano-X.h	/^  GR_COLOR bordercolor;		\/**< color of border *\/$/;"	m	struct:__anon59
+bordersize	nano-X.h	/^  GR_SIZE bordersize;		\/**< Window border size*\/$/;"	m	struct:__anon58
+bordersize	nano-X.h	/^  GR_SIZE bordersize;		\/**< size of border *\/$/;"	m	struct:__anon59
+bottom	mwtypes.h	/^	MWCOORD	bottom;$/;"	m	struct:__anon8
+bpp	mwtypes.h	/^	int		bpp;		\/* bits per pixel (1, 4 or 8)*\/$/;"	m	struct:__anon12
+bpp	mwtypes.h	/^	int		bpp;		\/* bits per pixel (1, 4 or 8)*\/$/;"	m	struct:__anon13
+bpp	mwtypes.h	/^	int	 bpp;		\/* hw bpp*\/$/;"	m	struct:__anon1
+bpp	mwtypes.h	/^	int	bpp;		\/* bits per pixel*\/$/;"	m	struct:__anon2
+buf	Amlogicframe.c	/^	struct semid_ds *buf;$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+buf	Amlogicframexxx.c	/^	struct semid_ds *buf;$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+buffer	nano-X.h	/^	unsigned char *buffer;		\/* request buffer*\/$/;"	m	struct:__anon80
+bufmax	nano-X.h	/^	unsigned char *bufmax;		\/* max buffer location*\/$/;"	m	struct:__anon80
+bufptr	nano-X.h	/^	unsigned char *bufptr;		\/* next unused buffer location*\/$/;"	m	struct:__anon80
+button	nano-X.h	/^  GR_EVENT_BUTTON button;		\/**< button events *\/$/;"	m	union:__anon78
+buttons	mwtypes.h	/^	int 	 buttons;	\/* buttons which are implemented *\/$/;"	m	struct:__anon1
+buttons	nano-X.h	/^  GR_BUTTON buttons;		\/**< current state of all buttons *\/$/;"	m	struct:__anon65
+buttons	nano-X.h	/^  GR_BUTTON buttons;		\/**< current state of buttons *\/$/;"	m	struct:__anon66
+buttons	nano-X.h	/^  GR_BUTTON buttons;		\/**< current state of buttons *\/$/;"	m	struct:__anon69
+bytesperpixel	mwtypes.h	/^	int		bytesperpixel;	\/* bytes per pixel*\/$/;"	m	struct:__anon12
+bytesperpixel	mwtypes.h	/^	int		bytesperpixel;	\/* bytes per pixel*\/$/;"	m	struct:__anon13
+bytespp	mwtypes.h	/^	int	bytespp;	\/* bytes per pixel*\/$/;"	m	struct:__anon2
+bzero	defines.h	74;"	d
+c	mwtypes.h	/^	int	a, b, c;	\/* xpos = (a*jitx + b*jity + c)\/denom *\/$/;"	m	struct:__anon15
+ch	nano-X.h	/^  GR_KEY ch;			\/**< 16-bit unicode key value, MWKEY_xxx *\/$/;"	m	struct:__anon66
+changebuttons	nano-X.h	/^  GR_BUTTON changebuttons;	\/**< buttons which went down or up *\/$/;"	m	struct:__anon65
+child	nano-X.h	/^  GR_WINDOW_ID child;		\/**< first child window id (or 0) *\/$/;"	m	struct:__anon59
+clientdata	nano-X.h	/^  GR_EVENT_CLIENT_DATA clientdata;	  \/**< Client data events *\/$/;"	m	union:__anon78
+clientdatareq	nano-X.h	/^  GR_EVENT_CLIENT_DATA_REQ clientdatareq; \/**< Request for client data events *\/$/;"	m	union:__anon78
+code	nano-X.h	/^  GR_ERROR code;		\/**< error code *\/$/;"	m	struct:__anon64
+color	Amlogic.h	/^        unsigned int   color ;$/;"	m	struct:__anon26
+cols	mwtypes.h	/^	MWCOORD  cols;		\/* number of columns on screen *\/$/;"	m	struct:__anon1
+compression	mwtypes.h	/^	int		compression;	\/* compression algorithm*\/$/;"	m	struct:__anon12
+compression	mwtypes.h	/^	int		compression;	\/* compression algorithm*\/$/;"	m	struct:__anon13
+config	Amlogic.h	/^        config_para_t  config;$/;"	m	struct:__anon24
+config_para_t	Amlogic.h	/^}config_para_t;$/;"	t	typeref:struct:__anon23
+config_planes_t	Amlogic.h	/^}config_planes_t;$/;"	t	typeref:struct:__anon21
+count	nano-X.h	/^  GR_COUNT count;		\/**< # valid entries *\/$/;"	m	struct:__anon62
+cursor	nano-X.h	/^  GR_CURSOR_ID cursor;		\/**< cursor id*\/$/;"	m	struct:__anon59
+d	mwtypes.h	/^	int	d, e, f;	\/* ypos = (d*jitx + e*jity + f)\/denom *\/$/;"	m	struct:__anon15
+dashcount	nano-X.h	/^  char                dashcount;$/;"	m	struct:__anon61
+dashmask	nano-X.h	/^  char                dashmask[32];$/;"	m	struct:__anon61
+data	nano-X.h	/^  void *data;			\/**< Pointer to data (filled in on client side) *\/$/;"	m	struct:__anon74
+datalen	nano-X.h	/^  unsigned long datalen;	\/**< Length of following data *\/$/;"	m	struct:__anon74
+descent	mwtypes.h	/^	int descent;$/;"	m	struct:__anon4
+dst_format	Amlogic.h	/^	unsigned int dst_format ; \/\/add for src&dst all in user space.$/;"	m	struct:__anon23
+dst_planes	Amlogic.h	/^	config_planes_t dst_planes[4];$/;"	m	struct:__anon23
+dst_rect	Amlogic.h	/^        rectangle_t     dst_rect;$/;"	m	struct:__anon26
+e	mwtypes.h	/^	int	d, e, f;	\/* ypos = (d*jitx + e*jity + f)\/denom *\/$/;"	m	struct:__anon15
+ecos_nanox_client_data	nano-X.h	/^} ecos_nanox_client_data;$/;"	t	typeref:struct:__anon81
+error	nano-X.h	/^  GR_EVENT_ERROR error;			\/**< error event *\/$/;"	m	union:__anon78
+event	nano-X.h	/^	GR_EVENT	event;$/;"	m	struct:event_list
+event_list	nano-X.h	/^struct event_list {$/;"	s
+eventmask	nano-X.h	/^  GR_EVENT_MASK eventmask;	\/**< current event mask for this client *\/$/;"	m	struct:__anon59
+exposure	nano-X.h	/^  GR_BOOL exposure;		\/**< send exposure events on GrCopyArea *\/$/;"	m	struct:__anon60
+exposure	nano-X.h	/^  GR_EVENT_EXPOSURE exposure;		\/**< exposure events *\/$/;"	m	union:__anon78
+extents	mwtypes.h	/^	MWRECT	extents;	\/* bounding box of region*\/$/;"	m	struct:__anon9
+f	mwtypes.h	/^	int	d, e, f;	\/* ypos = (d*jitx + e*jity + f)\/denom *\/$/;"	m	struct:__anon15
+fbdriver	mwtypes.h	/^	MWBOOL	 fbdriver;	\/* true if running mwin fb screen driver*\/$/;"	m	struct:__anon1
+fd	nano-X.h	/^  int		fd;		\/**< input file descriptor*\/$/;"	m	struct:__anon70
+fdinput	nano-X.h	/^  GR_EVENT_FDINPUT fdinput;		\/**< fd input events*\/$/;"	m	union:__anon78
+fgcolor	mwtypes.h	/^	MWCOLORVAL	fgcolor;		\/* foreground color*\/$/;"	m	struct:__anon14
+fgispixelval	nano-X.h	/^  GR_BOOL fgispixelval;		\/**< TRUE if 'foreground' is actually a GR_PIXELVAL *\/$/;"	m	struct:__anon60
+firstchar	mwtypes.h	/^	int firstchar;$/;"	m	struct:__anon4
+fixed	mwtypes.h	/^	MWBOOL fixed;$/;"	m	struct:__anon4
+flags	nano-X.h	/^  GR_WM_PROPS flags;		\/**< Which properties valid in struct for set*\/$/;"	m	struct:__anon58
+font	nano-X.h	/^  GR_FONT_ID font;		\/**< font number *\/$/;"	m	struct:__anon60
+fonts	mwtypes.h	/^	int 	 fonts;		\/* number of built-in fonts *\/$/;"	m	struct:__anon1
+foreground	nano-X.h	/^  GR_COLOR foreground;		\/**< foreground RGB color or pixel value *\/$/;"	m	struct:__anon60
+g	mwtypes.h	/^	MWUCHAR	g;$/;"	m	struct:__anon11
+g_AmlFBAdaptor	Amlogicframe.c	/^static 	T_FBAdaptor	g_AmlFBAdaptor = {NULL,NULL,FB_COLORMODE_565,720,576,2,0,640,526,0,0,0,-1,-1,0,0,0};$/;"	v	file:
+g_AmlFBAdaptor	Amlogicframe1.c	/^static 	T_FBAdaptor	g_AmlFBAdaptor = {NULL,NULL,FB_COLORMODE_565,720,576,2,0,640,526,0,0,0,-1,0};$/;"	v	file:
+g_AmlFBAdaptor	Amlogicframexxx.c	/^static 	T_FBAdaptor	g_AmlFBAdaptor = {NULL,NULL,FB_COLORMODE_565,720,576,2,0,640,526,0,0,0,-1,-1,0,0,0};$/;"	v	file:
+g_bBlend	Amlogicframe.c	/^static	int			g_bBlend		= 1; \/* 是否启动透明叠加 *\/$/;"	v	file:
+g_bBlend	Amlogicframe1.c	/^static	int			g_bBlend		= 1; \/* 是否启动透明叠加 *\/$/;"	v	file:
+g_bBlend	Amlogicframexxx.c	/^static	int			g_bBlend		= 1; \/* 是否启动透明叠加 *\/$/;"	v	file:
+g_fbstatus	Amlogicframe1.c	/^static 	int 	 		g_fbstatus		= SD_EPG;	\/* reference to struct PAGE_TYPE_t*\/$/;"	v	file:
+g_nFbDevNum	Amlogicframe.c	/^int                 g_nFbDevNum = 1;$/;"	v
+g_nFbDevNum	Amlogicframe1.c	/^int                 g_nFbDevNum = 1;$/;"	v
+g_nFbDevNum	Amlogicframexxx.c	/^int                 g_nFbDevNum = 1;$/;"	v
+g_osd_semid	Amlogicframe.c	/^static INT32 g_osd_semid;$/;"	v	file:
+g_osd_semid	Amlogicframexxx.c	/^static INT32 g_osd_semid;$/;"	v	file:
+gcid	nano-X.h	/^  GR_GC_ID       gcid;$/;"	m	struct:__anon61
+gcid	nano-X.h	/^  GR_GC_ID gcid;		\/**< GC id (or 0 if no such GC) *\/$/;"	m	struct:__anon60
+ge2d_op_ctl_t	Amlogic.h	/^}ge2d_op_ctl_t;$/;"	t	typeref:struct:__anon24
+ge2d_op_para_t	Amlogic.h	/^}ge2d_op_para_t ;$/;"	t	typeref:struct:__anon26
+ge2d_src_dst_t	Amlogic.h	/^}ge2d_src_dst_t;$/;"	t	typeref:enum:__anon20
+general	nano-X.h	/^  GR_EVENT_GENERAL general;		\/**< general window events *\/$/;"	m	union:__anon78
+gmask	mwtypes.h	/^	unsigned long gmask;	\/* green mask bits in pixel*\/$/;"	m	struct:__anon1
+h	Amlogic.h	/^	unsigned int	h;$/;"	m	struct:__anon21
+h	Amlogic.h	/^     int            h;   \/* height of it *\/$/;"	m	struct:__anon25
+head	mwtypes.h	/^	struct _mwlist *head;		\/* first item*\/$/;"	m	struct:_mwlisthead	typeref:struct:_mwlisthead::_mwlist
+height	mwtypes.h	/^	MWCOORD		height;$/;"	m	struct:__anon10
+height	mwtypes.h	/^	int		height;			\/* cursor height in pixels*\/$/;"	m	struct:__anon14
+height	mwtypes.h	/^	int		height;		\/* image height in pixels*\/$/;"	m	struct:__anon12
+height	mwtypes.h	/^	int		height;		\/* image height in pixels*\/$/;"	m	struct:__anon13
+height	mwtypes.h	/^	int height;$/;"	m	struct:__anon4
+height	nano-X.h	/^	GR_SIZE  height;	\/**< rectangle height*\/$/;"	m	struct:__anon57
+height	nano-X.h	/^  GR_SIZE height;		\/**< height of exposure *\/$/;"	m	struct:__anon67
+height	nano-X.h	/^  GR_SIZE height;		\/**< height of window *\/$/;"	m	struct:__anon59
+height	nano-X.h	/^  GR_SIZE height;		\/**< new height *\/$/;"	m	struct:__anon71
+hotkey	nano-X.h	/^  GR_BOOL hotkey;		\/**< TRUE if generated from GrGrabKey(GR_GRAB_HOTKEY_x) *\/$/;"	m	struct:__anon66
+hotx	mwtypes.h	/^	MWCOORD		hotx;			\/* relative x pos of hot spot*\/$/;"	m	struct:__anon14
+hoty	mwtypes.h	/^	MWCOORD		hoty;			\/* relative y pos of hot spot*\/$/;"	m	struct:__anon14
+id	mwtypes.h	/^	int		id;		\/* image id*\/$/;"	m	struct:__anon13
+id	nano-X.h	/^  GR_ID id;			\/**< resource id (maybe useless) *\/$/;"	m	struct:__anon64
+image	mwtypes.h	/^	MWIMAGEBITS	image[MWMAX_CURSOR_SIZE*2];\/* cursor image bits*\/$/;"	m	struct:__anon14
+imagebits	mwtypes.h	/^	MWUCHAR *	imagebits;	\/* image bits (dword right aligned)*\/$/;"	m	struct:__anon12
+imax	defines.h	/^static __inline int imax(int a,int b) { return (a > b ? a : b); }$/;"	f
+imin	defines.h	/^static __inline int imin(int a,int b) { return (a < b ? a : b); }$/;"	f
+inputonly	nano-X.h	/^  GR_BOOL inputonly;		\/**< TRUE if window is input only *\/$/;"	m	struct:__anon59
+key_color	Amlogic.h	/^	int	key_color;$/;"	m	struct:__anon22
+key_enable	Amlogic.h	/^	int	key_enable;$/;"	m	struct:__anon22
+key_mask	Amlogic.h	/^	int 	key_mask;$/;"	m	struct:__anon22
+key_mode	Amlogic.h	/^	int   key_mode;$/;"	m	struct:__anon22
+keystroke	nano-X.h	/^  GR_EVENT_KEYSTROKE keystroke;		\/**< keystroke events *\/$/;"	m	union:__anon78
+lastchar	mwtypes.h	/^	int lastchar;$/;"	m	struct:__anon4
+led	mwtypes.h	/^	int led;$/;"	m	struct:__anon16
+led_mode	mwtypes.h	/^	int led_mode;$/;"	m	struct:__anon16
+left	mwtypes.h	/^	MWCOORD	left;$/;"	m	struct:__anon8
+len	nano-X.h	/^  unsigned long len;		\/**< Total length of data *\/$/;"	m	struct:__anon74
+lfCharSet	mwtypes.h	/^	MWUCHAR	lfCharSet;		\/* font character set*\/$/;"	m	struct:__anon6
+lfClass	mwtypes.h	/^	MWUCHAR lfClass;		\/* font class (renderer) *\/$/;"	m	struct:__anon6
+lfClipPrecision	mwtypes.h	/^	MWUCHAR	lfClipPrecision;	\/* not used*\/$/;"	m	struct:__anon6
+lfEscapement	mwtypes.h	/^	long	lfEscapement;		\/* rotation in tenths of degree*\/$/;"	m	struct:__anon6
+lfFaceName	mwtypes.h	/^	char	lfFaceName[MWLF_FACESIZE];\/* font name, may be aliased*\/$/;"	m	struct:__anon6
+lfHeight	mwtypes.h	/^	long	lfHeight;		\/* desired height in pixels*\/$/;"	m	struct:__anon6
+lfItalic	mwtypes.h	/^	MWUCHAR	lfItalic;		\/* =1 for italic *\/$/;"	m	struct:__anon6
+lfModern	mwtypes.h	/^	MWUCHAR	lfModern;		\/* =1 for Modern font *\/$/;"	m	struct:__anon6
+lfMonospace	mwtypes.h	/^	MWUCHAR	lfMonospace;		\/* =1 for Monospaced font *\/$/;"	m	struct:__anon6
+lfOblique	mwtypes.h	/^	MWUCHAR	lfOblique;		\/* =1 for Oblique (kind of Italic) *\/$/;"	m	struct:__anon6
+lfOrientation	mwtypes.h	/^	long	lfOrientation;		\/* not used*\/$/;"	m	struct:__anon6
+lfOutPrecision	mwtypes.h	/^	MWUCHAR	lfOutPrecision;		\/* font type selection*\/$/;"	m	struct:__anon6
+lfPitch	mwtypes.h	/^	MWUCHAR	lfPitch;		\/* font pitch *\/$/;"	m	struct:__anon6
+lfPitchAndFamily	mwtypes.h	/^	MWUCHAR lfPitchAndFamily;	\/* not used*\/$/;"	m	struct:__anon6
+lfProportional	mwtypes.h	/^	MWUCHAR	lfProportional;		\/* =1 for Proportional font *\/$/;"	m	struct:__anon6
+lfQuality	mwtypes.h	/^	MWUCHAR	lfQuality;		\/* not used*\/$/;"	m	struct:__anon6
+lfRoman	mwtypes.h	/^	MWUCHAR	lfRoman;		\/* =1 for Roman letters (upright) *\/$/;"	m	struct:__anon6
+lfSansSerif	mwtypes.h	/^	MWUCHAR	lfSansSerif;		\/* =1 for Sans-serif font *\/$/;"	m	struct:__anon6
+lfSerif	mwtypes.h	/^	MWUCHAR	lfSerif;		\/* =1 for Serifed font *\/$/;"	m	struct:__anon6
+lfSmallCaps	mwtypes.h	/^	MWUCHAR	lfSmallCaps;		\/* =1 for small caps *\/$/;"	m	struct:__anon6
+lfStrikeOut	mwtypes.h	/^	MWUCHAR	lfStrikeOut;		\/* not used*\/$/;"	m	struct:__anon6
+lfStrikeOutColor	mwtypes.h	/^	long	lfStrikeOutColor;		\/* color of font strike out add by lirihui *\/$/;"	m	struct:__anon6
+lfUnderline	mwtypes.h	/^	MWUCHAR	lfUnderline;		\/* =1 for underline *\/$/;"	m	struct:__anon6
+lfWeight	mwtypes.h	/^	long	lfWeight;		\/* font weight*\/$/;"	m	struct:__anon6
+lfWidth	mwtypes.h	/^	long	lfWidth;		\/* desired width in pixels or 0*\/$/;"	m	struct:__anon6
+linespacing	mwtypes.h	/^	int linespacing;$/;"	m	struct:__anon4
+linestyle	nano-X.h	/^  int                   linestyle;	$/;"	m	struct:__anon61
+linewidth	nano-X.h	/^  unsigned short linewidth;$/;"	m	struct:__anon61
+lmax	defines.h	/^static __inline long lmax(long a,long b) { return (a > b ? a : b); }$/;"	f
+lmin	defines.h	/^static __inline long lmin(long a,long b) { return (a < b ? a : b); }$/;"	f
+m_FBDevColorDepth	Amlogicframe.c	/^	INT32			m_FBDevColorDepth;\/\/Framebuffer设备的颜色深度$/;"	m	struct:__anon30	file:
+m_FBDevColorDepth	Amlogicframe1.c	/^	INT32			m_FBDevColorDepth;\/\/Framebuffer设备的颜色深度$/;"	m	struct:__anon28	file:
+m_FBDevColorDepth	Amlogicframexxx.c	/^	INT32			m_FBDevColorDepth;\/\/Framebuffer设备的颜色深度$/;"	m	struct:__anon87	file:
+m_FBDevHeight	Amlogicframe.c	/^	INT32			m_FBDevHeight;\/\/Framebuffer设备的高度$/;"	m	struct:__anon30	file:
+m_FBDevHeight	Amlogicframe1.c	/^	INT32			m_FBDevHeight;\/\/Framebuffer设备的高度$/;"	m	struct:__anon28	file:
+m_FBDevHeight	Amlogicframexxx.c	/^	INT32			m_FBDevHeight;\/\/Framebuffer设备的高度$/;"	m	struct:__anon87	file:
+m_FBDevWidth	Amlogicframe.c	/^	INT32			m_FBDevWidth;\/\/Framebuffer设备的宽度$/;"	m	struct:__anon30	file:
+m_FBDevWidth	Amlogicframe1.c	/^	INT32			m_FBDevWidth;\/\/Framebuffer设备的宽度$/;"	m	struct:__anon28	file:
+m_FBDevWidth	Amlogicframexxx.c	/^	INT32			m_FBDevWidth;\/\/Framebuffer设备的宽度$/;"	m	struct:__anon87	file:
+m_MWHeight	Amlogicframe.c	/^	INT32			m_MWHeight;\/\/microwindows的窗口高度$/;"	m	struct:__anon30	file:
+m_MWHeight	Amlogicframe1.c	/^	INT32			m_MWHeight;\/\/microwindows的窗口高度$/;"	m	struct:__anon28	file:
+m_MWHeight	Amlogicframexxx.c	/^	INT32			m_MWHeight;\/\/microwindows的窗口高度$/;"	m	struct:__anon87	file:
+m_MWWidth	Amlogicframe.c	/^	INT32			m_MWWidth;\/\/microwindows的窗口宽度$/;"	m	struct:__anon30	file:
+m_MWWidth	Amlogicframe1.c	/^	INT32			m_MWWidth;\/\/microwindows的窗口宽度$/;"	m	struct:__anon28	file:
+m_MWWidth	Amlogicframexxx.c	/^	INT32			m_MWWidth;\/\/microwindows的窗口宽度$/;"	m	struct:__anon87	file:
+m_PixelType	Amlogicframe.c	/^	CHAR			m_PixelType;\/\/象素类型$/;"	m	struct:__anon30	file:
+m_PixelType	Amlogicframe1.c	/^	CHAR			m_PixelType;\/\/象素类型$/;"	m	struct:__anon28	file:
+m_PixelType	Amlogicframexxx.c	/^	CHAR			m_PixelType;\/\/象素类型$/;"	m	struct:__anon87	file:
+m_iExtraLeftOffset	Amlogicframe.c	/^	INT32			m_iExtraLeftOffset;\/\/framebuffer额外的左偏移量，从配置文件读入$/;"	m	struct:__anon30	file:
+m_iExtraLeftOffset	Amlogicframexxx.c	/^	INT32			m_iExtraLeftOffset;\/\/framebuffer额外的左偏移量，从配置文件读入$/;"	m	struct:__anon87	file:
+m_iExtraTopOffset	Amlogicframe.c	/^	INT32			m_iExtraTopOffset;\/\/framebuffer额外的左偏移量，从配置文件读入$/;"	m	struct:__anon30	file:
+m_iExtraTopOffset	Amlogicframexxx.c	/^	INT32			m_iExtraTopOffset;\/\/framebuffer额外的左偏移量，从配置文件读入$/;"	m	struct:__anon87	file:
+m_iFBBufSize	Amlogicframe.c	/^	INT32			m_iFBBufSize;\/\/Framebuffer的缓冲区大小$/;"	m	struct:__anon30	file:
+m_iFBBufSize	Amlogicframe1.c	/^	INT32			m_iFBBufSize;\/\/Framebuffer的缓冲区大小$/;"	m	struct:__anon28	file:
+m_iFBBufSize	Amlogicframexxx.c	/^	INT32			m_iFBBufSize;\/\/Framebuffer的缓冲区大小$/;"	m	struct:__anon87	file:
+m_iFbDevFD	Amlogicframe.c	/^	INT32			m_iFbDevFD;\/\/Framebuffer设备句柄$/;"	m	struct:__anon30	file:
+m_iFbDevFD	Amlogicframe1.c	/^	INT32			m_iFbDevFD;\/\/Framebuffer设备句柄$/;"	m	struct:__anon28	file:
+m_iFbDevFD	Amlogicframexxx.c	/^	INT32			m_iFbDevFD;\/\/Framebuffer设备句柄$/;"	m	struct:__anon87	file:
+m_iGe2dFD	Amlogicframe.c	/^	INT32			m_iGe2dFD;\/\/ge2d设备句柄$/;"	m	struct:__anon30	file:
+m_iGe2dFD	Amlogicframexxx.c	/^	INT32			m_iGe2dFD;\/\/ge2d设备句柄$/;"	m	struct:__anon87	file:
+m_iLeftOffset	Amlogicframe.c	/^	INT32			m_iLeftOffset;\/\/Framebuffer设备的左边偏移$/;"	m	struct:__anon30	file:
+m_iLeftOffset	Amlogicframe1.c	/^	INT32			m_iLeftOffset;\/\/Framebuffer设备的左边偏移$/;"	m	struct:__anon28	file:
+m_iLeftOffset	Amlogicframexxx.c	/^	INT32			m_iLeftOffset;\/\/Framebuffer设备的左边偏移$/;"	m	struct:__anon87	file:
+m_iLineLength	Amlogicframe.c	/^	INT32			m_iLineLength;\/\/Framebuffer map的偏移量$/;"	m	struct:__anon30	file:
+m_iLineLength	Amlogicframe1.c	/^	INT32			m_iLineLength;\/\/Framebuffer map的偏移量$/;"	m	struct:__anon28	file:
+m_iLineLength	Amlogicframexxx.c	/^	INT32			m_iLineLength;\/\/Framebuffer map的偏移量$/;"	m	struct:__anon87	file:
+m_iMWBufSize	Amlogicframe.c	/^	INT32			m_iMWBufSize;\/\/microwindows的缓冲区大小$/;"	m	struct:__anon30	file:
+m_iMWBufSize	Amlogicframe1.c	/^	INT32			m_iMWBufSize;\/\/microwindows的缓冲区大小$/;"	m	struct:__anon28	file:
+m_iMWBufSize	Amlogicframexxx.c	/^	INT32			m_iMWBufSize;\/\/microwindows的缓冲区大小$/;"	m	struct:__anon87	file:
+m_iSleep	Amlogicframe.c	/^int 	m_iSleep = 0;$/;"	v
+m_iSleep	Amlogicframe1.c	/^int 	m_iSleep = 0;$/;"	v
+m_iSleep	Amlogicframexxx.c	/^int 	m_iSleep = 0;$/;"	v
+m_iTopOffset	Amlogicframe.c	/^	INT32			m_iTopOffset;\/\/Framebuffer设备的顶部偏移$/;"	m	struct:__anon30	file:
+m_iTopOffset	Amlogicframe1.c	/^	INT32			m_iTopOffset;\/\/Framebuffer设备的顶部偏移$/;"	m	struct:__anon28	file:
+m_iTopOffset	Amlogicframexxx.c	/^	INT32			m_iTopOffset;\/\/Framebuffer设备的顶部偏移$/;"	m	struct:__anon87	file:
+m_pucFrameBuffer	Amlogicframe.c	/^	UCHAR *	m_pucFrameBuffer;\/\/Framebuffer基地址(用于缓冲MW 数据)$/;"	m	struct:__anon30	file:
+m_pucFrameBuffer	Amlogicframe1.c	/^	UCHAR *	m_pucFrameBuffer;\/\/Framebuffer基地址(用于缓冲MW 数据)$/;"	m	struct:__anon28	file:
+m_pucFrameBuffer	Amlogicframexxx.c	/^	UCHAR *	m_pucFrameBuffer;\/\/Framebuffer基地址(用于缓冲MW 数据)$/;"	m	struct:__anon87	file:
+m_pucFrameBufferMMAP	Amlogicframe.c	/^	UCHAR *	m_pucFrameBufferMMAP;\/\/Framebuffer的现存映射到用户空间的基地址$/;"	m	struct:__anon30	file:
+m_pucFrameBufferMMAP	Amlogicframe1.c	/^	UCHAR *	m_pucFrameBufferMMAP;\/\/Framebuffer的现存映射到用户空间的基地址$/;"	m	struct:__anon28	file:
+m_pucFrameBufferMMAP	Amlogicframexxx.c	/^	UCHAR *	m_pucFrameBufferMMAP;\/\/Framebuffer的现存映射到用户空间的基地址$/;"	m	struct:__anon87	file:
+m_tMwDrvState	Amlogicframe.c	/^T_MwDriverState     m_tMwDrvState;$/;"	v
+m_tMwDrvState	Amlogicframe1.c	/^T_MwDriverState     m_tMwDrvState;$/;"	v
+m_tMwDrvState	Amlogicframexxx.c	/^T_MwDriverState     m_tMwDrvState;$/;"	v
+main	main.c	/^int main( int argc, char** argv)$/;"	f
+main	nano-X.h	1226;"	d
+mapped	nano-X.h	/^  GR_BOOL mapped;		\/**< TRUE if window is mapped *\/$/;"	m	struct:__anon59
+mask	mwtypes.h	/^	MWIMAGEBITS	mask[MWMAX_CURSOR_SIZE*2];\/* cursor mask bits*\/$/;"	m	struct:__anon14
+max	defines.h	/^static __inline unsigned int max(unsigned int a,unsigned int b) { \\$/;"	f
+maxascent	mwtypes.h	/^	int maxascent;$/;"	m	struct:__anon4
+maxdescent	mwtypes.h	/^	int maxdescent;$/;"	m	struct:__anon4
+maxwidth	mwtypes.h	/^	int maxwidth;$/;"	m	struct:__anon4
+maxx	nano-X.h	/^  int maxx;			\/**< max raw X value *\/$/;"	m	struct:__anon63
+maxy	nano-X.h	/^  int maxy;			\/**< max raw Y value *\/$/;"	m	struct:__anon63
+mimetype	nano-X.h	/^  GR_MIMETYPE mimetype;		\/**< Type to supply data as *\/$/;"	m	struct:__anon73
+min	defines.h	/^static __inline unsigned int min(unsigned int a,unsigned int b) { \\$/;"	f
+minx	nano-X.h	/^  int minx;			\/**< min raw X value *\/$/;"	m	struct:__anon63
+miny	nano-X.h	/^  int miny;			\/**< min raw Y values *\/$/;"	m	struct:__anon63
+mode	nano-X.h	/^  int mode;			\/**< drawing mode *\/$/;"	m	struct:__anon60
+modifiers	mwtypes.h	/^	MWKEYMOD modifiers;	\/* modifiers which are implemented *\/$/;"	m	struct:__anon1
+modifiers	nano-X.h	/^  GR_KEYMOD modifiers;		\/**< modifiers (MWKMOD_SHIFT, etc)*\/$/;"	m	struct:__anon65
+modifiers	nano-X.h	/^  GR_KEYMOD modifiers;		\/**< modifiers (MWKMOD_SHIFT, etc)*\/$/;"	m	struct:__anon66
+modifiers	nano-X.h	/^  GR_KEYMOD modifiers;		\/**< modifiers (MWKMOD_SHIFT, etc)*\/$/;"	m	struct:__anon69
+mouse	nano-X.h	/^  GR_EVENT_MOUSE mouse;			\/**< mouse motion events *\/$/;"	m	union:__anon78
+mwname	mwtypes.h	/^	char *mwname;		\/* microwin name, eg "timesb" *\/$/;"	m	struct:__anon5
+name	nano-X.h	/^  GR_FUNC_NAME name;		\/**< function name which failed *\/$/;"	m	struct:__anon64
+ncolors	mwtypes.h	/^	long	 ncolors;	\/* hw number of colors supported*\/$/;"	m	struct:__anon1
+new_owner	nano-X.h	/^  GR_WINDOW_ID new_owner;	\/**< ID of new selection owner *\/$/;"	m	struct:__anon75
+next	mwtypes.h	/^	struct _mwlist *next;		\/* next item*\/$/;"	m	struct:_mwlist	typeref:struct:_mwlist::_mwlist
+next	nano-X.h	/^	EVENT_LIST *	next;$/;"	m	struct:event_list
+numRects	mwtypes.h	/^	int	numRects;	\/* # rectangles in use*\/$/;"	m	struct:__anon9
+op	Amlogic.h	/^        int op;$/;"	m	struct:__anon26
+op_type	Amlogic.h	/^	int  op_type;$/;"	m	struct:__anon23
+osdBlend	Amlogicframe.c	/^static INT32 osdBlend(U16 x0,U16 y0,U16 x1,U16 y1)$/;"	f	file:
+osdBlend	Amlogicframexxx.c	/^static INT32 osdBlend(U16 x0,U16 y0,U16 x1,U16 y1)$/;"	f	file:
+osdUpdateRegion	Amlogicframe.c	/^static INT32  osdUpdateRegion(U16 x0,U16 y0,U16 x1,U16 y1)\/\/anti_flick$/;"	f	file:
+osdUpdateRegion	Amlogicframe1.c	/^int  osdUpdateRegion(short x0,short y0,short x1,short y1)$/;"	f
+osdUpdateRegion	Amlogicframexxx.c	/^static INT32  osdUpdateRegion(U16 x0,U16 y0,U16 x1,U16 y1)\/\/anti_flick$/;"	f	file:
+osdUpdateRegionEx	Amlogicframe.c	/^static INT32  osdUpdateRegionEx(U16 x0,U16 y0,U16 x1,U16 y1)\/\/anti_flick$/;"	f	file:
+osdUpdateRegionEx	Amlogicframexxx.c	/^static INT32  osdUpdateRegionEx(U16 x0,U16 y0,U16 x1,U16 y1)\/\/anti_flick$/;"	f	file:
+osd_del_sem	Amlogicframe.c	/^static  void osd_del_sem(INT32 semid)$/;"	f	file:
+osd_del_sem	Amlogicframexxx.c	/^static  void osd_del_sem(INT32 semid)$/;"	f	file:
+osd_sem_creat	Amlogicframe.c	/^static int osd_sem_creat(key_t key)$/;"	f	file:
+osd_sem_creat	Amlogicframexxx.c	/^static int osd_sem_creat(key_t key)$/;"	f	file:
+osd_sem_lock	Amlogicframe.c	/^static INT32 osd_sem_lock(INT32 semid)$/;"	f	file:
+osd_sem_lock	Amlogicframexxx.c	/^static INT32 osd_sem_lock(INT32 semid)$/;"	f	file:
+osd_sem_unlock	Amlogicframe.c	/^static INT32 osd_sem_unlock(INT32 semid)$/;"	f	file:
+osd_sem_unlock	Amlogicframexxx.c	/^static INT32 osd_sem_unlock(INT32 semid)$/;"	f	file:
+osd_sem_wait	Amlogicframe.c	/^static void osd_sem_wait(INT32 semid)$/;"	f	file:
+osd_sem_wait	Amlogicframexxx.c	/^static void osd_sem_wait(INT32 semid)$/;"	f	file:
+osd_set_screen_offset	Amlogicframe.c	/^static void  osd_set_screen_offset(T_FBAdaptor * pFB) $/;"	f	file:
+osd_set_screen_offset	Amlogicframexxx.c	/^static void  osd_set_screen_offset(T_FBAdaptor * pFB) $/;"	f	file:
+otherid	nano-X.h	/^  GR_WINDOW_ID otherid;		\/**< new\/old focus id for focus events*\/$/;"	m	struct:__anon68
+palette	mwtypes.h	/^	MWPALENTRY 	palette[256];	\/* palette*\/$/;"	m	struct:__anon13
+palette	mwtypes.h	/^	MWPALENTRY *	palette;	\/* palette*\/$/;"	m	struct:__anon12
+palette	nano-X.h	/^  GR_PALENTRY palette[256];	\/**< palette *\/$/;"	m	struct:__anon62
+palsize	mwtypes.h	/^	int		palsize;	\/* palette size*\/$/;"	m	struct:__anon12
+palsize	mwtypes.h	/^	int		palsize;	\/* palette size*\/$/;"	m	struct:__anon13
+parent	nano-X.h	/^  GR_WINDOW_ID parent;		\/**< parent window id *\/$/;"	m	struct:__anon59
+partition_t	stddefs.h	/^typedef int partition_t;$/;"	t
+physpixels	mwtypes.h	/^	unsigned char *	physpixels;	\/* address of real framebuffer*\/$/;"	m	struct:__anon2
+pitch	mwtypes.h	/^	int		pitch;		\/* bytes per line*\/$/;"	m	struct:__anon12
+pitch	mwtypes.h	/^	int		pitch;		\/* bytes per line*\/$/;"	m	struct:__anon13
+pitch	mwtypes.h	/^	int	pitch;		\/* bytes per scan line for window (=fb pitch)*\/$/;"	m	struct:__anon2
+pixtype	mwtypes.h	/^	int	 pixtype;	\/* format of pixel value*\/$/;"	m	struct:__anon1
+pixtype	mwtypes.h	/^	int	pixtype;	\/* MWPF_ pixel type*\/$/;"	m	struct:__anon2
+planes	mwtypes.h	/^	int		planes;		\/* # image planes*\/$/;"	m	struct:__anon12
+planes	mwtypes.h	/^	int		planes;		\/* # image planes*\/$/;"	m	struct:__anon13
+planes	mwtypes.h	/^	int	 planes;	\/* hw # planes*\/$/;"	m	struct:__anon1
+portrait	mwtypes.h	/^	int	 portrait;	\/* current portrait mode*\/$/;"	m	struct:__anon1
+portrait_mode	mwtypes.h	/^	int	portrait_mode;	\/* current portrait mode*\/$/;"	m	struct:__anon2
+prev	mwtypes.h	/^	struct _mwlist *prev;		\/* previous item*\/$/;"	m	struct:_mwlist	typeref:struct:_mwlist::_mwlist
+processid	nano-X.h	/^  unsigned long processid;	\/**< process id of owner*\/$/;"	m	struct:__anon59
+props	nano-X.h	/^  GR_WM_PROPS props;		\/**< Window property bits*\/$/;"	m	struct:__anon58
+props	nano-X.h	/^  GR_WM_PROPS props;		\/**< window properties *\/$/;"	m	struct:__anon59
+pt_osd	Amlogic.h	/^        void  *pt_osd ;$/;"	m	struct:__anon24
+r	mwtypes.h	/^	MWUCHAR	r;$/;"	m	struct:__anon11
+realized	nano-X.h	/^  GR_BOOL realized;		\/**< TRUE if window is mapped and visible *\/$/;"	m	struct:__anon59
+rectangle_t	Amlogic.h	/^}rectangle_t;$/;"	t	typeref:struct:__anon25
+rects	mwtypes.h	/^	MWRECT *rects;		\/* rectangle array*\/$/;"	m	struct:__anon9
+region	nano-X.h	/^  GR_REGION_ID region;		\/**< user region *\/$/;"	m	struct:__anon60
+retvlue	mwtypes.h	/^	unsigned int	retvlue;$/;"	m	struct:__anon17
+rid	nano-X.h	/^  GR_WINDOW_ID rid;		\/**< ID of window data is from *\/$/;"	m	struct:__anon74
+rid	nano-X.h	/^  GR_WINDOW_ID rid;		\/**< ID of window to send data to *\/$/;"	m	struct:__anon73
+right	mwtypes.h	/^	MWCOORD	right;$/;"	m	struct:__anon8
+rmask	mwtypes.h	/^	unsigned long rmask;	\/* red mask bits in pixel*\/$/;"	m	struct:__anon1
+rootx	nano-X.h	/^  GR_COORD rootx;		\/**< root window x coordinate *\/$/;"	m	struct:__anon65
+rootx	nano-X.h	/^  GR_COORD rootx;		\/**< root window x coordinate *\/$/;"	m	struct:__anon66
+rootx	nano-X.h	/^  GR_COORD rootx;		\/**< root window x coordinate *\/$/;"	m	struct:__anon69
+rooty	nano-X.h	/^  GR_COORD rooty;		\/**< root window y coordinate *\/$/;"	m	struct:__anon65
+rooty	nano-X.h	/^  GR_COORD rooty;		\/**< root window y coordinate *\/$/;"	m	struct:__anon66
+rooty	nano-X.h	/^  GR_COORD rooty;		\/**< root window y coordinate *\/$/;"	m	struct:__anon69
+roundup	defines.h	72;"	d
+rows	mwtypes.h	/^	MWCOORD  rows;		\/* number of rows on screen *\/$/;"	m	struct:__anon1
+s	mwtypes.h	/^	int	s;		\/* denom*\/$/;"	m	struct:__anon15
+scancode	nano-X.h	/^  GR_SCANCODE scancode;		\/**< OEM scancode value if available*\/$/;"	m	struct:__anon66
+screensaver	nano-X.h	/^  GR_EVENT_SCREENSAVER screensaver; 	\/**< Screen saver events *\/$/;"	m	union:__anon78
+selectionchanged	nano-X.h	/^  GR_EVENT_SELECTION_CHANGED selectionchanged; \/**< Selection owner changed *\/$/;"	m	union:__anon78
+semun	Amlogicframe.c	/^union semun {$/;"	u	file:
+semun	Amlogicframexxx.c	/^union semun {$/;"	u	file:
+serial	nano-X.h	/^  GR_SERIALNO serial;		\/**< Serial number of transaction *\/$/;"	m	struct:__anon73
+serial	nano-X.h	/^  GR_SERIALNO serial;		\/**< Serial number of transaction *\/$/;"	m	struct:__anon74
+sibling	nano-X.h	/^  GR_WINDOW_ID sibling;		\/**< next sibling window id (or 0) *\/$/;"	m	struct:__anon59
+size	mwtypes.h	/^	int	size;		\/* malloc'd # of rectangles*\/$/;"	m	struct:__anon9
+src1_rect	Amlogic.h	/^        rectangle_t src1_rect;$/;"	m	struct:__anon26
+src2_key	Amlogic.h	/^       src_key_ctrl_t  src2_key;\/\/src2_key$/;"	m	struct:__anon23
+src2_rect	Amlogic.h	/^        rectangle_t src2_rect;$/;"	m	struct:__anon26
+src_format	Amlogic.h	/^	unsigned int src_format;$/;"	m	struct:__anon23
+src_key	Amlogic.h	/^	src_key_ctrl_t  src_key;$/;"	m	struct:__anon23
+src_key_ctrl_t	Amlogic.h	/^}src_key_ctrl_t;$/;"	t	typeref:struct:__anon22
+src_planes	Amlogic.h	/^	config_planes_t src_planes[4];$/;"	m	struct:__anon23
+state	mwtypes.h	/^	int			state;$/;"	m	struct:__anon17
+subwid	nano-X.h	/^  GR_WINDOW_ID subwid;		\/**< sub-window id (pointer was in) *\/$/;"	m	struct:__anon65
+subwid	nano-X.h	/^  GR_WINDOW_ID subwid;		\/**< sub-window id (pointer was in) *\/$/;"	m	struct:__anon66
+subwid	nano-X.h	/^  GR_WINDOW_ID subwid;		\/**< sub-window id (pointer was in) *\/$/;"	m	struct:__anon69
+subwid	nano-X.h	/^  GR_WINDOW_ID subwid;		\/**< update window id (=wid for UPDATE event)*\/$/;"	m	struct:__anon71
+tail	mwtypes.h	/^	struct _mwlist *tail;		\/* last item*\/$/;"	m	struct:_mwlisthead	typeref:struct:_mwlisthead::_mwlist
+tid	nano-X.h	/^  GR_TIMER_ID    tid;		\/**< ID of expired timer *\/$/;"	m	struct:__anon76
+time	nano-X.h	/^  GR_TIMEOUT time;		\/**< tickcount time value*\/$/;"	m	struct:__anon65
+timer	nano-X.h	/^  GR_EVENT_TIMER timer;                 \/**< Timer events *\/$/;"	m	union:__anon78
+title	nano-X.h	/^  GR_CHAR *title;		\/**< Window title*\/$/;"	m	struct:__anon58
+top	mwtypes.h	/^	MWCOORD	top;$/;"	m	struct:__anon8
+transcolor	mwtypes.h	/^	long		transcolor;	\/* transparent color or -1 if none*\/$/;"	m	struct:__anon12
+ttname	mwtypes.h	/^	char *ttname;		\/* TrueType name, eg "Times New Roman Bold" *\/$/;"	m	struct:__anon5
+type	mwtypes.h	/^	int	type; 		\/* region type*\/$/;"	m	struct:__anon9
+type	nano-X.h	/^  GR_EVENT_TYPE  type;		\/**< event type, GR_EVENT_TYPE_TIMER *\/$/;"	m	struct:__anon76
+type	nano-X.h	/^  GR_EVENT_TYPE type;			\/**< event type *\/$/;"	m	union:__anon78
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon64
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon65
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon66
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon67
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon68
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon69
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon70
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon71
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon72
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon73
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon74
+type	nano-X.h	/^  GR_EVENT_TYPE type;		\/**< event type *\/$/;"	m	struct:__anon75
+uColorKey	mwtypes.h	/^	unsigned int	uColorKey;		\/* 用于色彩过滤的特定颜色即色键，用户API始终使用RGB24， *\/$/;"	m	struct:__anon3
+ulmax	defines.h	/^static __inline unsigned long ulmax(unsigned long a,unsigned long b) { \\$/;"	f
+ulmin	defines.h	/^static __inline unsigned long ulmin(unsigned long a,unsigned long b) { \\$/;"	f
+update	nano-X.h	/^  GR_EVENT_UPDATE update;		\/**< window update events *\/$/;"	m	union:__anon78
+usebackground	nano-X.h	/^  GR_BOOL usebackground;	\/**< use background in bitmaps *\/$/;"	m	struct:__anon60
+utype	nano-X.h	/^  GR_UPDATE_TYPE utype;		\/**< update_type *\/$/;"	m	struct:__anon71
+val	Amlogicframe.c	/^	int val;$/;"	m	union:semun	file:
+val	Amlogicframexxx.c	/^	int val;$/;"	m	union:semun	file:
+visible	nano-X.h	/^      unsigned char visible;$/;"	m	struct:__anon79
+vs_height	mwtypes.h	/^	int	vs_height;$/;"	m	struct:__anon1
+vs_width	mwtypes.h	/^	int	vs_width;	\/* virtual screen width\/height*\/$/;"	m	struct:__anon1
+w	Amlogic.h	/^	unsigned int	w;$/;"	m	struct:__anon21
+w	Amlogic.h	/^     int            w;   \/* width of it *\/$/;"	m	struct:__anon25
+wid	nano-X.h	/^      GR_WINDOW_ID wid;$/;"	m	struct:__anon79
+wid	nano-X.h	/^  GR_WINDOW_ID   wid;		\/**< ID of window timer is destined for *\/$/;"	m	struct:__anon76
+wid	nano-X.h	/^  GR_WINDOW_ID wid;		\/**< ID of requested window *\/$/;"	m	struct:__anon73
+wid	nano-X.h	/^  GR_WINDOW_ID wid;		\/**< ID of window data is destined for *\/$/;"	m	struct:__anon74
+wid	nano-X.h	/^  GR_WINDOW_ID wid;		\/**< select window id*\/$/;"	m	struct:__anon71
+wid	nano-X.h	/^  GR_WINDOW_ID wid;		\/**< window id (or 0 if no such window) *\/$/;"	m	struct:__anon59
+wid	nano-X.h	/^  GR_WINDOW_ID wid;		\/**< window id *\/$/;"	m	struct:__anon67
+wid	nano-X.h	/^  GR_WINDOW_ID wid;		\/**< window id *\/$/;"	m	struct:__anon68
+wid	nano-X.h	/^  GR_WINDOW_ID wid;		\/**< window id event delived to *\/$/;"	m	struct:__anon66
+wid	nano-X.h	/^  GR_WINDOW_ID wid;		\/**< window id event delivered to *\/$/;"	m	struct:__anon65
+wid	nano-X.h	/^  GR_WINDOW_ID wid;		\/**< window id event delivered to *\/$/;"	m	struct:__anon69
+width	mwtypes.h	/^	MWCOORD		width;$/;"	m	struct:__anon10
+width	mwtypes.h	/^	int		width;			\/* cursor width in pixels*\/$/;"	m	struct:__anon14
+width	mwtypes.h	/^	int		width;		\/* image width in pixels*\/$/;"	m	struct:__anon12
+width	mwtypes.h	/^	int		width;		\/* image width in pixels*\/$/;"	m	struct:__anon13
+width	nano-X.h	/^	GR_SIZE  width;		\/**< rectangle width*\/$/;"	m	struct:__anon57
+width	nano-X.h	/^  GR_SIZE width;		\/**< new width *\/$/;"	m	struct:__anon71
+width	nano-X.h	/^  GR_SIZE width;		\/**< width of exposure *\/$/;"	m	struct:__anon67
+width	nano-X.h	/^  GR_SIZE width;		\/**< width of window *\/$/;"	m	struct:__anon59
+widths	mwtypes.h	/^	MWUCHAR widths[256];$/;"	m	struct:__anon4
+winpixels	mwtypes.h	/^	unsigned char *	winpixels;	\/* address of 0,0 this window in fb*\/$/;"	m	struct:__anon2
+ws_height	mwtypes.h	/^	int	ws_height;$/;"	m	struct:__anon1
+ws_width	mwtypes.h	/^	int	ws_width;	\/* workspace width\/height*\/$/;"	m	struct:__anon1
+x	Amlogic.h	/^     int            x;   \/* X coordinate of its top-left point *\/$/;"	m	struct:__anon25
+x	mwtypes.h	/^	MWCOORD	x, y;		\/* absolute window coordinates*\/$/;"	m	struct:__anon2
+x	mwtypes.h	/^	MWCOORD x;$/;"	m	struct:__anon7
+x	nano-X.h	/^	GR_COORD x;		\/**< upper left x coordinate*\/$/;"	m	struct:__anon57
+x	nano-X.h	/^  GR_COORD x;			\/**< new window x coordinate *\/$/;"	m	struct:__anon71
+x	nano-X.h	/^  GR_COORD x;			\/**< parent-relative x position of window *\/$/;"	m	struct:__anon59
+x	nano-X.h	/^  GR_COORD x;			\/**< window x coordinate of exposure *\/$/;"	m	struct:__anon67
+x	nano-X.h	/^  GR_COORD x;			\/**< window x coordinate of mouse *\/$/;"	m	struct:__anon65
+x	nano-X.h	/^  GR_COORD x;			\/**< window x coordinate of mouse *\/$/;"	m	struct:__anon66
+x	nano-X.h	/^  GR_COORD x;			\/**< window x coordinate of mouse *\/$/;"	m	struct:__anon69
+xdpcm	mwtypes.h	/^	int 	 xdpcm;		\/* dots\/centimeter in x direction *\/$/;"	m	struct:__anon1
+xoff	nano-X.h	/^  int xoff;			\/**< x offset of user region *\/$/;"	m	struct:__anon60
+xpos	mwtypes.h	/^	MWCOORD	 xpos;		\/* current x mouse position*\/$/;"	m	struct:__anon1
+xres	mwtypes.h	/^	MWCOORD	xres;		\/* real framebuffer resolution*\/$/;"	m	struct:__anon2
+xres	nano-X.h	/^  int xres;			\/**< X resolution of the screen *\/$/;"	m	struct:__anon63
+xswap	nano-X.h	/^  GR_BOOL xswap;		\/**< true if the x component should be swapped *\/$/;"	m	struct:__anon63
+xvirtres	mwtypes.h	/^	MWCOORD	xvirtres;	\/* virtual framebuffer resolution*\/$/;"	m	struct:__anon2
+y	Amlogic.h	/^     int            y;   \/* Y coordinate of its top-left point *\/$/;"	m	struct:__anon25
+y	mwtypes.h	/^	MWCOORD	x, y;		\/* absolute window coordinates*\/$/;"	m	struct:__anon2
+y	mwtypes.h	/^	MWCOORD y;$/;"	m	struct:__anon7
+y	nano-X.h	/^	GR_COORD y;		\/**< upper left y coordinate*\/$/;"	m	struct:__anon57
+y	nano-X.h	/^  GR_COORD y;			\/**< new window y coordinate *\/$/;"	m	struct:__anon71
+y	nano-X.h	/^  GR_COORD y;			\/**< parent-relative  y position of window *\/$/;"	m	struct:__anon59
+y	nano-X.h	/^  GR_COORD y;			\/**< window y coordinate of exposure *\/$/;"	m	struct:__anon67
+y	nano-X.h	/^  GR_COORD y;			\/**< window y coordinate of mouse *\/$/;"	m	struct:__anon65
+y	nano-X.h	/^  GR_COORD y;			\/**< window y coordinate of mouse *\/$/;"	m	struct:__anon66
+y	nano-X.h	/^  GR_COORD y;			\/**< window y coordinate of mouse *\/$/;"	m	struct:__anon69
+ydpcm	mwtypes.h	/^	int 	 ydpcm;		\/* dots\/centimeter in y direction *\/$/;"	m	struct:__anon1
+yoff	nano-X.h	/^  int yoff;			\/**< y offset of user region *\/$/;"	m	struct:__anon60
+ypos	mwtypes.h	/^	MWCOORD	 ypos;		\/* current y mouse position*\/$/;"	m	struct:__anon1
+yres	mwtypes.h	/^	MWCOORD	yres;$/;"	m	struct:__anon2
+yres	nano-X.h	/^  int yres;			\/**< Y resolution of the screen *\/$/;"	m	struct:__anon63
+yswap	nano-X.h	/^  GR_BOOL yswap;		\/**< true if the y component should be swapped *\/$/;"	m	struct:__anon63
+yvirtres	mwtypes.h	/^	MWCOORD	yvirtres;$/;"	m	struct:__anon2

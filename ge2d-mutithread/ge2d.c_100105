@@ -1,0 +1,624 @@
+#include "osd.h"
+#include <linux/input.h>
+#include <sys/poll.h>
+#include	<pthread.h>
+#include <sys/time.h> 
+#include <signal.h>
+
+
+
+#define    KEYBOARD_DEV     "/dev/input/event0"
+#define		KEY_UP   		0x67
+#define		KEY_DOWN		0x6c
+#define		KEY_LEFT   		0x69
+#define		KEY_RIGHT		0x6a
+#define 		KEY_PULL		0x42
+#define  		KEY_PUSH		0x43
+#define 		KEY_EXIT		0x74
+#define 		INVALID_THREAD_ID  ((pthread_t)(-1))
+#define 		MAX_THREAD_NUM	10
+
+#define		THREAD_DRAW	0
+#define		THREAD_INPUT	1
+
+	
+
+
+typedef   struct {
+	pthread_mutex_t  mutex;
+	int				int_exit;
+	pthread_cond_t    cond_exit;
+	pthread_cond_t 	cond_draw;
+	osd_obj_t  * 		osd;
+	int				key_code;
+	pthread_t  pthread_id[MAX_THREAD_NUM] ;
+}ge2d_context_t ;
+typedef void (*sighandler_t)(int); 
+
+
+
+ge2d_context_t  thread_context;
+static inline unsigned blendop(unsigned color_blending_mode,
+                               unsigned color_blending_src_factor,
+                               unsigned color_blending_dst_factor,
+                               unsigned alpha_blending_mode,
+                               unsigned alpha_blending_src_factor,
+                               unsigned alpha_blending_dst_factor)
+{
+    return (color_blending_mode << 24) |
+           (color_blending_src_factor << 20) |
+           (color_blending_dst_factor << 16) |
+           (alpha_blending_mode << 8) |
+           (alpha_blending_src_factor << 4) |
+           (alpha_blending_dst_factor << 0);
+}
+
+int ge2d_op_fill_rect(void *para)
+{
+	ge2d_op_para_t  op_para;
+	int r=0xff;
+	int a=0xff ;
+	ge2d_op_ctl_t *control=(ge2d_op_ctl_t*)para;
+	osd_obj_t *this_osd=(osd_obj_t *)control->pt_osd;
+
+	
+	ioctl( this_osd->fbfd, FBIOPUT_GE2D_CONFIG, &control->config) ;
+	op_para.src1_rect.x=100;
+	op_para.src1_rect.y=100;
+	op_para.src1_rect.w=300;
+	op_para.src1_rect.h=300;
+	//RBGA
+	 op_para.color=a|r<<24;	
+	 
+	
+	ioctl( this_osd->fbfd, FBIOPUT_GE2D_FILLRECTANGLE, &op_para) ;
+	return 0;
+}
+int ge2d_op_blend(void *para)
+{
+	
+	config_para_t ge2d_config;
+	osd_obj_t **osd=(osd_obj_t **)para;
+	ge2d_op_para_t  op_para;
+	osd_obj_t  *osd0=*osd++,*osd1=*osd;
+
+	ge2d_config.op_type=OSD1_OSD0;
+	ge2d_config.alu_const_color=0x0000ffff;
+	ioctl( osd0->fbfd, FBIOPUT_GE2D_CONFIG, &ge2d_config) ;
+	op_para.src1_rect.x=100;
+	op_para.src1_rect.y=100;
+	op_para.src1_rect.w=380;
+	op_para.src1_rect.h=380;
+
+	op_para.src2_rect.x=200;
+	op_para.src2_rect.y=200;
+	op_para.src2_rect.w=380;
+	op_para.src2_rect.h=380;
+
+	op_para.dst_rect.x=600;
+	op_para.dst_rect.y=300;
+	op_para.dst_rect.w=380;
+	op_para.dst_rect.h=380;
+
+
+	op_para.op=blendop( 
+			OPERATION_ADD,
+                    /* color blending src factor */
+                    COLOR_FACTOR_CONST_COLOR,
+                    /* color blending dst factor */
+                    COLOR_FACTOR_ONE,
+                    /* alpha blending_mode */
+                    OPERATION_MIN,
+                    /* alpha blending src factor */
+                    ALPHA_FACTOR_CONST_ALPHA,
+                    /* color blending dst factor */
+                    ALPHA_FACTOR_ONE_MINUS_CONST_ALPHA);
+	ioctl( osd0->fbfd, FBIOPUT_GE2D_BLEND, &op_para) ;
+	return 0;
+	
+}
+int ge2d_op_blit(void *para)
+{
+	config_para_t ge2d_config;
+	osd_obj_t **osd=(osd_obj_t **)para;
+	ge2d_op_para_t  op_para;
+	int move_mode;
+	osd_obj_t  *osd0=*osd++,*osd1=*osd;
+
+	printf("blit type \n"  \
+		  "1	move block from osd1 to osd0 \n" \
+		  "2	move block from osd0 to osd0 \n" \
+		  "please input blit type number: ");
+	scanf("%d",&move_mode);
+	if(move_mode==1)
+	{
+		ge2d_config.op_type=OSD1_OSD0;
+	}
+	else
+	{
+		ge2d_config.op_type=OSD0_OSD0;
+	}
+	ge2d_config.alu_const_color=0xff0000ff;
+	ioctl( osd0->fbfd, FBIOPUT_GE2D_CONFIG, &ge2d_config) ;
+
+	op_para.src1_rect.x=100;
+	op_para.src1_rect.y=100;
+	op_para.src1_rect.w=380;
+	op_para.src1_rect.h=380;
+
+	op_para.dst_rect.x=200;
+	op_para.dst_rect.y=300;
+	op_para.dst_rect.w=380;
+	op_para.dst_rect.h=380;
+
+	
+	ioctl( osd0->fbfd, FBIOPUT_GE2D_BLIT, &op_para) ;
+	
+	return 0;
+}
+int ge2d_op_stretch_blit(void *para)
+{
+	config_para_t ge2d_config;
+	osd_obj_t **osd=(osd_obj_t **)para;
+	ge2d_op_para_t  op_para;
+	int stretch_mode;
+	osd_obj_t  *osd0=*osd++,*osd1=*osd;
+	
+	printf("blit type \n"  \
+		  "1	stretch  block from osd1 to osd0 \n" \
+		  "2	stretch  block from osd0 to osd0 \n" \
+		  "please input blit type number: ");
+	scanf("%d",&stretch_mode);
+	if(stretch_mode==1)
+	{
+		ge2d_config.op_type=OSD1_OSD0;
+	}
+	else
+	{
+		ge2d_config.op_type=OSD0_OSD0;
+	}
+	ge2d_config.alu_const_color=0xff0000ff;
+	ioctl( osd0->fbfd, FBIOPUT_GE2D_CONFIG, &ge2d_config) ;
+	/*
+	op_para.src1_rect.x=50;
+	op_para.src1_rect.y=50;
+	op_para.src1_rect.w=100;
+	op_para.src1_rect.h=100;
+
+	op_para.dst_rect.x=150;
+	op_para.dst_rect.y=150;
+	op_para.dst_rect.w=200;
+	op_para.dst_rect.h=200;
+	*/
+	op_para.src1_rect.x=0;
+	op_para.src1_rect.y=0;
+	op_para.src1_rect.w=osd1->vinfo->xres;
+	op_para.src1_rect.h=osd1->vinfo->yres;
+
+	op_para.dst_rect.x=0;
+	op_para.dst_rect.y=0;
+	op_para.dst_rect.w=osd1->vinfo->xres;
+	op_para.dst_rect.h=osd1->vinfo->yres;
+	while(1)
+	{
+	printf("press enter :\r\n");
+	scanf("%c",&stretch_mode,&stretch_mode);
+	ge2d_config.op_type=ge2d_config.op_type < 2 ? 3 : 1; 
+	ioctl( osd0->fbfd, FBIOPUT_GE2D_CONFIG, &ge2d_config) ;
+	ioctl( osd0->fbfd, FBIOPUT_GE2D_STRETCHBLIT, &op_para) ;
+	}
+	return 0;
+}
+void  display_ge2d_op_menu(void)
+{
+	printf("\nge2d_op menu : \n"
+	"	1	fill rect, \n" 		\
+	"	2	blit\n" 			\
+	"	3	stretch blit \n"	\
+	"	4	blend	\n"		\
+	"	5	key test \n"
+	"please input menu item number: ");
+}
+
+static  int   key_is_pressed(int key_fd)
+{
+
+	int rc;
+      	struct pollfd	tPfd;
+      	struct input_event read_event;
+   	tPfd.fd			= key_fd;
+	tPfd.events		= POLLIN;
+	tPfd.revents		= 0;
+	rc	=	poll(&tPfd,1, 0);
+	if (rc != 0)
+	{
+		if (tPfd.revents & POLLIN)
+		{
+			rc = read (key_fd,&read_event, sizeof(read_event));
+			//printf("key:0x%06x, %d\n", read_event.code, read_event.value);
+			if(read_event.value==1)
+			{
+				printf("code:0x%x\r\n", read_event.code);
+				return  read_event.code;
+			}
+			return 0;
+		}
+	}
+	return  0;
+		 
+}
+#define		KEY_NUM_H 		8
+#define		KEY_NUM_V		8	
+typedef  struct{
+	char   index;
+	int     x ;
+	int 	  y;
+	int 	  w;
+	int     h;
+}key_prop_t;
+static const  int   key_width=50,key_height=30 ;
+static const  int   focus_border=4,key_array_gap_h=20 ,key_array_gap_v=20;
+static const  int   key_array_start_x=50, key_array_start_y=50;
+static key_prop_t  key_pos[KEY_NUM_V][KEY_NUM_H];
+static int 	focus_key_index=0;
+
+
+int  init_key_array(osd_obj_t  * osd_this)
+{
+	int i,j;
+	int  index=0;
+	
+	memset(key_pos,0,sizeof(int)*KEY_NUM_H*KEY_NUM_V);
+	for(i=0;i<KEY_NUM_V;i++)//initialize key array position.
+	{
+		for(j=0;j<KEY_NUM_H;j++)
+		{
+			key_pos[i][j].x=key_array_start_x + (key_width+key_array_gap_h)*j;
+			key_pos[i][j].y=key_array_start_y + (key_height+key_array_gap_v)*i;
+			key_pos[i][j].w=key_width;
+			key_pos[i][j].h=key_height;
+			key_pos[i][j].index=index;
+			index ++;
+		}
+	}
+	
+	for(i=0;i<KEY_NUM_V;i++)//initialize key array position.
+	{
+		for(j=0;j<KEY_NUM_H;j++)
+		{
+			osdDispRect(osd_this,0xff00ffff,key_pos[i][j].x,key_pos[i][j].y,key_pos[i][j].x+key_pos[i][j].w,key_pos[i][j].y+key_pos[i][j].h);
+		}
+	}	
+	focus_key_index=0;
+	
+	return 0;
+}
+int  slide_window(osd_obj_t  * osd_this,int status)
+{
+	
+	switch (status)
+	{
+		case KEY_PUSH:
+		if(osd_this->vinfo->yoffset < 500)
+		{
+			osd_this->vinfo->yoffset+=10;
+		}
+		break;
+		case KEY_PULL:
+		if(osd_this->vinfo->yoffset >10)
+		{
+			osd_this->vinfo->yoffset-=10;
+		}	
+		break;	
+	}
+	ioctl(osd_this->fbfd,FBIOPAN_DISPLAY,osd_this->vinfo);
+}
+void * random_thread(ge2d_context_t* ge2d_context)
+{
+	printf("enter random thread\r\n");
+	while(!ge2d_context->int_exit)
+	{
+		ge2d_context->key_code=	rand()%7 +KEY_UP;
+		pthread_cond_signal(&ge2d_context->cond_draw);
+		usleep(100000);
+	}
+}
+int  test_keyboard(ge2d_context_t* ge2d_context)
+{
+	static  int  id_num=THREAD_INPUT;
+	int ret ;
+	id_num++;
+	printf("+++++create thread 0x%x\r\n",id_num);
+	ret=pthread_create(&ge2d_context->pthread_id[id_num],NULL,random_thread,ge2d_context);
+	if(ret)
+	{
+		printf("error create thread%d:%s\r\n",id_num,strerror(errno));
+		return -1;
+	}
+	printf("create thread%d success \r\n",id_num);
+	return 0;
+}
+
+void  *ge2d_draw(ge2d_context_t* ge2d_context)
+{
+	 struct   timeval   now;   
+  	 struct   timespec   tm;  
+	
+	 int 		i,j;
+	 int 		ret;
+	 printf("enter draw thread\r\n");;
+	 init_key_array(ge2d_context->osd);
+	 printf("enter draw thread2\r\n");;
+	 while (1)
+	 {
+		pthread_mutex_lock(&ge2d_context->mutex);
+		gettimeofday(&now,NULL);
+		tm.tv_sec=now.tv_sec;
+		tm.tv_nsec=now.tv_usec*1000 + 30000000;//30ms
+		ret=pthread_cond_timedwait(&ge2d_context->cond_draw,&ge2d_context->mutex,&tm);
+		if(!ret) //condition signaled.
+		{
+			if(ge2d_context->osd)
+			{
+				i=focus_key_index/KEY_NUM_H,j=focus_key_index%KEY_NUM_H;
+				switch(ge2d_context->key_code)
+				{
+					case KEY_UP:
+					printf("^\r\n");
+					if (focus_key_index > KEY_NUM_H - 1)
+					{
+						focus_key_index -=KEY_NUM_H ;
+					}
+					break;
+					case KEY_DOWN:
+					printf("V\r\n");
+					if (focus_key_index <= (KEY_NUM_V-1)*KEY_NUM_H-1)
+					{
+						focus_key_index += KEY_NUM_H;
+					}
+					break;
+					case KEY_LEFT:
+					printf("<\r\n");
+					if (focus_key_index %KEY_NUM_H != 0)
+					{
+						focus_key_index --;
+					}
+					break;
+					case KEY_RIGHT:
+					printf(">\r\n");
+					if (focus_key_index %KEY_NUM_H != KEY_NUM_H-1)
+					{
+						focus_key_index ++;
+					}
+					break;
+				}
+	
+				osdDispRect(ge2d_context->osd,0xff00ffff,key_pos[i][j].x - focus_border ,key_pos[i][j].y- focus_border,key_pos[i][j].x+key_pos[i][j].w+focus_border,key_pos[i][j].y+key_pos[i][j].h+focus_border) ;
+			 	i=focus_key_index/KEY_NUM_H,j=focus_key_index%KEY_NUM_H;
+	 			osdDispRect(ge2d_context->osd,0xffff0000,key_pos[i][j].x - focus_border ,key_pos[i][j].y- focus_border,key_pos[i][j].x+key_pos[i][j].w+focus_border,key_pos[i][j].y+key_pos[i][j].h+focus_border) ;
+	 			osdDispRect(ge2d_context->osd,0xff00ffff,key_pos[i][j].x,key_pos[i][j].y,key_pos[i][j].x+key_pos[i][j].w,key_pos[i][j].y+key_pos[i][j].h);
+			}
+		}
+		pthread_mutex_unlock(&ge2d_context->mutex);
+	}
+	 
+}
+void  stop_all_thread(ge2d_context_t* ge2d_context)
+{
+	int  i;
+	for (i=0;i<MAX_THREAD_NUM;i++)
+	{
+		if(ge2d_context->pthread_id[i]==INVALID_THREAD_ID)
+		{
+			break;
+		}
+		else{
+			pthread_cancel(ge2d_context->pthread_id[i]) ;
+			ge2d_context->pthread_id[i]=INVALID_THREAD_ID;
+		}	
+	}
+	ge2d_context->int_exit=1;
+	printf("all thread has been stopped\r\n");
+}
+void *ge2d_reap_thread(ge2d_context_t* ge2d_context)
+{
+	printf("enter reap  thread\r\n");
+	pthread_mutex_lock(&ge2d_context->mutex);
+	pthread_cond_wait(&ge2d_context->cond_exit,&ge2d_context->mutex);
+	pthread_mutex_unlock(&ge2d_context->mutex);
+	printf("reap all thread\r\n");
+	stop_all_thread(ge2d_context);
+	
+}
+void  *ge2d_input(ge2d_context_t* ge2d_context)
+{
+	int key_fd;
+	int exit =0;
+	union sigval value ;
+	printf("enter input thread\r\n");;
+	key_fd=open(KEYBOARD_DEV,O_RDONLY);
+	if(key_fd<0) 
+	{
+		printf("error open keyboard dev\r\n",key_fd);
+		return -1;
+	}
+ 	printf("enter input thread2\r\n");;
+	
+	while(!exit)
+	{
+		int status=key_is_pressed(key_fd);
+		switch(status)
+		{
+			case  0:
+			//printf("error key down\r\n");
+			break;
+			case KEY_UP:
+			case KEY_DOWN:
+			case KEY_LEFT:
+			case KEY_RIGHT:
+			printf("++++++++++++++++++one key in\r\n");	
+			ge2d_context->key_code=	status;
+			pthread_cond_signal(&ge2d_context->cond_draw);
+			break;
+			case KEY_EXIT:
+			pthread_cond_signal(&ge2d_context->cond_exit);
+			exit=1;
+			break;
+			case KEY_PUSH:
+			case KEY_PULL:
+			if(ge2d_context->osd)
+			slide_window(ge2d_context->osd,status);
+			break;
+		}
+		
+	}
+	ge2d_context->pthread_id[THREAD_INPUT]=INVALID_THREAD_ID;
+	return 0;
+}
+void  ge2d_handle_quit(int sig_num)
+{
+	printf("signal number %d\r\n",sig_num) ;
+	if(sig_num==SIGINT)
+	{
+		printf("right, got it \r\n");
+		thread_context.int_exit=1;
+	}
+	return;
+}
+int  test_ge2d_op(void* para)
+{
+	int i,mode;
+	osd_obj_t  *osd[2] ;
+	int menu_item;
+	ge2d_op_ctl_t  ge2d_control;
+	int ret;
+	
+	pthread_t  reap_pthread_id;
+	struct sigaction act ;
+	sigset_t  mask;
+	sighandler_t  *old_sigint;
+
+	
+	old_sigint=signal(SIGINT,ge2d_handle_quit);
+	//create two osd object 
+	display_color_mode_list();
+	thread_context.int_exit=0;
+	for (i=0;i<MAX_THREAD_NUM;i++)
+	{
+		thread_context.pthread_id[i]=INVALID_THREAD_ID;
+	}
+	for (i=0;i<2;i++)
+	{
+		printf("please select one color mode for osd%d:",i);
+		mode=16;
+		if(mode<OSD_TYPE_16_655 || mode>OSD_TYPE_32_ARGB)
+		{
+			printf("invalid color format for osd device\r\n");
+			return -1;
+		}
+		osd[i]=create_osd_obj(mode,i);
+		if(NULL==osd[i]) 
+		{
+			printf("can't create osd object for  osd%d\r\n",i);
+			return -1;
+		}
+	}
+	thread_context.osd=osd[0] ;
+	osd[1]->show(osd[1]);
+	osd[0]->show(osd[0]);
+	//init_key_array(osd[0]);
+	//we first create two daemon.to process input & ouput.
+	pthread_mutex_init(&thread_context.mutex,NULL);   
+      	pthread_cond_init(&thread_context.cond_draw,NULL); 
+	pthread_cond_init(&thread_context.cond_exit,NULL);
+
+	ret=pthread_create(&thread_context.pthread_id[THREAD_DRAW],NULL,ge2d_draw,&thread_context);
+	if(ret)
+	{
+		printf("error create thread draw:%s\r\n",strerror(errno));
+		return -1;
+	}
+	printf("create input thread\r\n");
+	ret=pthread_create(&thread_context.pthread_id[THREAD_INPUT],NULL,ge2d_input,&thread_context);
+	if(ret)
+	{
+		printf("error create thread input:%s\r\n",strerror(errno));
+		return -1;
+	}
+	printf("create reap  thread\r\n");
+	
+	ret=pthread_create(&reap_pthread_id,NULL,ge2d_reap_thread,(void *)&thread_context);
+	if(ret)
+	{
+		printf("error create thread input:%s\r\n",strerror(errno));
+		return -1;
+	}
+	//first we must select one color format for each osd device .
+	printf("three daemon has been created\r\n");;
+      
+	
+	while(!thread_context.int_exit)
+	{
+	
+	//create osd object success ,begin ge2d operation.
+	
+	display_ge2d_op_menu();
+	scanf("%d",&menu_item);
+	//menu_item=5;
+	if(menu_item >= GE2D_MAX_OP_NUMBER+1 || menu_item <=0 )
+	{
+		printf("invalid input menu item number \r\n");
+		return -1;
+	}
+	
+	switch(menu_item)
+	{
+		case GE2D_OP_FILL_RECT:
+		ge2d_control.config.op_type=OSD0_OSD0 ;
+		//ge2d_control.config.alu_const_color=0xff0000ff;
+		ge2d_control.pt_osd=osd[0] ;
+		osd[0]->ge2d_op_func.fill_rect(&ge2d_control);
+		sleep(1);
+		osd[0]->show(osd[0]);
+		sleep(3);
+		break ;
+		case GE2D_OP_BLEND:
+		osd[1]->show(osd[1]);
+		osd[0]->show(osd[0]);
+		sleep(1);
+		osd[0]->ge2d_op_func.blend(osd);	
+		sleep(3);
+		break;
+		break;	
+		case GE2D_OP_BLIT:
+		osd[1]->show(osd[1]);
+		osd[0]->show(osd[0]);
+		sleep(1);	
+		osd[0]->ge2d_op_func.blit(osd);	
+		sleep(3);
+		break;
+		case GE2D_OP_STRETCH_BLIT:
+		osd[1]->show(osd[1]);
+		osd[0]->show(osd[0]);
+		sleep(1);		
+		osd[0]->ge2d_op_func.stretch_blit(osd);				
+		sleep(3);
+		case  5:
+		printf("begin test keyboard \r\n");
+		test_keyboard(&thread_context);
+		break;	
+	}
+	printf("press Enter to exit\r\n");
+	scanf("%c%c",&mode,&mode);
+	
+	}
+	
+	
+	pthread_cond_signal(&thread_context.cond_exit);
+	pthread_join(reap_pthread_id,NULL);
+	signal(SIGINT,old_sigint);
+	
+	destroy_osd_obj(osd[0]);
+	destroy_osd_obj(osd[1]);
+	return 0;
+}

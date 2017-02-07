@@ -1,0 +1,19 @@
+#!/bin/sh
+if [ "$1" = "android" ] ; then
+ arm-none-linux-gnueabi-gcc -DANDRIOD -g  -lpthread -o dsp  alpha16.c main.c osd.c ge2d.c multi_process.c libcmem.a
+echo  android four process
+cp dsp /nfsroot/wangjf/rootfs_and/
+
+else
+if [ "$1" = "arc" ];then
+arc-linux-uclibc-gcc  -g  -lpthread -o dsp  alpha16.c main.c osd.c ge2d.c multi_process2.c arc_libcmem.a
+# arm-none-linux-gnueabi-gcc -g  -lpthread -o dsp  alpha16.c main.c osd.c ge2d.c multi_process2.c libcmem.a
+echo two process
+cp dsp /nfsroot/wangjf/rootfs_a3/usr/bin
+else
+ arm-none-linux-gnueabi-gcc  -g  -lpthread -o dsp  alpha16.c main.c osd.c ge2d.c multi_process.c libcmem.a
+echo  arm four process
+cp dsp /nfsroot/wangjf/rootfs_arm/usr/bin/
+fi
+fi
+

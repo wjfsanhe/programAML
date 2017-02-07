@@ -1,0 +1,1250 @@
+/**************************************************************************
+* 版权所有 (C)2001, 深圳市中兴通讯股份有限公司。
+*
+* 文件名称：AmlogicFrame.c
+* 文件标识：
+* 内容摘要：实现Amlogic的MicroWindows帧缓冲驱动
+* 其它说明：
+* 当前版本：
+* 作    者：陈鹏飞
+* 完成日期：2009.07.23
+*
+* 修改记录1	：
+* 	修改日期：
+* 	版 本 号：
+* 	修 改 人：
+* 	修改内容：
+***************************************************************************/
+/**************************************************************************
+ *                         头文件引用                                     *
+ **************************************************************************/
+//#include <zmem.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/ioctl.h>
+#include <linux/fb.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <unistd.h>
+
+#include "Amlogic.h"
+#include "MwFb.h"
+#include "defines.h"
+#include "stgfb.h"
+#include "MwFbDriver.h"
+
+/**************************************************************************
+ *                           	宏定义                                  *
+ **************************************************************************/
+ #define MANUL_DEBUG	//framebuffer适配曾调试开关
+ 
+#define FBDEVNAME	"/dev/fb0"	//framebuffer设备的节点名称
+
+/**************************************************************************
+ *                           	结构体定义                                  *
+ **************************************************************************/
+ typedef enum
+{	
+	SD_EPG = 1,//标清
+	HD_EPG, //高清
+	XD_EPG //伸缩
+}PAGE_TYPE_t;
+
+ typedef struct
+{
+	UCHAR *	m_pucFrameBuffer;//Framebuffer基地址(用于缓冲MW 数据)
+	UCHAR *	m_pucFrameBufferMMAP;//Framebuffer的现存映射到用户空间的基地址
+	CHAR			m_PixelType;//象素类型
+	INT32			m_FBDevWidth;//Framebuffer设备的宽度
+	INT32			m_FBDevHeight;//Framebuffer设备的高度
+	INT32			m_FBDevColorDepth;//Framebuffer设备的颜色深度
+	INT32			m_iFBBufSize;//Framebuffer的缓冲区大小
+	INT32			m_MWWidth;//microwindows的窗口宽度
+	INT32			m_MWHeight;//microwindows的窗口高度
+	INT32			m_iMWBufSize;//microwindows的缓冲区大小
+	INT32			m_iLeftOffset;//Framebuffer设备的左边偏移
+	INT32			m_iTopOffset;//Framebuffer设备的顶部偏移
+	INT32			m_iFbDevFD;//Framebuffer设备句柄
+	INT32			m_iLineLength;//Framebuffer map的偏移量
+}T_FBAdaptor;
+
+/**************************************************************************
+ *                          全局变量                                      *
+ **************************************************************************/
+static 	T_FBAdaptor	g_AmlFBAdaptor = {NULL,NULL,FB_COLORMODE_565,720,576,2,0,640,526,0,0,0,-1,0};
+static 	int 	 		g_fbstatus		= SD_EPG;	/* reference to struct PAGE_TYPE_t*/
+static	int			g_bBlend		= 1; /* 是否启动透明叠加 */
+
+int                 g_nFbDevNum = 1;
+T_MwDriverState     m_tMwDrvState;
+int 	m_iSleep = 0;
+
+#define ADJUST_MAP_WIDTH		0 //25
+#define ADJUST_MAP_HEIGHT		0 //20
+
+/**************************************************************************
+ *                        局部函数原型                                    *
+ **************************************************************************/
+INT32		MwKbSleep(unsigned char bOption);
+static INT32 	FB_SetLayer(INT32 layer, INT32 ctrl);
+static INT32 	FB_SetAlpha(INT32 layer, INT32 alpha);
+static INT32 	FB_SetColorKey(INT32 layer, INT32 colorKey);
+static INT32 	Region_Check(INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight, INT32 *pnX, INT32 *pnY, INT32 *pnW, INT32 *pnH);
+static INT32	FB_EraseRect(INT32 layer, INT32 nType, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight);
+static INT32	FB_RefreshRect(unsigned char bLayer, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight);
+
+/**************************************************************************
+ *                        局部函数实现                                    *
+ **************************************************************************/
+#ifdef		MANUL_DEBUG
+#include	<sys/time.h>
+int	FbTiming(void)
+{
+	int	iResult;
+	struct timeval	tTime;
+
+	gettimeofday(&tTime, NULL);
+	iResult	= tTime.tv_sec * 1000 + tTime.tv_usec / 1000;
+
+	return	iResult;
+}
+#endif
+
+
+int  osdUpdateRegion(short x0,short y0,short x1,short y1)//anti_flick
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	config_para_t ge2d_config;
+	ge2d_op_para_t  op_para;
+	U16 tmp;
+
+	UINT32 begin = FbTiming();
+	
+	if(x0>x1) 
+	aml_swap(x0,x1,tmp);
+	if(y0>y1)
+	aml_swap(y0,y1,tmp);	
+
+	ge2d_config.op_type=OSD0_OSD0;	
+	
+	ge2d_config.alu_const_color=0xff0000ff;
+	ioctl( pFB->m_iFbDevFD, FBIOPUT_GE2D_CONFIG, &ge2d_config) ;
+	op_para.src1_rect.x=x0;
+	op_para.src1_rect.y=y0+ pFB->m_FBDevHeight;
+	op_para.src1_rect.w=x1-x0;
+	op_para.src1_rect.h=y1-y0;
+
+	op_para.dst_rect.x=x0;
+	op_para.dst_rect.y=y0;
+	op_para.dst_rect.w=op_para.src1_rect.w;
+	op_para.dst_rect.h=op_para.src1_rect.h;
+	ioctl(  pFB->m_iFbDevFD, FBIOPUT_GE2D_STRETCHBLIT, &op_para) ;
+
+	printf("###################%u\n", FbTiming() - begin);
+}
+
+int  osdUpdateRegion1(short x0,short y0,short x1,short y1)//anti_flick
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	config_para_t ge2d_config;
+	ge2d_op_para_t  op_para;
+	U16 tmp;
+
+	if(x0>x1) 
+	aml_swap(x0,x1,tmp);
+	if(y0>y1)
+	aml_swap(y0,y1,tmp);	
+
+	ge2d_config.op_type=OSD0_OSD0;	
+	
+	ge2d_config.alu_const_color=0xff0000ff;
+	ioctl( pFB->m_iFbDevFD, FBIOPUT_GE2D_CONFIG, &ge2d_config) ;
+	op_para.src1_rect.x=x0;
+	op_para.src1_rect.y=y0;
+	op_para.src1_rect.w=x1-x0;
+	op_para.src1_rect.h=y1-y0;
+
+	op_para.dst_rect.x=x0;
+	op_para.dst_rect.y=y0  + pFB->m_FBDevHeight;
+	op_para.dst_rect.w=op_para.src1_rect.w;
+	op_para.dst_rect.h=op_para.src1_rect.h;
+	ioctl(  pFB->m_iFbDevFD, FBIOPUT_GE2D_STRETCHBLIT, &op_para) ;
+	printf("%d,%d,%d,%d\n", op_para.dst_rect.x, op_para.dst_rect.y, op_para.dst_rect.w, op_para.dst_rect.h);
+}
+
+static INT32 FB_SetLayer(INT32 layer, INT32 ctrl)
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	BOOL RetErr = 0;
+
+	if(pFB->m_iFbDevFD > 0)
+	{
+		RetErr = ioctl(pFB->m_iFbDevFD, FBIOBLANK, &ctrl );
+		if( RetErr == -1 )
+		{
+			printf ("GFB_SetLayer ERROR: STGFB_IO_SET_VIEWPORT_HANDLE failed.\n");
+		}
+	}
+	else
+	{
+		printf ("%s:%d ERROR: STGFB_IO_SET_VIEWPORT_HANDLE failed.\n",__FUNCTION__,__LINE__);
+		RetErr = -1;
+	}
+	return RetErr;
+}
+
+static INT32 FB_SetAlpha(INT32 layer, INT32 alpha)
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	BOOL              RetErr = 0;
+
+	//目前Amlogic的device driver没有实现Alpha的功能,暂时屏蔽掉2009.08.20
+	/*if(pFB->m_iFbDevFD > 0)
+	{
+		tAlpha.Alpha0 = alpha;
+		tAlpha.Alpha1 = alpha;
+		RetErr = ioctl(pFB->m_iFbDevFD, STGFB_IO_SET_OVERLAY_ALPHA, &tAlpha );
+		if( RetErr == -1 )
+		{
+			printf ("GFB_SetAlpha ERROR: STGFB_IO_SET_OVERLAY_ALPHA failed.\n");
+		}
+	}
+	else
+	{
+		printf ("%s:%d ERROR: STGFB_IO_SET_OVERLAY_ALPHA failed.\n",__FUNCTION__,__LINE__);
+		RetErr = -1;		
+	}
+	*/
+	return RetErr;
+}
+
+static INT32 FB_SetColorKey(INT32 layer, INT32 colorKey)
+{
+	T_FBAdaptor 		*pFB = &g_AmlFBAdaptor;
+	INT32  			u32Enable=1;
+	BOOL              	RetErr = 0;
+	INT32 			i32ColorKey	= -1;
+	
+	if(pFB->m_iFbDevFD > 0)
+	{
+		if (ioctl(pFB->m_iFbDevFD, FBIOPUT_OSD_SRCKEY_ENABLE, &u32Enable)) 
+		{
+			printf("%s:%d FBIOPUT_OSD_SRCKEY_ENABLE: failed\n",__FUNCTION__,__LINE__);
+			return -1;
+		}
+	}
+		
+	printf("FB_SetColorKey: 0x%x\n",colorKey);
+	if(4 == pFB->m_FBDevColorDepth)
+	{
+		i32ColorKey = (colorKey >> 24) & 0xFF;
+	}	
+	else
+	{
+		U8 a,r,g,b;
+		
+		r = (colorKey >> 16) & 0xff ;  
+		g = (colorKey >> 8)  & 0xff ;
+		b = colorKey & 0xff ;
+		a = colorKey >> 24 & 0xff;
+		if(3 == pFB->m_FBDevColorDepth){
+		 	i32ColorKey = ((b << 16) | (g << 8) | r);
+		}
+		else if(2 == pFB->m_FBDevColorDepth){
+			i32ColorKey = (((r >> 2) & 0x3f) << 10 | (g >> (3 & 0x1f)) << 5 | (b >> (3 & 0x1f))) ;
+		}	
+		else
+		{
+			printf("FB_SetColorKey: 0x%x failed\n",colorKey);
+			return -1;
+		}
+		i32ColorKey = i32ColorKey <<8 | a; 
+	} 	
+	
+	RetErr = ioctl(pFB->m_iFbDevFD, FBIOPUT_OSD_SRCCOLORKEY, &i32ColorKey);
+	if( RetErr == -1 )
+	{
+		printf ("GFB_SetAlpha ERROR: STGFB_IO_SET_OVERLAY_ALPHA failed.\n");
+	}
+	
+	return RetErr;
+}
+
+static INT32 Region_Check(INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight, INT32 *pnX, INT32 *pnY, INT32 *pnW, INT32 *pnH)
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	INT32 nVirW = pFB->m_MWWidth;
+	INT32 nVirH = pFB->m_MWHeight;
+		
+	if (nLeft >= nVirW || nTop >= nVirH)
+	{
+	    	printf("Region_Check:nLeft=%d nTop=%d nWidth=%d nHeight=%d m_tMwDrvState.auColorKey[0]=%u\n", nLeft, nTop, nWidth, nHeight, m_tMwDrvState.auColorKey[0]);
+		printf("GUI Region_Check Err: range Failed 1\n");
+		return -1;
+	}
+
+	if (nLeft >= 0)
+	{
+		*pnX	= nLeft;
+		*pnW	= nWidth;
+	}
+	else
+	{
+		*pnX	= 0;
+		*pnW	= nWidth + nLeft;
+	}
+	*pnX + *pnW > nVirW ? (*pnW = nVirW - *pnX) : 0;
+
+	if (nTop >= 0)
+	{
+		*pnY	= nTop;
+		*pnH	= nHeight;
+	}
+	else
+	{
+		*pnY	= 0;
+		*pnH	= nHeight + nTop;
+	}
+	*pnY + *pnH > nVirH ? (*pnH = nVirH - *pnY) : 0;
+	if (*pnW <= 0 || *pnH <= 0)
+	{
+	    	printf("Region_Check:nLeft=%d nTop=%d nWidth=%d nHeight=%d m_tMwDrvState.auColorKey[0]=%u\n", nLeft, nTop, nWidth, nHeight, m_tMwDrvState.auColorKey[0]);
+		printf("GUI Region_Check Err: range Failed 2\n");	
+		return -1;
+	}
+	if (*pnW == pFB->m_FBDevWidth){
+		*pnW -= ADJUST_MAP_WIDTH;
+	}	
+	if (*pnH == pFB->m_FBDevHeight){
+		*pnH -= ADJUST_MAP_HEIGHT;
+	}
+	return 0;
+}
+
+/**************************************************************************
+* 函数名称：FB_EraseRect
+* 功能描述：将上层的图形buffer或者Linux的Framebuffer的中的象素点擦掉
+* 输入参数：
+*			bLayer				图层ID
+*			nType				对那个图形Buffer
+*			nLeft				刷新区域左上角横坐标
+*			nTop				刷新区域左上角纵坐标
+*			nWidth				刷新区域宽度
+*			nHeight				刷新区域高度
+* 输出参数：无
+* 返 回 值：成功或者失败
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2009.08.20  V1.0	     陈鹏飞	     初始版本
+***************************************************************************/
+INT32	FB_EraseRect(INT32 layer, INT32 nType, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight)
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	INT32   nResult = -1;
+	INT32   nX = -1;
+	INT32   nY = -1;
+	INT32   nW = -1;
+	INT32   nH = -1;
+	INT32   iLoopA = -1;
+	INT32   iLoopB = -1;
+	INT32   iDepth  = pFB->m_FBDevColorDepth;
+	INT32   iOrigin = 0;
+	INT32   red = -1;
+	INT32   green = -1;
+	INT32   blue = -1;
+	char    *pcDst = NULL;
+	short   color16 =0;
+
+	printf("FB_EraseRect: %d - %d %d %d %d %d\r\n", nType, nLeft, nTop, nWidth, nHeight, m_tMwDrvState.auColorKey[0]);
+    
+	do
+	{
+		if(nType == 2)
+		{
+			nX = nLeft;
+			nY = nTop;
+			nW = nWidth;
+			nH = nHeight;
+			iOrigin = 0;
+			pcDst = (char *)pFB->m_pucFrameBuffer;
+			break;
+		}
+		else if(nType == 3)
+		{
+			nX = nLeft;
+			nY = nTop;
+			nW = nWidth;
+			nH = nHeight;
+			iOrigin = 0;
+			pcDst = (char *)pFB->m_pucFrameBufferMMAP;		
+			break;
+		}		
+		
+		nResult = Region_Check(nLeft, nTop, nWidth, nHeight, &nX, &nY, &nW, &nH);	
+		if (nResult == -1)
+		{
+			printf("%s:%d Region_Check return Error\n",__FUNCTION__,__LINE__);
+			return -1;
+		}
+
+		if(nType == 0)
+		{
+			pcDst = (char *)pFB->m_pucFrameBuffer;
+			iOrigin = ((pFB->m_iTopOffset+ nY) * (pFB->m_MWWidth+ 2*pFB->m_iLeftOffset) + (pFB->m_iLeftOffset + nX)) * iDepth;	
+		}
+		else
+		{
+			pcDst = (char *)pFB->m_pucFrameBufferMMAP;
+			iOrigin = pFB->m_iLineLength * nY + nX * iDepth;
+		}		
+	}while(0);
+	printf("###### #####%x\n", pFB->m_pucFrameBufferMMAP);
+	pcDst += iOrigin;
+
+	if(m_tMwDrvState.auColorKey[0] == MASKNONE)
+	{
+		for(iLoopA = 0; iLoopA < nH; iLoopA++)
+		{
+			memset(pcDst, 0, nW*iDepth);
+			if (0 == nType%2)
+			{
+				pcDst += (pFB->m_MWWidth + 2*pFB->m_iLeftOffset)*iDepth;
+			}
+			else
+			{
+				pcDst += pFB->m_FBDevWidth* iDepth;
+			}
+		}	
+	}
+	else
+	{
+		if (iDepth == 2){
+			red = (m_tMwDrvState.auColorKey[0] >> 16) & 0xff;
+			green = (m_tMwDrvState.auColorKey[0] >> 8) & 0xff;
+			blue = m_tMwDrvState.auColorKey[0]  & 0xff;
+			/*color16 = ((((UINT32)(red) >> 2) << 0)    \
+				| (((UINT32)(green) >> 3) << 5)	 \
+				| (((UINT32)(blue) >> 3) << 11));*/		
+			color16 = ((((UINT32)(red) >> 3) << 11)    \
+				| (((UINT32)(green) >> 2) << 5)	 \
+				| (((UINT32)(blue) >> 3) << 0));	
+		}		
+		for(iLoopA = 0; iLoopA < nH; iLoopA++)
+		{
+			/* 用色键值来擦除屏幕*/
+			for(iLoopB = 0; iLoopB < nW; iLoopB++)
+			{				
+                		if (iDepth == 2){		
+					*(pcDst + iLoopB*iDepth)      = (color16 >> 8) & 0xff;
+					*(pcDst + iLoopB*iDepth + 1)  = color16 & 0xff;
+				}
+				else if (iDepth == 3){
+					*(pcDst + iLoopB*iDepth)      = (m_tMwDrvState.auColorKey[0] >> 16) & 0xff;
+					*(pcDst + iLoopB*iDepth + 1)  = (m_tMwDrvState.auColorKey[0] >> 8) & 0xff;
+					*(pcDst + iLoopB*iDepth + 2)  = m_tMwDrvState.auColorKey[0] & 0xff;
+				}	
+				
+			}
+			if (0 == nType%2)
+			{
+				pcDst += (pFB->m_MWWidth + 2*pFB->m_iLeftOffset)*iDepth;
+			}
+			else
+			{
+				pcDst += pFB->m_iLineLength;
+			}
+		}
+	}	
+	
+	printf("####osdUpdateRegion\n");
+	osdUpdateRegion(nX, nY, nW, nH);
+	
+	return	nResult;
+}
+
+/**************************************************************************
+* 函数名称：B120RefreshRect
+* 功能描述：将一个矩形区域的刷新内容反映到显示设备上
+* 输入参数：
+*			bLayer				图层ID
+*			nLeft				刷新区域左上角横坐标
+*			nTop				刷新区域左上角纵坐标
+*			nWidth				刷新区域宽度
+*			nHeight				刷新区域高度
+* 输出参数：无
+* 返 回 值：传送给显示设备的字节数，意义不大
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2006.02.14  V1.0	     朱晓斌	     初始版本
+***************************************************************************/
+INT32 FB_RefreshRect(unsigned char bLayer, INT32 nLeft, INT32 nTop, INT32 nWidth, INT32 nHeight)
+{	
+	INT32	nResult = -1;
+	INT32   nX = nLeft;
+	INT32   nY = nTop;
+	INT32   nW = nWidth;
+	INT32   nH = nHeight;
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	
+	nResult = Region_Check(nLeft, nTop, nWidth, nHeight, &nX, &nY, &nW, &nH);
+	if(nResult == -1)
+	{
+		printf("%s:%d Error: range failed\n",__FUNCTION__,__LINE__);
+		return -1;
+	}
+
+	printf("%s:%d:%d %d %d %d\n",__FUNCTION__,__LINE__,nX, nY, nW, nH);
+
+	{    
+		INT32	iLoopA = 0;
+		INT32   iLoopB = 0;
+		INT32   iOrigin = 0;
+		INT32   iOriginMmap = 0;
+		char*   pcSrc = NULL;
+		char*   pcDst = NULL;	
+		char* 	ptSrc = NULL;
+		char* 	ptDst = NULL;	
+		U8	red;
+		U8	green;
+		U8	blue;
+		INT32 color16 = -1;	
+						
+		iOrigin = ((pFB->m_iTopOffset+ nY) * (pFB->m_MWWidth+ 2*pFB->m_iLeftOffset) + (pFB->m_iLeftOffset + nX)) * pFB->m_FBDevColorDepth;				
+		iOriginMmap = (nY + ADJUST_MAP_HEIGHT) * pFB->m_iLineLength + (nX + ADJUST_MAP_WIDTH) * pFB->m_FBDevColorDepth;				
+		pcSrc  = (char *)(pFB->m_pucFrameBuffer+ iOrigin);
+		pcDst  = (char *)(pFB->m_pucFrameBufferMMAP + iOriginMmap);
+		
+		for(iLoopA = 0; iLoopA < nH; iLoopA++)
+		{	
+			ptSrc = pcSrc;
+			ptDst = pcDst;	
+					
+			for(iLoopB = 0; iLoopB < nW; iLoopB++)
+			{				
+				if (pFB->m_FBDevColorDepth == 2){
+					//printf("0x%02x, 0x%02x\n", *ptSrc, *(ptSrc+1));														
+					/*red = ((*ptSrc & 0x1F) << 1) | 0x01;
+					green = (*ptSrc & 0xE0) | (*(ptSrc + 1) & 0x07);
+					blue = *(ptSrc + 1) & 0xF8;								
+					color16 = blue | (green << 5) |(red  << 10);*/
+					*(ptDst++) = *ptSrc;		
+					*(ptDst++) = *(ptSrc + 1);																	
+					ptSrc += 2;	
+				}
+				else{						
+			/*		color16 = (*(ptSrc + 1) << 8) | *ptSrc;
+				        *(ptDst++) = (color16>>11)<<3;
+					*(ptDst++) = ((color16>>5)&0x3F)<<2;
+					*(ptDst++) = (color16&0x1F)<<3;
+				 */
+					*(ptDst++) = *ptSrc;	
+					*(ptDst++) = *(ptSrc + 1);					
+					*(ptDst++) = *(ptSrc + 2);
+					ptSrc += 3;					
+				}	
+			}			
+			pcSrc += (pFB->m_MWWidth + 2 * pFB->m_iLeftOffset) * pFB->m_FBDevColorDepth;			
+			pcDst += pFB->m_iLineLength;			
+		}		
+    	}
+
+	osdUpdateRegion(nX, nY, nW, nH);
+	
+	return	nResult;
+}
+
+
+
+/**************************************************************************
+ *                        全局函数实现                                    *
+ **************************************************************************/
+/**************************************************************************
+* 函数名称：MwFbInit
+* 功能描述：初始化显示设备驱动
+* 输入参数：nScrW				欲建立的帧缓冲宽度
+*			nScrH				欲建立的帧缓冲高度
+*			bColorMode			欲建立的帧缓冲色彩模式
+*			pMwFb				用于接收帧缓冲区地址的变量指针
+* 输出参数：pMwFb				帧缓冲区地址被写入其中
+* 返 回 值：0					初始化成功
+*			-1					初始化失败
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+int	MwFbInit(int nScrW, int nScrH, unsigned char bColorMode, void **pMwFb)
+{
+	INT32	i,iResult = 0;
+	INT32	iFBOffset = 0;
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	struct fb_fix_screeninfo fb_fix;
+	struct fb_var_screeninfo fb_var;
+
+	memset(&fb_fix,0,sizeof(struct fb_fix_screeninfo));
+	memset(&fb_var,0,sizeof(struct fb_var_screeninfo));
+	
+	if(pFB->m_iFbDevFD < 0)
+	{
+		pFB->m_iFbDevFD	=	open(FBDEVNAME, O_RDWR);
+		if (pFB->m_iFbDevFD < 0)
+		{
+			printf("Nano-X sever: Can't open framebuf\r\n");
+			goto MwFbInitFailed;;
+		}
+	}
+
+	if(ioctl(pFB->m_iFbDevFD, FBIOGET_FSCREENINFO, &fb_fix) == -1 ||
+	   ioctl(pFB->m_iFbDevFD, FBIOGET_VSCREENINFO, &fb_var) == -1)
+	{
+		printf("Error reading screen info\n");
+		goto MwFbInitFailed;;
+	}
+	fb_var.xres = 720;
+	fb_var.yres = 576;
+
+	fb_var.xres_virtual = 720;
+	fb_var.yres_virtual = 576 * 2;
+
+	printf("bColorMode=%d\n",bColorMode);
+	printf("smem_len=%d, line_length=%d, xres=%d, yres=%d, bits_per_pixel=%d\n",
+	fb_fix.smem_len, fb_fix.line_length, fb_var.xres, fb_var.yres, fb_var.bits_per_pixel);
+
+       printf("smem_len=%d, line_length=%d, xres=%d, yres=%d, bits_per_pixel=%d nScrW = %d nScrH = %d\n",
+		fb_fix.smem_len, fb_fix.line_length, fb_var.xres, fb_var.yres, fb_var.bits_per_pixel, nScrW, nScrH);
+	
+	pFB->m_FBDevWidth	= 720;//fb_var.xres;
+	pFB->m_FBDevHeight	= 576;//fb_var.yres;
+
+	printf("\n\n\n\n!!!@@####nano-X now in SD mode!!\n\n\n\n");
+	pFB->m_MWWidth		= nScrW;
+	pFB->m_MWHeight		= nScrH;
+
+	if (pFB->m_MWWidth > pFB->m_FBDevWidth)
+	{
+		pFB->m_MWWidth = pFB->m_FBDevWidth;
+	}
+
+	if (pFB->m_MWHeight	 > pFB->m_FBDevHeight)
+	{
+		pFB->m_MWHeight = pFB->m_FBDevHeight;
+	}
+    
+	pFB->m_PixelType	= bColorMode;	
+	if (pFB->m_PixelType == FB_COLORMODE_565)
+	{
+		pFB->m_FBDevColorDepth	= 2;
+	}
+	else if (pFB->m_PixelType == FB_COLORMODE_24)
+	{
+		pFB->m_FBDevColorDepth = 3;
+	}
+	else if (pFB->m_PixelType == FB_COLORMODE_32)
+	{
+		pFB->m_FBDevColorDepth = 4;
+	}
+	else
+	{
+		goto MwFbInitFailed;
+	}
+	pFB->m_iLineLength	= fb_var.xres_virtual * pFB->m_FBDevColorDepth;	
+		
+	pFB->m_iLeftOffset	= (pFB->m_FBDevWidth -pFB->m_MWWidth) / 2;
+	pFB->m_iTopOffset	= (pFB->m_FBDevHeight - pFB->m_MWHeight) / 2;    
+
+    	pFB->m_iMWBufSize	= (pFB->m_MWWidth + 2*pFB->m_iLeftOffset) * (pFB->m_MWHeight + 2*pFB->m_iTopOffset) * pFB->m_FBDevColorDepth;
+	pFB->m_iFBBufSize	= pFB->m_iLineLength * pFB->m_FBDevHeight * 2;
+	
+	if(NULL == pFB->m_pucFrameBuffer)
+	{
+		pFB->m_pucFrameBuffer	=	malloc(pFB->m_iMWBufSize);	/* 创建帧缓冲区 */
+	}
+	
+	if(NULL == pFB->m_pucFrameBufferMMAP)
+	{	
+		pFB->m_pucFrameBufferMMAP	=	mmap(NULL, pFB->m_iFBBufSize,  PROT_READ|PROT_WRITE, MAP_SHARED/*MAP_PRIVATE*/, pFB->m_iFbDevFD, 0);		
+		printf("$$$%x\n", pFB->m_pucFrameBufferMMAP);
+		pFB->m_pucFrameBufferMMAP += pFB->m_iLineLength * pFB->m_FBDevHeight;
+		
+		printf("##############%x\n", pFB->m_pucFrameBufferMMAP);
+	}
+	
+	if ((NULL == pFB->m_pucFrameBuffer) || (NULL == pFB->m_pucFrameBufferMMAP))
+	{
+		printf("Nano-X sever: Can't map framebuf\r\n");
+		goto MwFbInitFailed;
+	}
+       
+	iFBOffset = (pFB->m_iTopOffset  * (pFB->m_MWWidth + 2*pFB->m_iLeftOffset) + pFB->m_iLeftOffset) * pFB->m_FBDevColorDepth;
+	
+	*pMwFb = pFB->m_pucFrameBuffer + iFBOffset;
+	printf("Nano-X sever initialize over!\n");
+	printf("\n\nnano-X param:g_iScreenWidth =%d g_iScreenHeight =%d g_iVirScrW =%d g_iVirScrH =%d \n\n",
+		pFB->m_FBDevWidth, pFB->m_FBDevHeight,pFB->m_MWWidth ,pFB->m_MWHeight);
+	
+	fb_var.activate = FB_ACTIVATE_FORCE ;
+	fb_var.bits_per_pixel = pFB->m_FBDevColorDepth * 8;	 
+	if (ioctl(pFB->m_iFbDevFD, FBIOPUT_VSCREENINFO, &fb_var)) {   
+		return -1;
+	}	
+	        
+	m_tMwDrvState.bAlphaBuffer	= 0;
+	m_tMwDrvState.abAlpha[0]	= 0xFF;
+	m_tMwDrvState.auColorKey[0]	= 0x00000000;
+	FB_SetColorKey(0, m_tMwDrvState.auColorKey[0]);	
+	FB_EraseRect(0, 2, 0, 0, pFB->m_MWWidth + 2*pFB->m_iLeftOffset, pFB->m_MWHeight + 2*pFB->m_iTopOffset);
+	FB_EraseRect(0, 3, 0, 0, pFB->m_FBDevWidth, pFB->m_FBDevHeight);
+    
+    	return 0;
+MwFbInitFailed:
+	printf("%s:%d faield\n",__FUNCTION__,__LINE__);
+	if(pFB->m_iFbDevFD > 0)
+	{
+		close(pFB->m_iFbDevFD);
+		pFB->m_iFbDevFD = -1;
+	}
+
+	if(NULL != pFB->m_pucFrameBuffer)
+	{
+		free(pFB->m_pucFrameBuffer);
+		pFB->m_pucFrameBuffer = NULL;
+	}
+	
+	if(NULL != pFB->m_pucFrameBufferMMAP)
+	{
+		pFB->m_pucFrameBufferMMAP -= pFB->m_iLineLength * pFB->m_FBDevHeight;
+		munmap(pFB->m_pucFrameBufferMMAP,pFB->m_iFBBufSize);
+		pFB->m_pucFrameBufferMMAP = NULL;
+	}	
+	return -1;
+}
+
+/**************************************************************************
+* 函数名称：MwFbUninit
+* 功能描述：卸载驱动
+* 输入参数：无
+* 输出参数：无
+* 返 回 值：无
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+void	MwFbUninit(void)
+{	
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+
+	if(pFB->m_iFbDevFD > 0)
+	{
+		close(pFB->m_iFbDevFD);
+	}
+	pFB->m_iFbDevFD	=	-1;
+
+	if(NULL != pFB->m_pucFrameBuffer)
+	{
+		free(pFB->m_pucFrameBuffer);
+	}
+	pFB->m_pucFrameBuffer = NULL;
+
+	if(NULL != pFB->m_pucFrameBufferMMAP)
+	{
+		pFB->m_pucFrameBufferMMAP -= pFB->m_iLineLength * pFB->m_FBDevHeight;
+		munmap(pFB->m_pucFrameBufferMMAP,pFB->m_iFBBufSize);
+	}
+	pFB->m_pucFrameBufferMMAP = NULL;
+}
+
+/**************************************************************************
+* 函数名称：MwFbGetScrInfo
+* 功能描述：获取屏幕信息
+* 输入参数：pnScrW			用于存储屏幕宽度的变量指针
+*			pnScrH			用于存储屏幕高度的变量指针
+*			pnBpp			用于存储每像素比特数的变量指针
+*			pMwFb			用于存储帧缓冲区地址的变量指针
+* 输出参数：pnScrW			屏幕宽度被写入其中
+*			pnScrH			屏幕高度被写入其中
+*			pnBpp			每像素字节数被写入其中
+*			pMwFb			帧缓冲区地址被写入其中
+* 返 回 值：无
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+void	MwFbGetScrInfo(int *pnScrW, int *pnScrH, int *pnBpp, void **pMwFb)
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	INT32 iFBOffset = 0;
+	INT32 nVirW,nVirH;
+
+	nVirW = pFB->m_MWWidth;
+	nVirH = pFB->m_MWHeight;
+
+	if(pnScrW)
+	{
+		*pnScrW   = nVirW;
+	}
+	if(pnScrH)
+	{
+		*pnScrH    = nVirH;
+	}
+	if(pnBpp)
+	{
+		*pnBpp  = pFB->m_FBDevColorDepth << 3;
+	}
+	iFBOffset = (pFB->m_iTopOffset* (pFB->m_MWWidth + 2*pFB->m_iLeftOffset) + pFB->m_iLeftOffset) * pFB->m_FBDevColorDepth;
+	if(pMwFb)
+	{
+		*pMwFb = pFB->m_pucFrameBuffer + iFBOffset;
+	}
+}
+
+/**************************************************************************
+* 函数名称：MwFbGetLineLen
+* 功能描述：获取帧缓冲区一行的长度
+* 输入参数：pnLineLen			用于存储帧缓冲区行长度的变量指针
+* 输出参数：pnLineLen			帧缓冲区行长度被写入其中
+* 返 回 值：无
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+void	MwFbGetLineLen(int *pnLineLen)
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	*pnLineLen = (pFB->m_MWWidth + 2*pFB->m_iLeftOffset) * pFB->m_FBDevColorDepth;
+}
+
+/**************************************************************************
+* 函数名称：MwFbGetPixType
+* 功能描述：获取像素格式
+* 输入参数：pbColorMode			用于存储帧缓冲区像素格式的变量指针
+* 输出参数：pbColorMode			像素格式被写入其中
+* 返 回 值：无
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+void	MwFbGetPixType(int *pbColorMode)
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	if (pFB->m_PixelType == FB_COLORMODE_565)
+	{
+		*pbColorMode = MWPF_TRUECOLOR565;
+	}
+	else if (pFB->m_PixelType == FB_COLORMODE_24)
+	{
+		*pbColorMode = MWPF_TRUECOLOR888;
+	}
+	else if (pFB->m_PixelType == FB_COLORMODE_32)
+	{
+		*pbColorMode = MWPF_TRUECOLOR0888;
+	}
+}
+
+/**************************************************************************
+* 函数名称：MwFbGetBufSize
+* 功能描述：获取帧缓冲区大小
+* 输入参数：pnSize				用于存储帧缓冲区大小的变量指针
+* 输出参数：pnSize				帧缓冲区大小被写入其中
+* 返 回 值：无
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+void	MwFbGetBufSize(int *pnSize)
+{
+	INT32 nVirW,nVirH;
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	
+	nVirW = (pFB->m_MWWidth + 2*pFB->m_iLeftOffset);
+	nVirH = pFB->m_MWHeight;//(g_iVirScrH + 2*g_topOffset);
+
+	*pnSize = nVirW * nVirH * pFB->m_FBDevColorDepth;
+}
+
+/**************************************************************************
+* 函数名称：MwFbLayerControl
+* 功能描述：对各个图层进行控制
+* 输入参数：bDevice				欲控制图层所属的显示设备编号
+*			bLayer				欲控制的图层编号，0-GUI、1-OSD
+*			bAction				控制动作，目前已定义如下动作：
+*				0				直接控制图层的开启和关闭
+*				1				设置图层的默认透明度和透明色
+*				2				获取非默认图层对应的内存窗口ID
+*				3				获取显示时在底层硬件上的横向偏移
+*				4				获取显示时在底层硬件上的纵向偏移
+*				0x40			控制有视频时透明度叠加功能的开启和关闭
+* 输出参数：无
+* 返 回 值：0					命令得到执行
+*			1					无法识别的命令
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2002/08/01	     V1.0	    XXXX	      XXXX
+***************************************************************************/
+int MwFbLayerControl(unsigned char bDevice, unsigned char bLayer,
+			unsigned char bAction, unsigned char bArgB, unsigned int uArgU)
+{
+	INT32	iResult;
+	UINT32	uLayer, uMode;
+	unsigned char alpha;
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	
+	printf("MwFbLayerControl:%d %d %d %d %d\n", bDevice, bLayer, bAction, bArgB, uArgU);
+
+	iResult	= 0;
+	switch(bAction)
+	{
+		case 0:
+			if (bArgB == 0)
+			{
+				FB_SetLayer(0, 0);
+			}
+			else
+			{
+				FB_SetLayer(0, 1);
+				if (m_tMwDrvState.bVideoState == 0)
+				{
+					FB_SetAlpha(0, 127);
+				}
+				else
+				{
+					if(g_bBlend == 0)
+					{
+						FB_SetAlpha(0, 127);
+					}
+					else
+					{
+						alpha = m_tMwDrvState.abAlpha[0]/2;
+						alpha = (alpha > 127) ? 127 : alpha;
+						FB_SetAlpha(0, alpha);
+						FB_SetColorKey(0, m_tMwDrvState.auColorKey[0]);
+					}
+				}
+			}
+			break;
+
+		case 1:
+/*
+			m_tMwDrvState.abAlpha[0]	= bArgB;
+			m_tMwDrvState.auColorKey[0]	= uArgU;
+*/
+                        printf("GFB_SetAlpha:%d\n",g_bBlend);
+                        if (bArgB == 0)
+                        {
+                                FB_SetLayer(0, 0);
+                        }
+                        else
+                        {
+                                FB_SetLayer(0, 1);
+                                /*if (m_tMwDrvState.bVideoState == 0)
+                                {
+                                        GFB_SetAlpha(0, 127);
+                                }
+                                else
+                                {*/
+                                        if(g_bBlend == 0)
+                                        {
+                                                FB_SetAlpha(0, 127);
+                                        }
+                                        else
+                                        {
+                                                alpha = bArgB/2;
+                                                alpha = (alpha > 127) ? 127 : alpha;
+                                                FB_SetAlpha(0, alpha);
+                                                FB_SetColorKey(0, uArgU);
+                                                printf("GFB_SetAlpha\n");
+                                        }
+                                /*}*/
+                        }
+
+			break;
+
+		case 3:
+			iResult = pFB->m_iLeftOffset;
+			break;
+
+		case 4:
+			iResult = pFB->m_iTopOffset;
+			break;
+
+		case 0x40:
+			g_bBlend = bArgB;
+			break;
+
+		case	2:						/* 获取非默认图层对应的内存窗口ID */
+		/* 需要支持附加图层的驱动在此扩充代码，返回离线屏的句柄 */
+		default:
+			iResult	= 1;
+			break;
+	}
+	
+	return	iResult;
+}
+
+/**************************************************************************
+* 函数名称：MwFbDriverControl
+* 功能描述：对驱动进行控制
+* 输入参数：bAction				控制行为，1-控制与休眠有关的行为
+*			bOption				控制选项，取值及含义与bAction参数有关：
+*		bAction取值		bOption含义
+*			1			0-退出休眠状态、1-进入休眠状态
+* 输出参数：无
+* 返 回 值：目前始终返回零值，无意义
+* 其它说明：本函数本身并不负责某种功能的实现，只是根据上层通过参数传递的信
+*			息对底层驱动的行为作一些调整以便适应系统状态的改变。如设备休眠
+*			时必须关闭红外接受模块的闪灯功能
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+int MwFbDriverControl(unsigned char bAction, unsigned char bOption)
+{
+	printf("MwFbDriverControl:%d %d\n", bAction, bOption);
+
+	if (bAction == 1)
+	{
+		MwKbSleep(bOption);
+	}
+	return	0;
+}
+
+/**************************************************************************
+* 函数名称：MwFbSetTransparent
+* 功能描述：设置透明度
+* 输入参数：bDevice				欲操作的显示设备编号
+*			bLayer				图层，0-GUI、1-OSD
+*			ptRect				欲设置透明度的区域指针
+*			ptTrans				透明度设置数据
+* 输出参数：无
+* 返 回 值：0					设置成功
+*			非零值				设置失败
+* 其它说明：设置某个区域的透明度，将透明度描述传递给显示设备，与以前版本
+*			的驱动接口定义不同的是，这里不对ptRect或ptTrans为空的情形做任
+*			何特殊处理，这两个参数必须均不为空
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+int	MwFbSetTransparent(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, MWTRANSPARENCE *ptTrans)
+{
+	int		iResult;
+
+	if (bLayer > 0)						/* 图层编号非法？ */
+	{
+		iResult	= 1;
+		goto	MwFbSetTranExit0;
+	}
+
+	if (ptTrans == NULL)				/* 未指定透明度？ */
+	{
+		iResult	= 2;
+		goto	MwFbSetTranExit0;
+	}
+
+	if (ptRect == NULL)					/* 未指定区域？ */
+	{
+		iResult	= 3;
+		goto	MwFbSetTranExit0;
+	}
+
+	iResult	= 0;
+	switch (ptTrans->bMode)				/* 根据透明度模式分别处理 */
+	{
+		case	3:						/* 统一透明度！ */
+		{
+			m_tMwDrvState.abAlpha[0]	= ptTrans->bOrgTrans;
+			m_tMwDrvState.auColorKey[0]	= ptTrans->uColorKey;
+			printf("MwFbSetTransparent:%d %d %d %d\n", bDevice, bLayer, ptTrans->bOrgTrans, ptTrans->uColorKey);
+			break;
+		}
+		default:
+		{
+			iResult	= 4;
+			break;
+		}
+	}
+
+MwFbSetTranExit0:
+	return	iResult;
+}
+
+T_MwDriverState		*MwFbGetDeviceConfig(unsigned char bDevice)
+{
+	m_tMwDrvState.bAlphaBuffer	= 0;
+
+	return	&m_tMwDrvState;
+}
+
+/**************************************************************************
+* 函数名称：MwFbRefreshPixel
+* 功能描述：将一系列矩形区域的刷新内容反映到显示设备上
+* 输入参数：bDevice				欲刷新的显示设备编号
+*			bLayer				欲刷新区域所在的图层编号，0-GUI、1-OSD
+*			ptRect				指向待刷新区域的结构指针
+*			nNum				待刷新区域的数量
+* 输出参数：无
+* 返 回 值：传送给显示设备的字节数，意义不大
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+int	MwFbRefreshPixel(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, int nNum)
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	INT32	nResult, iLoopA;
+	MWRECT	*ptCurRect;
+
+#ifdef		MANUL_DEBUG
+	INT32	nTime1, nTime2, nTime3;
+	nTime1	= FbTiming();
+#endif
+	nResult	= 0;
+
+	if (bLayer > 0)
+	{
+		goto	MwFbRectExit0;
+	}
+
+	ptCurRect	= ptRect;
+
+#ifdef		MANUL_DEBUG
+	nTime2	= FbTiming();
+#endif
+	
+	if (ptCurRect)
+	{		
+		for (iLoopA = 0; iLoopA < nNum; iLoopA++)
+		{
+			nResult	+= FB_RefreshRect(bLayer, ptCurRect[iLoopA].left, ptCurRect[iLoopA].top,
+						ptCurRect[iLoopA].right - ptCurRect[iLoopA].left,
+						ptCurRect[iLoopA].bottom - ptCurRect[iLoopA].top);
+		}
+	}
+
+MwFbRectExit1:
+
+#ifdef		MANUL_DEBUG
+	nTime3	= FbTiming();
+	//printf("MwFbRefreshPixel-> %d Rect(s) %d <- %d -> %d <- %d -> %d\r\n",nNum, nTime1, nTime2 - nTime1, nTime2, nTime3 - nTime2, nTime3);
+#endif
+
+MwFbRectExit0:
+	return	nResult;
+}
+
+/**************************************************************************
+* 函数名称：MwFbEarasePixel
+* 功能描述：在屏幕上擦除一系列矩形区域的显示内容
+* 输入参数：bDevice				欲擦除的显示设备编号
+*			bLayer				欲擦除区域所在的图层编号
+*			ptRect				指向待擦除区域的结构指针
+*			nNum				待擦除区域的数量
+* 输出参数：无
+* 返 回 值：传送给显示设备的字节数，意义不大
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2007.01.23  V1.0	     刘成刚	     初始版本
+***************************************************************************/
+int	MwFbEarasePixel(unsigned char bDevice, unsigned char bLayer, MWRECT *ptRect, int nNum)
+{
+	T_FBAdaptor *pFB = &g_AmlFBAdaptor;
+	INT32	nResult, iLoopA, nX, nY, nW, nH;
+	MWRECT	*ptCurRect;
+	INT32  nScrW,nScrH,nOffset;
+
+	nScrW = (pFB->m_MWWidth + 2*pFB->m_iLeftOffset);
+	
+	nScrH = (pFB->m_MWHeight + 2*pFB->m_iTopOffset);
+
+#ifdef		MANUL_DEBUG
+	INT32	nTime1, nTime2, nTime3;
+	nTime1	= FbTiming();
+#endif
+	nResult	= 0;
+
+	if (bLayer > 0)
+	{
+		goto	MwFbClearExit0;
+	}
+
+#ifdef		MANUL_DEBUG
+	nTime2	= FbTiming();
+#endif
+
+	ptCurRect	= ptRect;
+	/* 循环，精确写入所有刷新区域的描述信息 */
+	for (iLoopA = 0; iLoopA < nNum; iLoopA++, ptCurRect++)
+	{
+		if (ptCurRect->left >= nScrW || ptCurRect->top >= nScrH)
+		{
+			continue;
+		}
+
+		nX	= ptCurRect->left >= 0 ? ptCurRect->left : 0;
+		nW	= (ptCurRect->right < nScrW ? ptCurRect->right : nScrW) - nX;
+
+		nY	= ptCurRect->top >= 0 ? ptCurRect->top : 0;
+		nH	= (ptCurRect->bottom < nScrH ? ptCurRect->bottom : nScrH) - nY;
+
+		if (nW == 0 || nH == 0)
+		{
+			continue;
+		}
+
+		printf("MwFbEarasePixel:%d %d %d %d\n", nX, nY, nW, nH);	
+		FB_EraseRect(0, 1, nX, nY, nW, nH);
+
+	}
+
+MwFbClearExit1:
+
+#ifdef		MANUL_DEBUG
+	nTime3	= FbTiming();
+	printf("MwFbEarasePixel-> %d Rect(s) %d <- %d -> %d <- %d -> %d\r\n",	nNum, nTime1, nTime2 - nTime1, nTime2, nTime3 - nTime2, nTime3);
+#endif
+
+MwFbClearExit0:
+	return	nResult;
+}
+
+/**************************************************************************
+* 函数名称：
+* 功能描述：
+* 访问的表：
+* 修改的表：
+* 输入参数：
+* 输出参数：
+* 返 回 值：
+* 其它说明：
+* 修改日期    版本号     修改人	     修改内容
+* -----------------------------------------------
+* 2006.03.21	V1.0	 朱晓斌      初始版本
+***************************************************************************/
+INT32	MwKbSleep(unsigned char bOption)
+{
+	if (bOption == 1)
+	{
+		m_iSleep	= 1;
+	}
+	else
+	{
+		m_iSleep	= 0;
+	}
+
+	return	0;
+}
+

@@ -1,0 +1,685 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALPHA_FACTOR_CONST_ALPHA	../ge2d-mutithread/osd.h	54;"	d
+ALPHA_FACTOR_DST_ALPHA	../ge2d-mutithread/osd.h	52;"	d
+ALPHA_FACTOR_ONE	../ge2d-mutithread/osd.h	49;"	d
+ALPHA_FACTOR_ONE_MINUS_CONST_ALPHA	../ge2d-mutithread/osd.h	55;"	d
+ALPHA_FACTOR_ONE_MINUS_DST_ALPHA	../ge2d-mutithread/osd.h	53;"	d
+ALPHA_FACTOR_ONE_MINUS_SRC_ALPHA	../ge2d-mutithread/osd.h	51;"	d
+ALPHA_FACTOR_SRC_ALPHA	../ge2d-mutithread/osd.h	50;"	d
+ALPHA_FACTOR_ZERO	../ge2d-mutithread/osd.h	48;"	d
+ARRAY_SIZE	../ge2d-mutithread/osd.h	286;"	d
+AUDIO_TYPE	../ge2d-mutithread/osd.h	/^enum  AUDIO_TYPE{$/;"	g
+A_MPG	../ge2d-mutithread/osd.h	/^	A_MPG=1,$/;"	e	enum:AUDIO_TYPE
+BITMAPFILEHEADER	../ge2d-mutithread/osd.h	/^} BITMAPFILEHEADER;$/;"	t	typeref:struct:tagBITMAPFILEHEADER
+BITMAPINFOHEADER	../ge2d-mutithread/osd.h	/^} BITMAPINFOHEADER;$/;"	t	typeref:struct:tagBITMAPINFOHEADER
+BITMAP_USE_FILE	../ge2d-mutithread/osd.h	22;"	d
+BLENDOP_ADD	../ge2d-mutithread/osd.h	74;"	d
+BLENDOP_LOGIC	../ge2d-mutithread/osd.h	79;"	d
+BLENDOP_LOGIC_AND	../ge2d-mutithread/osd.h	88;"	d
+BLENDOP_LOGIC_AND_INVERT	../ge2d-mutithread/osd.h	94;"	d
+BLENDOP_LOGIC_AND_REVERSE	../ge2d-mutithread/osd.h	86;"	d
+BLENDOP_LOGIC_CLEAR	../ge2d-mutithread/osd.h	80;"	d
+BLENDOP_LOGIC_COPY	../ge2d-mutithread/osd.h	81;"	d
+BLENDOP_LOGIC_COPY_INVERT	../ge2d-mutithread/osd.h	84;"	d
+BLENDOP_LOGIC_EQUIV	../ge2d-mutithread/osd.h	93;"	d
+BLENDOP_LOGIC_INVERT	../ge2d-mutithread/osd.h	85;"	d
+BLENDOP_LOGIC_NAND	../ge2d-mutithread/osd.h	90;"	d
+BLENDOP_LOGIC_NOOP	../ge2d-mutithread/osd.h	82;"	d
+BLENDOP_LOGIC_NOR	../ge2d-mutithread/osd.h	91;"	d
+BLENDOP_LOGIC_OR	../ge2d-mutithread/osd.h	89;"	d
+BLENDOP_LOGIC_OR_INVERT	../ge2d-mutithread/osd.h	95;"	d
+BLENDOP_LOGIC_OR_REVERSE	../ge2d-mutithread/osd.h	87;"	d
+BLENDOP_LOGIC_SET	../ge2d-mutithread/osd.h	83;"	d
+BLENDOP_LOGIC_XOR	../ge2d-mutithread/osd.h	92;"	d
+BLENDOP_MAX	../ge2d-mutithread/osd.h	78;"	d
+BLENDOP_MIN	../ge2d-mutithread/osd.h	77;"	d
+BLENDOP_REVERSE_SUB	../ge2d-mutithread/osd.h	76;"	d
+BLENDOP_SUB	../ge2d-mutithread/osd.h	75;"	d
+BMP_FILE_NAME	../ge2d-mutithread/osd.h	20;"	d
+BMP_HEIGHT	../ge2d-mutithread/alpha16.c	/^int	BMP_HEIGHT	;$/;"	v
+BMP_WIDTH	../ge2d-mutithread/alpha16.c	/^int 	BMP_WIDTH ;$/;"	v
+BUTTON_START_X	../ge2d-mutithread/multi_process.c	23;"	d	file:
+BUTTON_START_X	../ge2d-mutithread/multi_process2.c	20;"	d	file:
+BUTTON_START_Y	../ge2d-mutithread/multi_process.c	24;"	d	file:
+BUTTON_START_Y	../ge2d-mutithread/multi_process2.c	21;"	d	file:
+CANVAS_ALLOC	../ge2d-mutithread/osd.h	/^    CANVAS_ALLOC,$/;"	e	enum:__anon15
+CANVAS_OSD0	../ge2d-mutithread/osd.h	/^    CANVAS_OSD0 =0,$/;"	e	enum:__anon15
+CANVAS_OSD1	../ge2d-mutithread/osd.h	/^    CANVAS_OSD1,	 $/;"	e	enum:__anon15
+CANVAS_TYPE_INVALID	../ge2d-mutithread/osd.h	/^    CANVAS_TYPE_INVALID,$/;"	e	enum:__anon15
+CHILD_PROCESS_NUM	../ge2d-mutithread/multi_process.c	300;"	d	file:
+CMEM_AllocParams	../ge2d-mutithread/cmemlib.h	/^typedef struct CMEM_AllocParams {$/;"	s
+CMEM_AllocParams	../ge2d-mutithread/cmemlib.h	/^} CMEM_AllocParams;$/;"	t	typeref:struct:CMEM_AllocParams
+CMEM_AllocUnion	../ge2d-mutithread/cmemlib.h	/^union CMEM_AllocUnion {$/;"	u
+CMEM_BlockAttrs	../ge2d-mutithread/cmemlib.h	/^typedef struct CMEM_BlockAttrs {$/;"	s
+CMEM_BlockAttrs	../ge2d-mutithread/cmemlib.h	/^} CMEM_BlockAttrs;$/;"	t	typeref:struct:CMEM_BlockAttrs
+CMEM_CACHED	../ge2d-mutithread/cmemlib.h	153;"	d
+CMEM_H	../ge2d-mutithread/cmemlib.h	137;"	d
+CMEM_HEAP	../ge2d-mutithread/cmemlib.h	151;"	d
+CMEM_INV	../ge2d-mutithread/cmemlib.h	150;"	d
+CMEM_IOCALLOC	../ge2d-mutithread/cmemlib.h	158;"	d
+CMEM_IOCALLOCCACHED	../ge2d-mutithread/cmemlib.h	177;"	d
+CMEM_IOCALLOCHEAP	../ge2d-mutithread/cmemlib.h	159;"	d
+CMEM_IOCALLOCHEAPCACHED	../ge2d-mutithread/cmemlib.h	178;"	d
+CMEM_IOCCACHE	../ge2d-mutithread/cmemlib.h	164;"	d
+CMEM_IOCCACHEINV	../ge2d-mutithread/cmemlib.h	176;"	d
+CMEM_IOCCACHEWB	../ge2d-mutithread/cmemlib.h	175;"	d
+CMEM_IOCCACHEWBINV	../ge2d-mutithread/cmemlib.h	174;"	d
+CMEM_IOCCMDMASK	../ge2d-mutithread/cmemlib.h	183;"	d
+CMEM_IOCFREE	../ge2d-mutithread/cmemlib.h	160;"	d
+CMEM_IOCFREEHEAP	../ge2d-mutithread/cmemlib.h	179;"	d
+CMEM_IOCFREEHEAPPHYS	../ge2d-mutithread/cmemlib.h	181;"	d
+CMEM_IOCFREEPHYS	../ge2d-mutithread/cmemlib.h	180;"	d
+CMEM_IOCGETBLOCK	../ge2d-mutithread/cmemlib.h	166;"	d
+CMEM_IOCGETPHYS	../ge2d-mutithread/cmemlib.h	161;"	d
+CMEM_IOCGETPOOL	../ge2d-mutithread/cmemlib.h	163;"	d
+CMEM_IOCGETSIZE	../ge2d-mutithread/cmemlib.h	162;"	d
+CMEM_IOCGETVERSION	../ge2d-mutithread/cmemlib.h	165;"	d
+CMEM_IOCREGUSER	../ge2d-mutithread/cmemlib.h	167;"	d
+CMEM_NONCACHED	../ge2d-mutithread/cmemlib.h	154;"	d
+CMEM_PHYS	../ge2d-mutithread/cmemlib.h	155;"	d
+CMEM_POOL	../ge2d-mutithread/cmemlib.h	152;"	d
+CMEM_VERSION	../ge2d-mutithread/cmemlib.h	146;"	d
+CMEM_WB	../ge2d-mutithread/cmemlib.h	149;"	d
+COLOR_DECADE_STEP	../ge2d-mutithread/ge2d.c	572;"	d	file:
+COLOR_FACTOR_CONST_ALPHA	../ge2d-mutithread/osd.h	44;"	d
+COLOR_FACTOR_CONST_COLOR	../ge2d-mutithread/osd.h	42;"	d
+COLOR_FACTOR_DST_ALPHA	../ge2d-mutithread/osd.h	40;"	d
+COLOR_FACTOR_DST_COLOR	../ge2d-mutithread/osd.h	36;"	d
+COLOR_FACTOR_ONE	../ge2d-mutithread/osd.h	33;"	d
+COLOR_FACTOR_ONE_MINUS_CONST_ALPHA	../ge2d-mutithread/osd.h	45;"	d
+COLOR_FACTOR_ONE_MINUS_CONST_COLOR	../ge2d-mutithread/osd.h	43;"	d
+COLOR_FACTOR_ONE_MINUS_DST_ALPHA	../ge2d-mutithread/osd.h	41;"	d
+COLOR_FACTOR_ONE_MINUS_DST_COLOR	../ge2d-mutithread/osd.h	37;"	d
+COLOR_FACTOR_ONE_MINUS_SRC_ALPHA	../ge2d-mutithread/osd.h	39;"	d
+COLOR_FACTOR_ONE_MINUS_SRC_COLOR	../ge2d-mutithread/osd.h	35;"	d
+COLOR_FACTOR_SRC_ALPHA	../ge2d-mutithread/osd.h	38;"	d
+COLOR_FACTOR_SRC_ALPHA_SATURATE	../ge2d-mutithread/osd.h	46;"	d
+COLOR_FACTOR_SRC_COLOR	../ge2d-mutithread/osd.h	34;"	d
+COLOR_FACTOR_ZERO	../ge2d-mutithread/osd.h	32;"	d
+COLOR_INDEX_02_PAL4	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_02_PAL4    = 2,  \/\/ 0$/;"	e	enum:__anon27
+COLOR_INDEX_04_PAL16	../ge2d-mutithread/osd.h	/^    	COLOR_INDEX_04_PAL16   = 4, \/\/ 0$/;"	e	enum:__anon27
+COLOR_INDEX_08_PAL256	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_08_PAL256=8,$/;"	e	enum:__anon27
+COLOR_INDEX_16_1555_A	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_16_1555_A=14,$/;"	e	enum:__anon27
+COLOR_INDEX_16_4444_A	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_16_4444_A = 15,$/;"	e	enum:__anon27
+COLOR_INDEX_16_4444_R	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_16_4444_R = 12,$/;"	e	enum:__anon27
+COLOR_INDEX_16_4642_R	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_16_4642_R = 13,$/;"	e	enum:__anon27
+COLOR_INDEX_16_565	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_16_565 =16,$/;"	e	enum:__anon27
+COLOR_INDEX_16_6442	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_16_6442 =11 ,$/;"	e	enum:__anon27
+COLOR_INDEX_16_655	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_16_655 =9,$/;"	e	enum:__anon27
+COLOR_INDEX_16_844	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_16_844 =10,$/;"	e	enum:__anon27
+COLOR_INDEX_24_5658	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_24_5658 = 22,$/;"	e	enum:__anon27
+COLOR_INDEX_24_6666_A	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_24_6666_A=19,$/;"	e	enum:__anon27
+COLOR_INDEX_24_6666_R	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_24_6666_R=20,$/;"	e	enum:__anon27
+COLOR_INDEX_24_8565	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_24_8565 =21,$/;"	e	enum:__anon27
+COLOR_INDEX_24_888_B	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_24_888_B = 23,$/;"	e	enum:__anon27
+COLOR_INDEX_24_RGB	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_24_RGB = 24,$/;"	e	enum:__anon27
+COLOR_INDEX_32_ABGR	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_32_ABGR = 30,$/;"	e	enum:__anon27
+COLOR_INDEX_32_ARGB	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_32_ARGB=32,$/;"	e	enum:__anon27
+COLOR_INDEX_32_BGRA	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_32_BGRA=29,$/;"	e	enum:__anon27
+COLOR_INDEX_32_RGBA	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_32_RGBA=31,$/;"	e	enum:__anon27
+COLOR_INDEX_YUV_422	../ge2d-mutithread/osd.h	/^	COLOR_INDEX_YUV_422=33,$/;"	e	enum:__anon27
+FBIOGET_OSD_GET_GBL_ALPHA	../ge2d-mutithread/osd.h	267;"	d
+FBIOPUT_OSD_2X_SCALE	../ge2d-mutithread/osd.h	268;"	d
+FBIOPUT_OSD_ORDER_GET	../ge2d-mutithread/alpha16.c	504;"	d	file:
+FBIOPUT_OSD_ORDER_SET	../ge2d-mutithread/alpha16.c	503;"	d	file:
+FBIOPUT_OSD_SET_GBL_ALPHA	../ge2d-mutithread/osd.h	266;"	d
+FBIOPUT_OSD_SRCCOLORKEY	../ge2d-mutithread/osd.h	264;"	d
+FBIOPUT_OSD_SRCKEY_ENABLE	../ge2d-mutithread/osd.h	265;"	d
+FB_VISUAL_PSEUDOCOLOR	../ge2d-mutithread/osd.h	600;"	d
+FB_VISUAL_TRUECOLOR	../ge2d-mutithread/osd.h	601;"	d
+GE2D_ANTIFLICKER_ENABLE	../ge2d-mutithread/osd.h	261;"	d
+GE2D_BIG_ENDIAN	../ge2d-mutithread/osd.h	101;"	d
+GE2D_BLEND	../ge2d-mutithread/osd.h	23;"	d
+GE2D_BLEND	../ge2d-mutithread/osd.h	253;"	d
+GE2D_BLEND_NOBLOCK	../ge2d-mutithread/osd.h	246;"	d
+GE2D_BLIT	../ge2d-mutithread/osd.h	254;"	d
+GE2D_BLIT_NOALPHA	../ge2d-mutithread/osd.h	252;"	d
+GE2D_BLIT_NOALPHA_NOBLOCK	../ge2d-mutithread/osd.h	245;"	d
+GE2D_BLIT_NOBLOCK	../ge2d-mutithread/osd.h	247;"	d
+GE2D_BPP_16BIT	../ge2d-mutithread/osd.h	160;"	d
+GE2D_BPP_24BIT	../ge2d-mutithread/osd.h	161;"	d
+GE2D_BPP_32BIT	../ge2d-mutithread/osd.h	162;"	d
+GE2D_BPP_8BIT	../ge2d-mutithread/osd.h	159;"	d
+GE2D_BPP_MASK	../ge2d-mutithread/osd.h	158;"	d
+GE2D_CLASS_NAME	../ge2d-mutithread/osd.h	242;"	d
+GE2D_COLOR_MAP_ABGR8888	../ge2d-mutithread/osd.h	142;"	d
+GE2D_COLOR_MAP_ARGB1555	../ge2d-mutithread/osd.h	120;"	d
+GE2D_COLOR_MAP_ARGB4444	../ge2d-mutithread/osd.h	118;"	d
+GE2D_COLOR_MAP_ARGB6666	../ge2d-mutithread/osd.h	133;"	d
+GE2D_COLOR_MAP_ARGB8565	../ge2d-mutithread/osd.h	129;"	d
+GE2D_COLOR_MAP_ARGB8888	../ge2d-mutithread/osd.h	140;"	d
+GE2D_COLOR_MAP_AVUY8888	../ge2d-mutithread/osd.h	143;"	d
+GE2D_COLOR_MAP_AYUV1555	../ge2d-mutithread/osd.h	121;"	d
+GE2D_COLOR_MAP_AYUV4444	../ge2d-mutithread/osd.h	119;"	d
+GE2D_COLOR_MAP_AYUV6666	../ge2d-mutithread/osd.h	134;"	d
+GE2D_COLOR_MAP_AYUV8565	../ge2d-mutithread/osd.h	130;"	d
+GE2D_COLOR_MAP_AYUV8888	../ge2d-mutithread/osd.h	141;"	d
+GE2D_COLOR_MAP_BGR888	../ge2d-mutithread/osd.h	135;"	d
+GE2D_COLOR_MAP_BGRA8888	../ge2d-mutithread/osd.h	144;"	d
+GE2D_COLOR_MAP_MASK	../ge2d-mutithread/osd.h	105;"	d
+GE2D_COLOR_MAP_RGB565	../ge2d-mutithread/osd.h	116;"	d
+GE2D_COLOR_MAP_RGB655	../ge2d-mutithread/osd.h	108;"	d
+GE2D_COLOR_MAP_RGB844	../ge2d-mutithread/osd.h	110;"	d
+GE2D_COLOR_MAP_RGB888	../ge2d-mutithread/osd.h	125;"	d
+GE2D_COLOR_MAP_RGBA4444	../ge2d-mutithread/osd.h	114;"	d
+GE2D_COLOR_MAP_RGBA4642	../ge2d-mutithread/osd.h	122;"	d
+GE2D_COLOR_MAP_RGBA5658	../ge2d-mutithread/osd.h	127;"	d
+GE2D_COLOR_MAP_RGBA6442	../ge2d-mutithread/osd.h	112;"	d
+GE2D_COLOR_MAP_RGBA6666	../ge2d-mutithread/osd.h	131;"	d
+GE2D_COLOR_MAP_RGBA8888	../ge2d-mutithread/osd.h	138;"	d
+GE2D_COLOR_MAP_SHIFT	../ge2d-mutithread/osd.h	104;"	d
+GE2D_COLOR_MAP_VUY888	../ge2d-mutithread/osd.h	136;"	d
+GE2D_COLOR_MAP_VUYA8888	../ge2d-mutithread/osd.h	145;"	d
+GE2D_COLOR_MAP_YUV422	../ge2d-mutithread/osd.h	107;"	d
+GE2D_COLOR_MAP_YUV444	../ge2d-mutithread/osd.h	126;"	d
+GE2D_COLOR_MAP_YUV565	../ge2d-mutithread/osd.h	117;"	d
+GE2D_COLOR_MAP_YUV655	../ge2d-mutithread/osd.h	109;"	d
+GE2D_COLOR_MAP_YUV844	../ge2d-mutithread/osd.h	111;"	d
+GE2D_COLOR_MAP_YUVA4444	../ge2d-mutithread/osd.h	115;"	d
+GE2D_COLOR_MAP_YUVA4642	../ge2d-mutithread/osd.h	123;"	d
+GE2D_COLOR_MAP_YUVA5658	../ge2d-mutithread/osd.h	128;"	d
+GE2D_COLOR_MAP_YUVA6442	../ge2d-mutithread/osd.h	113;"	d
+GE2D_COLOR_MAP_YUVA6666	../ge2d-mutithread/osd.h	132;"	d
+GE2D_COLOR_MAP_YUVA8888	../ge2d-mutithread/osd.h	139;"	d
+GE2D_CONFIG	../ge2d-mutithread/osd.h	260;"	d
+GE2D_CONFIG_EX	../ge2d-mutithread/osd.h	259;"	d
+GE2D_ENDIAN_MASK	../ge2d-mutithread/osd.h	100;"	d
+GE2D_ENDIAN_SHIFT	../ge2d-mutithread/osd.h	99;"	d
+GE2D_FILLRECTANGLE	../ge2d-mutithread/osd.h	256;"	d
+GE2D_FILLRECTANGLE_NOBLOCK	../ge2d-mutithread/osd.h	249;"	d
+GE2D_FMT_M24_RGB	../ge2d-mutithread/osd.h	185;"	d
+GE2D_FMT_M24_YUV420	../ge2d-mutithread/osd.h	182;"	d
+GE2D_FMT_M24_YUV420B	../ge2d-mutithread/osd.h	187;"	d
+GE2D_FMT_M24_YUV420T	../ge2d-mutithread/osd.h	186;"	d
+GE2D_FMT_M24_YUV422	../ge2d-mutithread/osd.h	183;"	d
+GE2D_FMT_M24_YUV444	../ge2d-mutithread/osd.h	184;"	d
+GE2D_FMT_S16_RGB	../ge2d-mutithread/osd.h	177;"	d
+GE2D_FMT_S16_YUV422	../ge2d-mutithread/osd.h	176;"	d
+GE2D_FMT_S16_YUV422B	../ge2d-mutithread/osd.h	189;"	d
+GE2D_FMT_S16_YUV422T	../ge2d-mutithread/osd.h	188;"	d
+GE2D_FMT_S24_RGB	../ge2d-mutithread/osd.h	179;"	d
+GE2D_FMT_S24_YUV444	../ge2d-mutithread/osd.h	178;"	d
+GE2D_FMT_S24_YUV444B	../ge2d-mutithread/osd.h	191;"	d
+GE2D_FMT_S24_YUV444T	../ge2d-mutithread/osd.h	190;"	d
+GE2D_FMT_S32_RGBA	../ge2d-mutithread/osd.h	181;"	d
+GE2D_FMT_S32_YUVA444	../ge2d-mutithread/osd.h	180;"	d
+GE2D_FMT_S8_A	../ge2d-mutithread/osd.h	174;"	d
+GE2D_FMT_S8_B	../ge2d-mutithread/osd.h	173;"	d
+GE2D_FMT_S8_CB	../ge2d-mutithread/osd.h	169;"	d
+GE2D_FMT_S8_CR	../ge2d-mutithread/osd.h	170;"	d
+GE2D_FMT_S8_G	../ge2d-mutithread/osd.h	172;"	d
+GE2D_FMT_S8_LUT	../ge2d-mutithread/osd.h	175;"	d
+GE2D_FMT_S8_R	../ge2d-mutithread/osd.h	171;"	d
+GE2D_FMT_S8_Y	../ge2d-mutithread/osd.h	168;"	d
+GE2D_FORMAT_COMP_RANGE	../ge2d-mutithread/osd.h	164;"	d
+GE2D_FORMAT_M24_RGB	../ge2d-mutithread/osd.h	211;"	d
+GE2D_FORMAT_M24_YUV420	../ge2d-mutithread/osd.h	208;"	d
+GE2D_FORMAT_M24_YUV420B	../ge2d-mutithread/osd.h	213;"	d
+GE2D_FORMAT_M24_YUV420T	../ge2d-mutithread/osd.h	212;"	d
+GE2D_FORMAT_M24_YUV422	../ge2d-mutithread/osd.h	209;"	d
+GE2D_FORMAT_M24_YUV444	../ge2d-mutithread/osd.h	210;"	d
+GE2D_FORMAT_MASK	../ge2d-mutithread/osd.h	157;"	d
+GE2D_FORMAT_S16_ARGB_1555	../ge2d-mutithread/osd.h	225;"	d
+GE2D_FORMAT_S16_ARGB_4444	../ge2d-mutithread/osd.h	224;"	d
+GE2D_FORMAT_S16_RGBA_4444	../ge2d-mutithread/osd.h	223;"	d
+GE2D_FORMAT_S16_RGBA_4642	../ge2d-mutithread/osd.h	226;"	d
+GE2D_FORMAT_S16_RGBA_6442	../ge2d-mutithread/osd.h	222;"	d
+GE2D_FORMAT_S16_RGB_565	../ge2d-mutithread/osd.h	220;"	d
+GE2D_FORMAT_S16_RGB_655	../ge2d-mutithread/osd.h	203;"	d
+GE2D_FORMAT_S16_RGB_844	../ge2d-mutithread/osd.h	221;"	d
+GE2D_FORMAT_S16_YUV422	../ge2d-mutithread/osd.h	202;"	d
+GE2D_FORMAT_S16_YUV422B	../ge2d-mutithread/osd.h	215;"	d
+GE2D_FORMAT_S16_YUV422T	../ge2d-mutithread/osd.h	214;"	d
+GE2D_FORMAT_S24_ARGB_6666	../ge2d-mutithread/osd.h	231;"	d
+GE2D_FORMAT_S24_ARGB_8565	../ge2d-mutithread/osd.h	229;"	d
+GE2D_FORMAT_S24_BGR	../ge2d-mutithread/osd.h	232;"	d
+GE2D_FORMAT_S24_RGB	../ge2d-mutithread/osd.h	205;"	d
+GE2D_FORMAT_S24_RGBA_5658	../ge2d-mutithread/osd.h	228;"	d
+GE2D_FORMAT_S24_RGBA_6666	../ge2d-mutithread/osd.h	230;"	d
+GE2D_FORMAT_S24_YUV444	../ge2d-mutithread/osd.h	204;"	d
+GE2D_FORMAT_S24_YUV444B	../ge2d-mutithread/osd.h	217;"	d
+GE2D_FORMAT_S24_YUV444T	../ge2d-mutithread/osd.h	216;"	d
+GE2D_FORMAT_S32_ABGR	../ge2d-mutithread/osd.h	235;"	d
+GE2D_FORMAT_S32_ARGB	../ge2d-mutithread/osd.h	234;"	d
+GE2D_FORMAT_S32_BGRA	../ge2d-mutithread/osd.h	236;"	d
+GE2D_FORMAT_S32_RGBA	../ge2d-mutithread/osd.h	207;"	d
+GE2D_FORMAT_S32_YUVA444	../ge2d-mutithread/osd.h	206;"	d
+GE2D_FORMAT_S8_A	../ge2d-mutithread/osd.h	200;"	d
+GE2D_FORMAT_S8_B	../ge2d-mutithread/osd.h	199;"	d
+GE2D_FORMAT_S8_CB	../ge2d-mutithread/osd.h	195;"	d
+GE2D_FORMAT_S8_CR	../ge2d-mutithread/osd.h	196;"	d
+GE2D_FORMAT_S8_G	../ge2d-mutithread/osd.h	198;"	d
+GE2D_FORMAT_S8_LUT	../ge2d-mutithread/osd.h	201;"	d
+GE2D_FORMAT_S8_R	../ge2d-mutithread/osd.h	197;"	d
+GE2D_FORMAT_S8_Y	../ge2d-mutithread/osd.h	194;"	d
+GE2D_FORMAT_YUV	../ge2d-mutithread/osd.h	163;"	d
+GE2D_KEY_DOWN	../ge2d-mutithread/ge2d.c	13;"	d	file:
+GE2D_KEY_EXIT	../ge2d-mutithread/ge2d.c	18;"	d	file:
+GE2D_KEY_LEFT	../ge2d-mutithread/ge2d.c	14;"	d	file:
+GE2D_KEY_PULL	../ge2d-mutithread/ge2d.c	16;"	d	file:
+GE2D_KEY_PUSH	../ge2d-mutithread/ge2d.c	17;"	d	file:
+GE2D_KEY_RIGHT	../ge2d-mutithread/ge2d.c	15;"	d	file:
+GE2D_KEY_UP	../ge2d-mutithread/ge2d.c	12;"	d	file:
+GE2D_LITTLE_ENDIAN	../ge2d-mutithread/osd.h	102;"	d
+GE2D_MAX_OP_NUMBER	../ge2d-mutithread/osd.h	/^	GE2D_MAX_OP_NUMBER$/;"	e	enum:GE2D_OP_TYPE
+GE2D_OP_BLEND	../ge2d-mutithread/osd.h	/^	GE2D_OP_BLEND,$/;"	e	enum:GE2D_OP_TYPE
+GE2D_OP_BLIT	../ge2d-mutithread/osd.h	/^	GE2D_OP_BLIT,$/;"	e	enum:GE2D_OP_TYPE
+GE2D_OP_FILL_RECT	../ge2d-mutithread/osd.h	/^	GE2D_OP_FILL_RECT=1,$/;"	e	enum:GE2D_OP_TYPE
+GE2D_OP_STRETCH_BLIT	../ge2d-mutithread/osd.h	/^	GE2D_OP_STRETCH_BLIT,$/;"	e	enum:GE2D_OP_TYPE
+GE2D_OP_TYPE	../ge2d-mutithread/osd.h	/^enum   GE2D_OP_TYPE{$/;"	g
+GE2D_SET_COEF	../ge2d-mutithread/osd.h	258;"	d
+GE2D_SRCCOLORKEY	../ge2d-mutithread/osd.h	257;"	d
+GE2D_STRETCHBLIT	../ge2d-mutithread/osd.h	255;"	d
+GE2D_STRETCHBLIT_NOALPHA	../ge2d-mutithread/osd.h	251;"	d
+GE2D_STRETCHBLIT_NOALPHA_NOBLOCK	../ge2d-mutithread/osd.h	244;"	d
+GE2D_STRETCHBLIT_NOBLOCK	../ge2d-mutithread/osd.h	248;"	d
+INT16	../ge2d-mutithread/osd.h	276;"	d
+INT32	../ge2d-mutithread/osd.h	275;"	d
+INT8S	../ge2d-mutithread/osd.h	277;"	d
+INVALID_BPP_ITEM	../ge2d-mutithread/osd.h	599;"	d
+INVALID_THREAD_ID	../ge2d-mutithread/ge2d.c	19;"	d	file:
+KEYBOARD_DEV	../ge2d-mutithread/ge2d.c	11;"	d	file:
+KEY_NUM_H	../ge2d-mutithread/ge2d.c	256;"	d	file:
+KEY_NUM_V	../ge2d-mutithread/ge2d.c	257;"	d	file:
+LOGIC_OPERATION_AND	../ge2d-mutithread/osd.h	65;"	d
+LOGIC_OPERATION_AND_INVERT	../ge2d-mutithread/osd.h	71;"	d
+LOGIC_OPERATION_AND_REVERSE	../ge2d-mutithread/osd.h	63;"	d
+LOGIC_OPERATION_CLEAR	../ge2d-mutithread/osd.h	57;"	d
+LOGIC_OPERATION_COPY	../ge2d-mutithread/osd.h	58;"	d
+LOGIC_OPERATION_COPY_INVERT	../ge2d-mutithread/osd.h	61;"	d
+LOGIC_OPERATION_EQUIV	../ge2d-mutithread/osd.h	70;"	d
+LOGIC_OPERATION_INVERT	../ge2d-mutithread/osd.h	62;"	d
+LOGIC_OPERATION_NAND	../ge2d-mutithread/osd.h	67;"	d
+LOGIC_OPERATION_NOOP	../ge2d-mutithread/osd.h	59;"	d
+LOGIC_OPERATION_NOR	../ge2d-mutithread/osd.h	68;"	d
+LOGIC_OPERATION_OR	../ge2d-mutithread/osd.h	66;"	d
+LOGIC_OPERATION_OR_INVERT	../ge2d-mutithread/osd.h	72;"	d
+LOGIC_OPERATION_OR_REVERSE	../ge2d-mutithread/osd.h	64;"	d
+LOGIC_OPERATION_SET	../ge2d-mutithread/osd.h	60;"	d
+LOGIC_OPERATION_XOR	../ge2d-mutithread/osd.h	69;"	d
+MAX_THREAD_NUM	../ge2d-mutithread/ge2d.c	20;"	d	file:
+MULTI_PROCESS	../ge2d-mutithread/multi_process.c	31;"	d	file:
+MULTI_PROCESS	../ge2d-mutithread/multi_process2.c	28;"	d	file:
+OPERATION_ADD	../ge2d-mutithread/osd.h	25;"	d
+OPERATION_LOGIC	../ge2d-mutithread/osd.h	30;"	d
+OPERATION_MAX	../ge2d-mutithread/osd.h	29;"	d
+OPERATION_MIN	../ge2d-mutithread/osd.h	28;"	d
+OPERATION_REVERSE_SUB	../ge2d-mutithread/osd.h	27;"	d
+OPERATION_SUB	../ge2d-mutithread/osd.h	26;"	d
+OSD0_BACKGROUND_COLOR	../ge2d-mutithread/multi_process.c	13;"	d	file:
+OSD0_BACKGROUND_COLOR	../ge2d-mutithread/multi_process2.c	13;"	d	file:
+OSD0_BUTTON_COLOR	../ge2d-mutithread/multi_process.c	17;"	d	file:
+OSD0_BUTTON_COLOR	../ge2d-mutithread/multi_process2.c	16;"	d	file:
+OSD0_BUTTON_HEIGHT	../ge2d-mutithread/multi_process.c	26;"	d	file:
+OSD0_BUTTON_HEIGHT	../ge2d-mutithread/multi_process2.c	23;"	d	file:
+OSD0_BUTTON_WIDTH	../ge2d-mutithread/multi_process.c	25;"	d	file:
+OSD0_BUTTON_WIDTH	../ge2d-mutithread/multi_process2.c	22;"	d	file:
+OSD0_INDEX	../ge2d-mutithread/multi_process.c	7;"	d	file:
+OSD0_INDEX	../ge2d-mutithread/multi_process2.c	7;"	d	file:
+OSD0_OSD0	../ge2d-mutithread/osd.h	/^		OSD0_OSD0 =0,$/;"	e	enum:__anon14
+OSD0_OSD1	../ge2d-mutithread/osd.h	/^		OSD0_OSD1,	 $/;"	e	enum:__anon14
+OSD1_BACKGROUND_COLOR	../ge2d-mutithread/multi_process.c	14;"	d	file:
+OSD1_BACKGROUND_COLOR	../ge2d-mutithread/multi_process2.c	14;"	d	file:
+OSD1_BUTTON_COLOR	../ge2d-mutithread/multi_process.c	19;"	d	file:
+OSD1_BUTTON_COLOR	../ge2d-mutithread/multi_process2.c	18;"	d	file:
+OSD1_BUTTON_HEIGHT	../ge2d-mutithread/multi_process.c	28;"	d	file:
+OSD1_BUTTON_HEIGHT	../ge2d-mutithread/multi_process2.c	25;"	d	file:
+OSD1_BUTTON_WIDTH	../ge2d-mutithread/multi_process.c	27;"	d	file:
+OSD1_BUTTON_WIDTH	../ge2d-mutithread/multi_process2.c	24;"	d	file:
+OSD1_INDEX	../ge2d-mutithread/multi_process.c	8;"	d	file:
+OSD1_INDEX	../ge2d-mutithread/multi_process2.c	8;"	d	file:
+OSD1_OSD0	../ge2d-mutithread/osd.h	/^		OSD1_OSD0,$/;"	e	enum:__anon14
+OSD1_OSD1	../ge2d-mutithread/osd.h	/^		OSD1_OSD1,$/;"	e	enum:__anon14
+OSD2_BUTTON_COLOR	../ge2d-mutithread/multi_process.c	20;"	d	file:
+OSD3_BUTTON_COLOR	../ge2d-mutithread/multi_process.c	21;"	d	file:
+OSD_TYPE_16_1555_A	../ge2d-mutithread/osd.h	/^	OSD_TYPE_16_1555_A=14,$/;"	e	enum:__anon13
+OSD_TYPE_16_4444_A	../ge2d-mutithread/osd.h	/^	OSD_TYPE_16_4444_A = 15,$/;"	e	enum:__anon13
+OSD_TYPE_16_4444_R	../ge2d-mutithread/osd.h	/^	OSD_TYPE_16_4444_R = 12,$/;"	e	enum:__anon13
+OSD_TYPE_16_4642_R	../ge2d-mutithread/osd.h	/^	OSD_TYPE_16_4642_R = 13,$/;"	e	enum:__anon13
+OSD_TYPE_16_565	../ge2d-mutithread/osd.h	/^	OSD_TYPE_16_565 =16,$/;"	e	enum:__anon13
+OSD_TYPE_16_6442	../ge2d-mutithread/osd.h	/^	OSD_TYPE_16_6442 =11 ,$/;"	e	enum:__anon13
+OSD_TYPE_16_655	../ge2d-mutithread/osd.h	/^	OSD_TYPE_16_655 =9,$/;"	e	enum:__anon13
+OSD_TYPE_16_844	../ge2d-mutithread/osd.h	/^	OSD_TYPE_16_844 =10,$/;"	e	enum:__anon13
+OSD_TYPE_24_5658	../ge2d-mutithread/osd.h	/^	OSD_TYPE_24_5658 = 22,$/;"	e	enum:__anon13
+OSD_TYPE_24_6666_A	../ge2d-mutithread/osd.h	/^	OSD_TYPE_24_6666_A=19,$/;"	e	enum:__anon13
+OSD_TYPE_24_6666_R	../ge2d-mutithread/osd.h	/^	OSD_TYPE_24_6666_R=20,$/;"	e	enum:__anon13
+OSD_TYPE_24_8565	../ge2d-mutithread/osd.h	/^	OSD_TYPE_24_8565 =21,$/;"	e	enum:__anon13
+OSD_TYPE_24_888_B	../ge2d-mutithread/osd.h	/^	OSD_TYPE_24_888_B = 23,$/;"	e	enum:__anon13
+OSD_TYPE_24_RGB	../ge2d-mutithread/osd.h	/^	OSD_TYPE_24_RGB = 24,$/;"	e	enum:__anon13
+OSD_TYPE_32_ABGR	../ge2d-mutithread/osd.h	/^	OSD_TYPE_32_ABGR = 30,$/;"	e	enum:__anon13
+OSD_TYPE_32_ARGB	../ge2d-mutithread/osd.h	/^	OSD_TYPE_32_ARGB=32,$/;"	e	enum:__anon13
+OSD_TYPE_32_BGRA	../ge2d-mutithread/osd.h	/^	OSD_TYPE_32_BGRA=29,$/;"	e	enum:__anon13
+OSD_TYPE_32_RGBA	../ge2d-mutithread/osd.h	/^	OSD_TYPE_32_RGBA=31,$/;"	e	enum:__anon13
+PLANE_HEIGHT	../ge2d-mutithread/ge2d.c	571;"	d	file:
+PLANE_WIDTH	../ge2d-mutithread/ge2d.c	570;"	d	file:
+SCREEN_H	../ge2d-mutithread/multi_process.c	12;"	d	file:
+SCREEN_H	../ge2d-mutithread/multi_process2.c	12;"	d	file:
+SCREEN_W	../ge2d-mutithread/multi_process.c	11;"	d	file:
+SCREEN_W	../ge2d-mutithread/multi_process2.c	11;"	d	file:
+STREAM_ES	../ge2d-mutithread/osd.h	/^	STREAM_ES,$/;"	e	enum:STREAM_TYPE
+STREAM_PS	../ge2d-mutithread/osd.h	/^	STREAM_PS$/;"	e	enum:STREAM_TYPE
+STREAM_TS	../ge2d-mutithread/osd.h	/^	STREAM_TS,$/;"	e	enum:STREAM_TYPE
+STREAM_TYPE	../ge2d-mutithread/osd.h	/^enum   STREAM_TYPE{$/;"	g
+THREAD_DRAW	../ge2d-mutithread/ge2d.c	22;"	d	file:
+THREAD_INPUT	../ge2d-mutithread/ge2d.c	23;"	d	file:
+TRANSPARENT_COLOR	../ge2d-mutithread/multi_process.c	16;"	d	file:
+TRANSPARENT_COLOR	../ge2d-mutithread/multi_process2.c	15;"	d	file:
+TYPE_INVALID	../ge2d-mutithread/osd.h	/^		TYPE_INVALID,$/;"	e	enum:__anon14
+T_DEC_PARA	../ge2d-mutithread/osd.h	/^}T_DEC_PARA;$/;"	t	typeref:struct:T_DEC_PARAMETER
+T_DEC_PARAMETER	../ge2d-mutithread/osd.h	/^typedef struct T_DEC_PARAMETER$/;"	s
+U16	../ge2d-mutithread/osd.h	273;"	d
+U32	../ge2d-mutithread/osd.h	272;"	d
+U8	../ge2d-mutithread/osd.h	274;"	d
+UINT16	../ge2d-mutithread/osd.h	279;"	d
+UINT32	../ge2d-mutithread/osd.h	280;"	d
+UINT8	../ge2d-mutithread/osd.h	278;"	d
+VB_SIZE	../ge2d-mutithread/osd.h	270;"	d
+VIDEO_TYPE	../ge2d-mutithread/osd.h	/^enum  VIDEO_TYPE{$/;"	g
+V_MPG1	../ge2d-mutithread/osd.h	/^	V_MPG1=1,$/;"	e	enum:VIDEO_TYPE
+V_MPG2	../ge2d-mutithread/osd.h	/^	V_MPG2,$/;"	e	enum:VIDEO_TYPE
+V_MPG4	../ge2d-mutithread/osd.h	/^	V_MPG4,	$/;"	e	enum:VIDEO_TYPE
+_OSD_H_	../ge2d-mutithread/osd.h	2;"	d
+_fill_rect	../ge2d-mutithread/osd.c	/^static void _fill_rect (U8 *p, U32 line_width, U32 x0, U32 y0,U32 x1,U32 y1, U32 bpp,U32 color)$/;"	f	file:
+addr	../ge2d-mutithread/osd.h	/^	unsigned long  addr;$/;"	m	struct:__anon16
+align	../ge2d-mutithread/cmemlib.h	/^        size_t align;$/;"	m	struct:CMEM_AllocUnion::__anon3
+alignment	../ge2d-mutithread/cmemlib.h	/^    size_t alignment;   \/**<$/;"	m	struct:CMEM_AllocParams
+alloc_config_t	../ge2d-mutithread/osd.h	/^typedef config_para_t alloc_config_t  ;$/;"	t
+alloc_heap_inparams	../ge2d-mutithread/cmemlib.h	/^    } alloc_heap_inparams;      \/**< *\/$/;"	m	union:CMEM_AllocUnion	typeref:struct:CMEM_AllocUnion::__anon3
+alloc_pool_inparams	../ge2d-mutithread/cmemlib.h	/^    } alloc_pool_inparams;      \/**< *\/$/;"	m	union:CMEM_AllocUnion	typeref:struct:CMEM_AllocUnion::__anon4
+alloc_pool_outparams	../ge2d-mutithread/cmemlib.h	/^    } alloc_pool_outparams;     \/**< *\/$/;"	m	union:CMEM_AllocUnion	typeref:struct:CMEM_AllocUnion::__anon7
+alu_const_color	../ge2d-mutithread/osd.h	/^	int  alu_const_color;$/;"	m	struct:__anon18
+alu_const_color	../ge2d-mutithread/osd.h	/^    int alu_const_color;$/;"	m	struct:__anon20
+bfOffBits	../ge2d-mutithread/osd.h	/^	U32 bfOffBits;  	\/\/bitmap data offset to  file header	$/;"	m	struct:tagBITMAPFILEHEADER
+bfReserved1	../ge2d-mutithread/osd.h	/^	U16	bfReserved1;  \/\/0$/;"	m	struct:tagBITMAPFILEHEADER
+bfReserved2	../ge2d-mutithread/osd.h	/^	U16	bfReserved2;  \/\/0$/;"	m	struct:tagBITMAPFILEHEADER
+bfSize	../ge2d-mutithread/osd.h	/^	U32 bfSize;   \/\/file size $/;"	m	struct:tagBITMAPFILEHEADER
+bfType	../ge2d-mutithread/osd.h	/^	U16	bfType;  \/\/BM$/;"	m	struct:tagBITMAPFILEHEADER
+biBitCount	../ge2d-mutithread/osd.h	/^	U16 biBitCount;\/\/bits of erery pixel . must be one of follow values 1(double color)$/;"	m	struct:tagBITMAPINFOHEADER
+biClrImportant	../ge2d-mutithread/osd.h	/^	U32 biClrImportant;\/\/bitmap most important color number during display process.$/;"	m	struct:tagBITMAPINFOHEADER
+biClrUsed	../ge2d-mutithread/osd.h	/^	U32 biClrUsed;	\/\/bitmap used color number.$/;"	m	struct:tagBITMAPINFOHEADER
+biCompression	../ge2d-mutithread/osd.h	/^	U32 biCompression; \/\/ bitmap compresstion type must be one of 0 (uncompress)$/;"	m	struct:tagBITMAPINFOHEADER
+biHeight	../ge2d-mutithread/osd.h	/^	U32 biHeight; \/\/bitmap height (pixel unit)$/;"	m	struct:tagBITMAPINFOHEADER
+biPlanes	../ge2d-mutithread/osd.h	/^	U16 biPlanes; \/\/ 1$/;"	m	struct:tagBITMAPINFOHEADER
+biSize	../ge2d-mutithread/osd.h	/^	U32 biSize;  \/\/this structure occupy size $/;"	m	struct:tagBITMAPINFOHEADER
+biSizeImage	../ge2d-mutithread/osd.h	/^	U32 biSizeImage; 	\/\/ bitmap size $/;"	m	struct:tagBITMAPINFOHEADER
+biWidth	../ge2d-mutithread/osd.h	/^	U32	biWidth; \/\/bitmap width (pixel unit)$/;"	m	struct:tagBITMAPINFOHEADER
+biXPelsPerMeter	../ge2d-mutithread/osd.h	/^	U32	biXPelsPerMeter; \/\/bitmap horizontal resolution.$/;"	m	struct:tagBITMAPINFOHEADER
+biYPelsPerMeter	../ge2d-mutithread/osd.h	/^	U32	biYPelsPerMeter; \/\/bitmap vertical resolution.$/;"	m	struct:tagBITMAPINFOHEADER
+bitmap16	../ge2d-mutithread/alpha16.c	/^U16 *bitmap16=NULL;$/;"	v
+bitmap24	../ge2d-mutithread/alpha16.c	/^U32	  *bitmap24=NULL;$/;"	v
+bitmask	../ge2d-mutithread/osd.h	/^    unsigned int  bitmask;$/;"	m	struct:__anon20
+bitmask_en	../ge2d-mutithread/osd.h	/^    unsigned char bitmask_en;$/;"	m	struct:__anon20
+blend	../ge2d-mutithread/osd.h	/^	int	(*blend)(void *para);$/;"	m	struct:__anon24
+blendop	../ge2d-mutithread/ge2d.c	/^static inline unsigned blendop(unsigned color_blending_mode,$/;"	f	file:
+blit	../ge2d-mutithread/osd.h	/^	int	(*blit)(void* para);$/;"	m	struct:__anon24
+blockid	../ge2d-mutithread/cmemlib.h	/^        int blockid;$/;"	m	struct:CMEM_AllocUnion::__anon3
+blockid	../ge2d-mutithread/cmemlib.h	/^        int blockid;$/;"	m	struct:CMEM_AllocUnion::__anon4
+blockid	../ge2d-mutithread/cmemlib.h	/^        int blockid;$/;"	m	struct:CMEM_AllocUnion::__anon5
+blockid	../ge2d-mutithread/cmemlib.h	/^        int blockid;$/;"	m	struct:CMEM_AllocUnion::__anon6
+blockid	../ge2d-mutithread/cmemlib.h	/^    int blockid;$/;"	m	union:CMEM_AllocUnion
+blue_length	../ge2d-mutithread/osd.h	/^	u8	blue_length;$/;"	m	struct:__anon28
+blue_msb_right	../ge2d-mutithread/osd.h	/^	u8	blue_msb_right;$/;"	m	struct:__anon28
+blue_offset	../ge2d-mutithread/osd.h	/^	u8	blue_offset;$/;"	m	struct:__anon28
+bpp	../ge2d-mutithread/osd.h	/^	U32		bpp;$/;"	m	struct:__anon26
+bpp	../ge2d-mutithread/osd.h	/^	int		bpp;$/;"	m	struct:__anon25
+bpp	../ge2d-mutithread/osd.h	/^	u8	bpp;$/;"	m	struct:__anon28
+bytemask_only	../ge2d-mutithread/osd.h	/^    unsigned char bytemask_only;$/;"	m	struct:__anon20
+canvas_index	../ge2d-mutithread/osd.h	/^    int  canvas_index;$/;"	m	struct:__anon19
+child_process	../ge2d-mutithread/multi_process.c	/^static int child_process(osd_obj_t*  osd)$/;"	f	file:
+cmem_fillrect	../ge2d-mutithread/ge2d.c	/^static int cmem_fillrect(unsigned int ge2d_fd,$/;"	f	file:
+color	../ge2d-mutithread/osd.h	/^	U32   color ;$/;"	m	struct:__anon11
+color	../ge2d-mutithread/osd.h	/^	unsigned int   color ;$/;"	m	struct:__anon23
+color	../ge2d-mutithread/osd.h	/^    int  color;$/;"	m	struct:__anon19
+color_bit_define_t	../ge2d-mutithread/osd.h	/^}color_bit_define_t;$/;"	t	typeref:struct:__anon28
+color_index_t	../ge2d-mutithread/osd.h	/^}color_index_t;$/;"	t	typeref:enum:__anon27
+color_type	../ge2d-mutithread/osd.h	/^	u8	color_type;$/;"	m	struct:__anon28
+cond_draw	../ge2d-mutithread/ge2d.c	/^	pthread_cond_t 	cond_draw;$/;"	m	struct:__anon1	file:
+cond_exit	../ge2d-mutithread/ge2d.c	/^	pthread_cond_t    cond_exit;$/;"	m	struct:__anon1	file:
+config	../ge2d-mutithread/osd.h	/^	alloc_config_t  config;$/;"	m	struct:__anon21
+config_para_ex_t	../ge2d-mutithread/osd.h	/^}config_para_ex_t;$/;"	t	typeref:struct:__anon20
+config_para_t	../ge2d-mutithread/osd.h	/^}config_para_t;$/;"	t	typeref:struct:__anon18
+config_planes_t	../ge2d-mutithread/osd.h	/^}config_planes_t;$/;"	t	typeref:struct:__anon16
+convert_bmp_data	../ge2d-mutithread/alpha16.c	/^int convert_bmp_data(U32 *bmp,U32 *bmp_buffer, U32 bpp,BITMAPINFOHEADER *info_header)$/;"	f
+create_one_child	../ge2d-mutithread/multi_process.c	/^int   create_one_child(osd_obj_t  * osd)$/;"	f
+create_osd_canvas	../ge2d-mutithread/multi_process.c	/^static int  create_osd_canvas(osd_obj_t *osd)$/;"	f	file:
+create_osd_canvas	../ge2d-mutithread/multi_process2.c	/^static int  create_osd_canvas(osd_obj_t *osd)$/;"	f	file:
+create_osd_obj	../ge2d-mutithread/osd.c	/^osd_obj_t*  create_osd_obj(int mode,int osd_index)$/;"	f
+default_color_format_array	../ge2d-mutithread/osd.h	/^static const  color_bit_define_t   default_color_format_array[]={$/;"	v
+default_draw_func	../ge2d-mutithread/osd.c	/^int  default_draw_func(void *para)$/;"	f
+deinit_osd	../ge2d-mutithread/osd.c	/^int  deinit_osd(osd_obj_t* osd_obj)$/;"	f
+destroy_osd_obj	../ge2d-mutithread/osd.c	/^int destroy_osd_obj(osd_obj_t* osd_obj)$/;"	f
+disp_offset_t	../ge2d-mutithread/osd.h	/^}disp_offset_t;$/;"	t	typeref:struct:__anon12
+disp_start_x	../ge2d-mutithread/osd.h	/^	U32	 disp_start_x;$/;"	m	struct:__anon12
+disp_start_y	../ge2d-mutithread/osd.h	/^	U32	 disp_start_y;$/;"	m	struct:__anon12
+display_color_mode_list	../ge2d-mutithread/alpha16.c	/^void  display_color_mode_list(void)$/;"	f
+display_ge2d_op_menu	../ge2d-mutithread/ge2d.c	/^void  display_ge2d_op_menu(void)$/;"	f
+display_run_menu	../ge2d-mutithread/main.c	/^void  display_run_menu(void)$/;"	f
+draw	../ge2d-mutithread/osd.h	/^	int	(*draw)(void* para);$/;"	m	struct:__anon25
+draw_func_16bpp	../ge2d-mutithread/osd.c	/^int  draw_func_16bpp(void *para)$/;"	f
+draw_func_16bpp_4444_r	../ge2d-mutithread/osd.c	/^int  draw_func_16bpp_4444_r(void *para)$/;"	f
+draw_func_16bpp_844	../ge2d-mutithread/osd.c	/^int  draw_func_16bpp_844(void *para)$/;"	f
+draw_func_24bpp	../ge2d-mutithread/osd.c	/^int  draw_func_24bpp(void *para)$/;"	f
+draw_func_32bpp	../ge2d-mutithread/osd.c	/^int draw_func_32bpp(void *para)$/;"	f
+draw_sample_button	../ge2d-mutithread/multi_process.c	/^static int  draw_sample_button(osd_obj_t *osd)$/;"	f	file:
+draw_sample_button	../ge2d-mutithread/multi_process2.c	/^static int  draw_sample_button(osd_obj_t *osd)$/;"	f	file:
+dst_format	../ge2d-mutithread/osd.h	/^	unsigned int dst_format ; \/\/add for src&dst all in user space.$/;"	m	struct:__anon18
+dst_para	../ge2d-mutithread/osd.h	/^    src_dst_para_ex_t dst_para;$/;"	m	struct:__anon20
+dst_planes	../ge2d-mutithread/osd.h	/^	config_planes_t dst_planes[4];$/;"	m	struct:__anon18
+dst_planes	../ge2d-mutithread/osd.h	/^    config_planes_t dst_planes[4];$/;"	m	struct:__anon20
+dst_rect	../ge2d-mutithread/osd.h	/^	osd_rectangle_t dst_rect;$/;"	m	struct:__anon11
+dst_rect	../ge2d-mutithread/osd.h	/^	rectangle_t	dst_rect;$/;"	m	struct:__anon23
+dst_xy_swap	../ge2d-mutithread/osd.h	/^    unsigned char dst_xy_swap;$/;"	m	struct:__anon20
+dump_bmp_info	../ge2d-mutithread/alpha16.c	/^int  dump_bmp_info(BITMAPFILEHEADER *file_header,BITMAPINFOHEADER *info_header)$/;"	f
+error_msg_table	../ge2d-mutithread/alpha16.c	/^char *error_msg_table[]={$/;"	v
+fbfd	../ge2d-mutithread/osd.h	/^	int 		fbfd ;$/;"	m	struct:__anon25
+fbp	../ge2d-mutithread/osd.h	/^	char		*fbp;$/;"	m	struct:__anon25
+fill_color_en	../ge2d-mutithread/osd.h	/^    unsigned char fill_color_en;$/;"	m	struct:__anon19
+fill_mode	../ge2d-mutithread/osd.h	/^    unsigned char fill_mode;    $/;"	m	struct:__anon19
+fill_rect	../ge2d-mutithread/multi_process.c	/^static int  fill_rect(osd_obj_t*  osd,rectangle_t  *rect,unsigned int  color)$/;"	f	file:
+fill_rect	../ge2d-mutithread/multi_process2.c	/^static int  fill_rect(osd_obj_t*  osd,rectangle_t  *rect,int  color)$/;"	f	file:
+fill_rect	../ge2d-mutithread/osd.h	/^	int	(*fill_rect)(void* para);$/;"	m	struct:__anon24
+finfo	../ge2d-mutithread/osd.h	/^	struct fb_fix_screeninfo *finfo ;$/;"	m	struct:__anon25	typeref:struct:__anon25::fb_fix_screeninfo
+fix_line_length	../ge2d-mutithread/osd.h	/^	U32		fix_line_length;$/;"	m	struct:__anon26
+flags	../ge2d-mutithread/cmemlib.h	/^    int flags;          \/**< either CMEM_CACHED or CMEM_NONCACHED *\/$/;"	m	struct:CMEM_AllocParams
+focus_border	../ge2d-mutithread/ge2d.c	/^static const  int   focus_border=4,key_array_gap_h=10 ,key_array_gap_v=10;$/;"	v	file:
+focus_key_index	../ge2d-mutithread/ge2d.c	/^static int 	focus_key_index=0;$/;"	v	file:
+format	../ge2d-mutithread/osd.h	/^    int  format;$/;"	m	struct:__anon19
+free_outparams	../ge2d-mutithread/cmemlib.h	/^    } free_outparams;           \/**< *\/$/;"	m	union:CMEM_AllocUnion	typeref:struct:CMEM_AllocUnion::__anon9
+func_array	../ge2d-mutithread/main.c	/^func_test_t  func_array[]={ NULL,test_osd_display, test_ge2d_op,test_osd_colorkey,osd_order_change,multi_process_test} ;$/;"	v
+func_test_t	../ge2d-mutithread/osd.h	/^typedef  int	(*func_test_t)(void *);$/;"	t
+ge2d_config	../ge2d-mutithread/multi_process.c	/^static int  ge2d_config(osd_obj_t*  osd)$/;"	f	file:
+ge2d_config	../ge2d-mutithread/multi_process2.c	/^static int  ge2d_config(osd_obj_t*  osd)$/;"	f	file:
+ge2d_context_t	../ge2d-mutithread/ge2d.c	/^}ge2d_context_t ;$/;"	t	typeref:struct:__anon1	file:
+ge2d_draw	../ge2d-mutithread/ge2d.c	/^void  *ge2d_draw(void *para)$/;"	f
+ge2d_fd	../ge2d-mutithread/osd.h	/^	int 		ge2d_fd;$/;"	m	struct:__anon25
+ge2d_handle_quit	../ge2d-mutithread/ge2d.c	/^void  ge2d_handle_quit(int sig_num)$/;"	f
+ge2d_input	../ge2d-mutithread/ge2d.c	/^void  *ge2d_input(void *para)$/;"	f
+ge2d_op_blend	../ge2d-mutithread/ge2d.c	/^int ge2d_op_blend(void *para)$/;"	f
+ge2d_op_blit	../ge2d-mutithread/ge2d.c	/^int ge2d_op_blit(void *para)$/;"	f
+ge2d_op_ctl_t	../ge2d-mutithread/osd.h	/^}ge2d_op_ctl_t;$/;"	t	typeref:struct:__anon21
+ge2d_op_fill_rect	../ge2d-mutithread/ge2d.c	/^int ge2d_op_fill_rect(void *para)$/;"	f
+ge2d_op_func	../ge2d-mutithread/osd.h	/^	ge2d_op_func_t  ge2d_op_func;$/;"	m	struct:__anon25
+ge2d_op_func_t	../ge2d-mutithread/osd.h	/^}ge2d_op_func_t;$/;"	t	typeref:struct:__anon24
+ge2d_op_para_t	../ge2d-mutithread/osd.h	/^}ge2d_op_para_t ;$/;"	t	typeref:struct:__anon23
+ge2d_op_stretch_blit	../ge2d-mutithread/ge2d.c	/^int ge2d_op_stretch_blit(void *para)$/;"	f
+ge2d_reap_thread	../ge2d-mutithread/ge2d.c	/^void *ge2d_reap_thread(void *para)$/;"	f
+ge2d_src_canvas_type	../ge2d-mutithread/osd.h	/^}ge2d_src_canvas_type;$/;"	t	typeref:enum:__anon15
+ge2d_src_dst_t	../ge2d-mutithread/osd.h	/^}ge2d_src_dst_t;$/;"	t	typeref:enum:__anon14
+get_block_outparams	../ge2d-mutithread/cmemlib.h	/^    } get_block_outparams;      \/**< *\/$/;"	m	union:CMEM_AllocUnion	typeref:struct:CMEM_AllocUnion::__anon8
+get_osd_buffer_pointer	../ge2d-mutithread/osd.c	/^char*	get_osd_buffer_pointer(int fbfd,struct fb_var_screeninfo *vinfo, struct fb_fix_screeninfo *finfo)$/;"	f
+get_pool_inparams	../ge2d-mutithread/cmemlib.h	/^    } get_pool_inparams;        \/**< *\/$/;"	m	union:CMEM_AllocUnion	typeref:struct:CMEM_AllocUnion::__anon6
+get_size_inparams	../ge2d-mutithread/cmemlib.h	/^    } get_size_inparams;        \/**< *\/$/;"	m	union:CMEM_AllocUnion	typeref:struct:CMEM_AllocUnion::__anon5
+green_length	../ge2d-mutithread/osd.h	/^	u8	green_length;$/;"	m	struct:__anon28
+green_msb_right	../ge2d-mutithread/osd.h	/^	u8	green_msb_right;$/;"	m	struct:__anon28
+green_offset	../ge2d-mutithread/osd.h	/^	u8	green_offset;$/;"	m	struct:__anon28
+h	../ge2d-mutithread/ge2d.c	/^	int     h;$/;"	m	struct:__anon2	file:
+h	../ge2d-mutithread/osd.h	/^	unsigned int	h;$/;"	m	struct:__anon16
+h	../ge2d-mutithread/osd.h	/^     int            h;   \/* height of it *\/$/;"	m	struct:__anon10
+h	../ge2d-mutithread/osd.h	/^     int            h;   \/* height of it *\/$/;"	m	struct:__anon22
+handle	../ge2d-mutithread/osd.h	/^	INT32	handle;$/;"	m	struct:__anon26
+handle_term_int	../ge2d-mutithread/multi_process.c	/^static void  handle_term_int(int sig_num)$/;"	f	file:
+handle_term_int	../ge2d-mutithread/multi_process2.c	/^static void  handle_term_int(int sig_num)$/;"	f	file:
+height	../ge2d-mutithread/osd.h	/^    int  height;$/;"	m	struct:__anon19
+hf_init_phase	../ge2d-mutithread/osd.h	/^    unsigned hf_init_phase;$/;"	m	struct:__anon20
+hf_rpt_num	../ge2d-mutithread/osd.h	/^    int hf_rpt_num;$/;"	m	struct:__anon20
+hsc_phase_slope	../ge2d-mutithread/osd.h	/^    int hsc_phase_slope;$/;"	m	struct:__anon20
+hsc_start_phase_step	../ge2d-mutithread/osd.h	/^    unsigned hsc_start_phase_step;$/;"	m	struct:__anon20
+i32DecoderID	../ge2d-mutithread/osd.h	/^	INT32    			i32DecoderID;	 $/;"	m	struct:T_DEC_PARAMETER
+index	../ge2d-mutithread/ge2d.c	/^	char   index;$/;"	m	struct:__anon2	file:
+init_key_array	../ge2d-mutithread/ge2d.c	/^int  init_key_array(osd_obj_t  * osd_this)$/;"	f
+init_osd	../ge2d-mutithread/osd.c	/^int  init_osd(int bpp,int osd_index,struct fb_var_screeninfo *vinfo, struct fb_fix_screeninfo *finfo, \\$/;"	f
+int_exit	../ge2d-mutithread/ge2d.c	/^	int				int_exit;$/;"	m	struct:__anon1	file:
+key_array_gap_h	../ge2d-mutithread/ge2d.c	/^static const  int   focus_border=4,key_array_gap_h=10 ,key_array_gap_v=10;$/;"	v	file:
+key_array_gap_v	../ge2d-mutithread/ge2d.c	/^static const  int   focus_border=4,key_array_gap_h=10 ,key_array_gap_v=10;$/;"	v	file:
+key_array_start_x	../ge2d-mutithread/ge2d.c	/^static const  int   key_array_start_x=50, key_array_start_y=50;$/;"	v	file:
+key_array_start_y	../ge2d-mutithread/ge2d.c	/^static const  int   key_array_start_x=50, key_array_start_y=50;$/;"	v	file:
+key_code	../ge2d-mutithread/ge2d.c	/^	int				key_code;$/;"	m	struct:__anon1	file:
+key_color	../ge2d-mutithread/osd.h	/^	int	key_color;$/;"	m	struct:__anon17
+key_enable	../ge2d-mutithread/osd.h	/^	int	key_enable;$/;"	m	struct:__anon17
+key_height	../ge2d-mutithread/ge2d.c	/^static const  int   key_width=50,key_height=30 ;$/;"	v	file:
+key_is_pressed	../ge2d-mutithread/ge2d.c	/^static  int   key_is_pressed(int key_fd)$/;"	f	file:
+key_mask	../ge2d-mutithread/osd.h	/^	int 	key_mask;$/;"	m	struct:__anon17
+key_mode	../ge2d-mutithread/osd.h	/^	int   key_mode;$/;"	m	struct:__anon17
+key_pos	../ge2d-mutithread/ge2d.c	/^static key_prop_t  key_pos[KEY_NUM_V][KEY_NUM_H];$/;"	v	file:
+key_prop_t	../ge2d-mutithread/ge2d.c	/^}key_prop_t;$/;"	t	typeref:struct:__anon2	file:
+key_width	../ge2d-mutithread/ge2d.c	/^static const  int   key_width=50,key_height=30 ;$/;"	v	file:
+kill_all_child_process	../ge2d-mutithread/multi_process.c	/^static  int kill_all_child_process(int *child_pid,int count)$/;"	f	file:
+kill_all_child_process	../ge2d-mutithread/multi_process2.c	/^static  int kill_all_child_process(int child_pid)$/;"	f	file:
+kill_process	../ge2d-mutithread/multi_process.c	/^static int  kill_process=0;$/;"	v	file:
+kill_process	../ge2d-mutithread/multi_process2.c	/^static int  kill_process=0;$/;"	v	file:
+left	../ge2d-mutithread/osd.h	/^    int  left;$/;"	m	struct:__anon19
+line_width	../ge2d-mutithread/osd.h	/^	int		line_width;$/;"	m	struct:__anon25
+load_bitmap_file	../ge2d-mutithread/alpha16.c	/^int load_bitmap_file(int* bmp,int bpp)$/;"	f
+load_bitmap_local	../ge2d-mutithread/alpha16.c	/^int  load_bitmap_local(int*bmp , int bpp)$/;"	f
+load_bmp_data	../ge2d-mutithread/alpha16.c	/^int load_bmp_data(int bmp_fd,int *bmp,BITMAPFILEHEADER *file_header,BITMAPINFOHEADER *info_header)$/;"	f
+main	../ge2d-mutithread/main.c	/^int main(void)$/;"	f
+mem_type	../ge2d-mutithread/osd.h	/^    int  mem_type;$/;"	m	struct:__anon19
+min	../ge2d-mutithread/osd.h	284;"	d
+move_sample_button	../ge2d-mutithread/multi_process.c	/^static int  move_sample_button(osd_obj_t *osd)$/;"	f	file:
+move_sample_button	../ge2d-mutithread/multi_process2.c	/^static int  move_sample_button(osd_obj_t *osd)$/;"	f	file:
+multi_process_test	../ge2d-mutithread/multi_process.c	/^int   multi_process_test(void* para)$/;"	f
+multi_process_test	../ge2d-mutithread/multi_process2.c	/^int   multi_process_test(void* para)$/;"	f
+mutex	../ge2d-mutithread/ge2d.c	/^	pthread_mutex_t  mutex;$/;"	m	struct:__anon1	file:
+name	../ge2d-mutithread/osd.h	/^	char 	name[40];$/;"	m	struct:__anon25
+op	../ge2d-mutithread/osd.h	/^	int op;$/;"	m	struct:__anon23
+op_mode	../ge2d-mutithread/osd.h	/^    unsigned op_mode;$/;"	m	struct:__anon20
+op_type	../ge2d-mutithread/osd.h	/^	int  op_type;$/;"	m	struct:__anon18
+osd	../ge2d-mutithread/ge2d.c	/^	osd_obj_t  * 		osd;$/;"	m	struct:__anon1	file:
+osd0_process	../ge2d-mutithread/multi_process2.c	/^static int  osd0_process(int child_pid)$/;"	f	file:
+osd1_process	../ge2d-mutithread/multi_process2.c	/^static int osd1_process(void)$/;"	f	file:
+osdDispRect	../ge2d-mutithread/osd.c	/^INT32 osdDispRect(osd_obj_t* osd_this,U32  argb,U16 x0,U16 y0,U16 x1,U16 y1)$/;"	f
+osdEraseRect	../ge2d-mutithread/osd.c	/^INT32 osdEraseRect(osd_obj_t* osd_this,U16 x0,U16 y0,U16 x1,U16 y1)$/;"	f
+osdSetColorKey	../ge2d-mutithread/osd.c	/^INT32 osdSetColorKey(osd_obj_t* osd_this,INT32 iColorKey)$/;"	f
+osdUpdateRegion	../ge2d-mutithread/osd.c	/^INT32  osdUpdateRegion(osd_obj_t *osd_this,U16 x0,U16 y0,U16 x1,U16 y1)\/\/anti_flick$/;"	f
+osd_disp_type_t	../ge2d-mutithread/osd.h	/^}osd_disp_type_t;$/;"	t	typeref:enum:__anon13
+osd_index	../ge2d-mutithread/osd.h	/^	int		osd_index;$/;"	m	struct:__anon25
+osd_info_t	../ge2d-mutithread/osd.h	/^}osd_info_t ;$/;"	t	typeref:struct:__anon26
+osd_obj_t	../ge2d-mutithread/osd.h	/^}osd_obj_t ;$/;"	t	typeref:struct:__anon25
+osd_order_change	../ge2d-mutithread/alpha16.c	/^int   osd_order_change(void* para)$/;"	f
+osd_para_t	../ge2d-mutithread/osd.h	/^}osd_para_t ;$/;"	t	typeref:struct:__anon11
+osd_rectangle_t	../ge2d-mutithread/osd.h	/^}osd_rectangle_t;$/;"	t	typeref:struct:__anon10
+osd_show	../ge2d-mutithread/osd.c	/^int  osd_show(void *para)$/;"	f
+para	../ge2d-mutithread/osd.h	/^	void  *para ;$/;"	m	struct:__anon25
+parent_process	../ge2d-mutithread/multi_process.c	/^static int  parent_process(int *child_pid,int count)$/;"	f	file:
+phys_base	../ge2d-mutithread/cmemlib.h	/^    unsigned long phys_base;$/;"	m	struct:CMEM_BlockAttrs
+physp	../ge2d-mutithread/cmemlib.h	/^        unsigned long physp;$/;"	m	struct:CMEM_AllocUnion::__anon7
+physp	../ge2d-mutithread/cmemlib.h	/^        unsigned long physp;$/;"	m	struct:CMEM_AllocUnion::__anon8
+physp	../ge2d-mutithread/cmemlib.h	/^    unsigned long physp;$/;"	m	union:CMEM_AllocUnion
+poolid	../ge2d-mutithread/cmemlib.h	/^        int poolid;$/;"	m	struct:CMEM_AllocUnion::__anon4
+poolid	../ge2d-mutithread/cmemlib.h	/^        int poolid;$/;"	m	struct:CMEM_AllocUnion::__anon5
+poolid	../ge2d-mutithread/cmemlib.h	/^        int poolid;$/;"	m	struct:CMEM_AllocUnion::__anon9
+poolid	../ge2d-mutithread/cmemlib.h	/^    int poolid;$/;"	m	union:CMEM_AllocUnion
+print_error_string	../ge2d-mutithread/alpha16.c	/^void  print_error_string(char *err_str)$/;"	f
+pt_osd	../ge2d-mutithread/osd.h	/^	void  *pt_osd ;$/;"	m	struct:__anon21
+pthread_id	../ge2d-mutithread/ge2d.c	/^	pthread_t  pthread_id[MAX_THREAD_NUM] ;$/;"	m	struct:__anon1	file:
+ptr	../ge2d-mutithread/osd.h	/^	U8*		ptr;$/;"	m	struct:__anon26
+random_thread	../ge2d-mutithread/ge2d.c	/^void * random_thread(void *para)$/;"	f
+rectangle_t	../ge2d-mutithread/osd.h	/^}rectangle_t;$/;"	t	typeref:struct:__anon22
+red_length	../ge2d-mutithread/osd.h	/^	u8	red_length;$/;"	m	struct:__anon28
+red_msb_right	../ge2d-mutithread/osd.h	/^	u8	red_msb_right;$/;"	m	struct:__anon28
+red_offset	../ge2d-mutithread/osd.h	/^	u8	red_offset ;$/;"	m	struct:__anon28
+release_osd_buffer_pointer	../ge2d-mutithread/osd.c	/^int	release_osd_buffer_pointer(osd_obj_t* osd_obj)$/;"	f
+save_vinfo	../ge2d-mutithread/osd.h	/^	struct fb_var_screeninfo *save_vinfo;$/;"	m	struct:__anon25	typeref:struct:__anon25::fb_var_screeninfo
+scale_test	../ge2d-mutithread/ge2d.c	/^static int  scale_test(osd_obj_t **  osd)$/;"	f	file:
+screen_size	../ge2d-mutithread/osd.h	/^	int 		screen_size;$/;"	m	struct:__anon25
+setup_var_info	../ge2d-mutithread/osd.c	/^static  int setup_var_info(int bpp,struct fb_var_screeninfo *vinfo)$/;"	f	file:
+show	../ge2d-mutithread/osd.h	/^	int 	(*show)(void *para);$/;"	m	struct:__anon25
+show_bitmap	../ge2d-mutithread/alpha16.c	/^ int  show_bitmap(char *p, unsigned line_width, unsigned xres, unsigned yres, unsigned bpp)$/;"	f
+sighandler_t	../ge2d-mutithread/ge2d.c	/^typedef void (*sighandler_t)(int); $/;"	t	file:
+size	../ge2d-mutithread/cmemlib.h	/^        size_t size;$/;"	m	struct:CMEM_AllocUnion::__anon3
+size	../ge2d-mutithread/cmemlib.h	/^        size_t size;$/;"	m	struct:CMEM_AllocUnion::__anon6
+size	../ge2d-mutithread/cmemlib.h	/^        size_t size;$/;"	m	struct:CMEM_AllocUnion::__anon7
+size	../ge2d-mutithread/cmemlib.h	/^        size_t size;$/;"	m	struct:CMEM_AllocUnion::__anon8
+size	../ge2d-mutithread/cmemlib.h	/^        size_t size;$/;"	m	struct:CMEM_AllocUnion::__anon9
+size	../ge2d-mutithread/cmemlib.h	/^    size_t size;$/;"	m	struct:CMEM_BlockAttrs
+size	../ge2d-mutithread/cmemlib.h	/^    size_t size;$/;"	m	union:CMEM_AllocUnion
+slide_window	../ge2d-mutithread/ge2d.c	/^int  slide_window(osd_obj_t  * osd_this,int status)$/;"	f
+src1_gb_alpha	../ge2d-mutithread/osd.h	/^    unsigned src1_gb_alpha;$/;"	m	struct:__anon20
+src1_hsc_phase0_always_en	../ge2d-mutithread/osd.h	/^    unsigned char src1_hsc_phase0_always_en;$/;"	m	struct:__anon20
+src1_hsc_rpt_ctrl	../ge2d-mutithread/osd.h	/^    unsigned char src1_hsc_rpt_ctrl;  \/\/1bit, 0: using minus, 1: using repeat data$/;"	m	struct:__anon20
+src1_rect	../ge2d-mutithread/osd.h	/^	osd_rectangle_t src1_rect;$/;"	m	struct:__anon11
+src1_rect	../ge2d-mutithread/osd.h	/^	rectangle_t src1_rect;$/;"	m	struct:__anon23
+src1_vsc_phase0_always_en	../ge2d-mutithread/osd.h	/^    unsigned char src1_vsc_phase0_always_en;$/;"	m	struct:__anon20
+src1_vsc_rpt_ctrl	../ge2d-mutithread/osd.h	/^    unsigned char src1_vsc_rpt_ctrl;  \/\/1bit, 0: using minus  1: using repeat data$/;"	m	struct:__anon20
+src2_key	../ge2d-mutithread/osd.h	/^    src_key_ctrl_t  src2_key;$/;"	m	struct:__anon20
+src2_para	../ge2d-mutithread/osd.h	/^    src_dst_para_ex_t src2_para;$/;"	m	struct:__anon20
+src2_planes	../ge2d-mutithread/osd.h	/^    config_planes_t src2_planes[4];$/;"	m	struct:__anon20
+src2_rect	../ge2d-mutithread/osd.h	/^	osd_rectangle_t src2_rect;$/;"	m	struct:__anon11
+src2_rect	../ge2d-mutithread/osd.h	/^	rectangle_t src2_rect;$/;"	m	struct:__anon23
+src_dst_para_ex_t	../ge2d-mutithread/osd.h	/^}src_dst_para_ex_t ;$/;"	t	typeref:struct:__anon19
+src_format	../ge2d-mutithread/osd.h	/^	unsigned int src_format;$/;"	m	struct:__anon18
+src_key	../ge2d-mutithread/osd.h	/^	src_key_ctrl_t  src_key;$/;"	m	struct:__anon18
+src_key	../ge2d-mutithread/osd.h	/^    src_key_ctrl_t  src_key;$/;"	m	struct:__anon20
+src_key_ctrl_t	../ge2d-mutithread/osd.h	/^}src_key_ctrl_t;$/;"	t	typeref:struct:__anon17
+src_para	../ge2d-mutithread/osd.h	/^    src_dst_para_ex_t src_para;$/;"	m	struct:__anon20
+src_planes	../ge2d-mutithread/osd.h	/^	config_planes_t src_planes[4];$/;"	m	struct:__anon18
+src_planes	../ge2d-mutithread/osd.h	/^    config_planes_t src_planes[4];$/;"	m	struct:__anon20
+stop_all_thread	../ge2d-mutithread/ge2d.c	/^void  stop_all_thread(ge2d_context_t* ge2d_context)$/;"	f
+stretch_blit	../ge2d-mutithread/osd.h	/^	int	(*stretch_blit)(void* para);$/;"	m	struct:__anon24
+swap	../ge2d-mutithread/osd.h	282;"	d
+tagBITMAPFILEHEADER	../ge2d-mutithread/osd.h	/^typedef struct tagBITMAPFILEHEADER$/;"	s
+tagBITMAPINFOHEADER	../ge2d-mutithread/osd.h	/^typedef struct tagBITMAPINFOHEADER{$/;"	s
+test_3d	../ge2d-mutithread/ge2d.c	/^static int test_3d(osd_obj_t **  osd)$/;"	f	file:
+test_cmem	../ge2d-mutithread/ge2d.c	/^static int test_cmem(osd_obj_t **  osd,int  format)$/;"	f	file:
+test_ge2d_op	../ge2d-mutithread/ge2d.c	/^int  test_ge2d_op(void* para)$/;"	f
+test_keyboard	../ge2d-mutithread/ge2d.c	/^int  test_keyboard(ge2d_context_t* ge2d_context)$/;"	f
+test_osd_colorkey	../ge2d-mutithread/alpha16.c	/^int 	test_osd_colorkey(void* para)$/;"	f
+test_osd_display	../ge2d-mutithread/alpha16.c	/^ int  test_osd_display(void* para)$/;"	f
+thread_context	../ge2d-mutithread/ge2d.c	/^ge2d_context_t  thread_context;$/;"	v
+top	../ge2d-mutithread/osd.h	/^    int  top;$/;"	m	struct:__anon19
+transp_length	../ge2d-mutithread/osd.h	/^	u8	transp_length;$/;"	m	struct:__anon28
+transp_msb_right	../ge2d-mutithread/osd.h	/^	u8	transp_msb_right;$/;"	m	struct:__anon28
+transp_offset	../ge2d-mutithread/osd.h	/^	u8	transp_offset;$/;"	m	struct:__anon28
+type	../ge2d-mutithread/cmemlib.h	/^    int type;           \/**< either CMEM_HEAP or CMEM_POOL *\/$/;"	m	struct:CMEM_AllocParams
+u16APID	../ge2d-mutithread/osd.h	/^	UINT16 			u16APID;		 $/;"	m	struct:T_DEC_PARAMETER
+u16VPID	../ge2d-mutithread/osd.h	/^	UINT16 			u16VPID;		 $/;"	m	struct:T_DEC_PARAMETER
+u32ACodeType	../ge2d-mutithread/osd.h	/^ 	UINT32 			u32ACodeType;	 $/;"	m	struct:T_DEC_PARAMETER
+u32VCodeType	../ge2d-mutithread/osd.h	/^ 	UINT32 			u32VCodeType;	 $/;"	m	struct:T_DEC_PARAMETER
+u8	../ge2d-mutithread/osd.h	/^typedef  unsigned char u8  ;$/;"	t
+u8StreamType	../ge2d-mutithread/osd.h	/^	UINT8 			u8StreamType;	 $/;"	m	struct:T_DEC_PARAMETER
+vf_init_phase	../ge2d-mutithread/osd.h	/^    unsigned vf_init_phase;$/;"	m	struct:__anon20
+vf_rpt_num	../ge2d-mutithread/osd.h	/^    int vf_rpt_num;$/;"	m	struct:__anon20
+vinfo	../ge2d-mutithread/osd.h	/^	struct fb_var_screeninfo *vinfo ;$/;"	m	struct:__anon25	typeref:struct:__anon25::fb_var_screeninfo
+virtp	../ge2d-mutithread/cmemlib.h	/^    unsigned long virtp;$/;"	m	union:CMEM_AllocUnion
+vsc_phase_slope	../ge2d-mutithread/osd.h	/^    int vsc_phase_slope;$/;"	m	struct:__anon20
+vsc_start_phase_step	../ge2d-mutithread/osd.h	/^    unsigned vsc_start_phase_step;$/;"	m	struct:__anon20
+w	../ge2d-mutithread/ge2d.c	/^	int 	  w;$/;"	m	struct:__anon2	file:
+w	../ge2d-mutithread/osd.h	/^	unsigned int	w;$/;"	m	struct:__anon16
+w	../ge2d-mutithread/osd.h	/^     int            w;   \/* width of it *\/$/;"	m	struct:__anon10
+w	../ge2d-mutithread/osd.h	/^     int            w;   \/* width of it *\/$/;"	m	struct:__anon22
+width	../ge2d-mutithread/osd.h	/^    int  width;$/;"	m	struct:__anon19
+x	../ge2d-mutithread/ge2d.c	/^	int     x ;$/;"	m	struct:__anon2	file:
+x	../ge2d-mutithread/osd.h	/^     int            x;   \/* X coordinate of its top-left point *\/$/;"	m	struct:__anon10
+x	../ge2d-mutithread/osd.h	/^     int            x;   \/* X coordinate of its top-left point *\/$/;"	m	struct:__anon22
+x_rev	../ge2d-mutithread/osd.h	/^    unsigned char x_rev;$/;"	m	struct:__anon19
+xres	../ge2d-mutithread/osd.h	/^	U32		xres;$/;"	m	struct:__anon26
+y	../ge2d-mutithread/ge2d.c	/^	int 	  y;$/;"	m	struct:__anon2	file:
+y	../ge2d-mutithread/osd.h	/^     int            y;   \/* Y coordinate of its top-left point *\/$/;"	m	struct:__anon10
+y	../ge2d-mutithread/osd.h	/^     int            y;   \/* Y coordinate of its top-left point *\/$/;"	m	struct:__anon22
+y_rev	../ge2d-mutithread/osd.h	/^    unsigned char y_rev;$/;"	m	struct:__anon19
+yres	../ge2d-mutithread/osd.h	/^	U32		yres;$/;"	m	struct:__anon26
